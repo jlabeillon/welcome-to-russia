@@ -1,4 +1,4 @@
-#Welcome To Russia 2018 !
+# Welcome To Russia 2018 !
 
 ## Que voulez-vous faire ?
 
@@ -8,24 +8,24 @@ En 2018 la Russie va accueillir la *coupe du monde de football*. Je ne connais r
 
 Toutes les maquettes du site ne sont pas encore finies mais en gros:
 
-###Main - https://imgur.com/KT4sXtH
-###City presentation - https://imgur.com/CkEfR3l
-###Hotels - https://imgur.com/zuzKFf6
-###Stadium - https://imgur.com/0Sj1oJh
+### Main - https://imgur.com/KT4sXtH
+### City presentation - https://imgur.com/CkEfR3l
+### Hotels - https://imgur.com/zuzKFf6
+### Stadium - https://imgur.com/0Sj1oJh
 
 etc (Transportation? Activities? Restaurants?)
 
 Le site sera en plusieurs langues (Anglais, Français, Russe, etc...).
 
-##Opportunités
+## Opportunités
 
 C'est un réel projet qui j’espère sera utile aux futurs touristes (site web, app IOS, app Android). C'est aussi un projet qui permet de s’entraîner au marketing, de penser client.
 
-##Quels seront les technologies utilisées ?
+## Quels seront les technologies utilisées ?
 
 C'est un projet lourd en front donc React. Pour le back, Symfony.
 
-##Avez-vous une idée de l'équipe ?
+## Avez-vous une idée de l'équipe ?
 
 Anton Vassiliev - *Responsable Front + Product Owner*
 Johanna Msellati - *Devellopeuse Frond-End*
