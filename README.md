@@ -34,3 +34,6 @@ C'est un projet lourd en front donc React. Pour le back, Symfony.
 - Angélique Valvandrin - **Développeuse Back-End**
 - Jean-Luc Abeillon - **Responsable Back**
 - Maylis Juzan - **Chef de projet / soutien Back-End**
+
+
+ceci est un test angel
