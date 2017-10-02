@@ -1,6 +1,8 @@
 Project Welcome to Russia 2018
 =======
 
+####PRIMORDIAL : Faites ``` composer install ``` quand vous clonez le projet !
+
 Penser à faire un ``` sudo chmod -R 777 var ``` [ Pas propre ]
 
 Ou 
@@ -14,3 +16,5 @@ puis
 et enfin
 
 ``` sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var ```
+
+
