@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Dusha;
+    src: url(Dusha.ttf);
+}
+
+#greetings-home {
+  text-align: center;
+  font-family: Dusha;
+  font-size: 5em;
+  color: red;
+}
+
+#big-picture-home {
+  width: 500px;
+  height: 400px;
+}
+
+#medium-picture-home {
+  width: 250px;
+  height: 200px;
+}
+
+#small-picture-home {
+  width: 160px;
+  height: 120px;
+}
+
+#visa-nav-home {
+  width: 200px;
+  height: 250px;
+  background: url('../images/visa-home.jpg');
+  margin: 1em;
+}
+
+#hotels-nav-home {
+  width: 200px;
+  height: 250px;
+  background: url('../images/hotels-home.jpg');
+  background-size: cover;
+  margin: 1em;
+}
+
+#competition-nav-home {
+  width: 200px;
+  height: 250px;
+  background: url('../images/competition-home.jpg');
+  background-size: cover;
+  margin: 1em;
+}
+
+#transports-nav-home {
+  width: 200px;
+  height: 250px;
+  background: url('../images/transportation-home.jpg');
+  background-size: cover;
+  margin: 1em;
+}
