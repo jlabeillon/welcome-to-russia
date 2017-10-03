@@ -1,7 +1,7 @@
 Project Welcome to Russia 2018
 =======
 
-####PRIMORDIAL : Faites ``` composer install ``` quand vous clonez le projet !
+#### PRIMORDIAL : Faites ``` composer install ``` quand vous clonez le projet !
 
 Penser à faire un ``` sudo chmod -R 777 var ``` [ Pas propre ]
 
