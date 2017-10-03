@@ -28,10 +28,6 @@ class City
      */
     private $description;
 
-    /**
-     * @ORM\Column(type="text")
-     */
-    private $transport;
 
     /**
      * @ORM\Column(type="string")
@@ -90,13 +86,7 @@ class City
         return $this->description;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getTransport()
-    {
-        return $this->transport;
-    }
+
 
     /**
      * @return mixed
@@ -154,13 +144,7 @@ class City
         $this->description = $description;
     }
 
-    /**
-     * @param mixed $transport
-     */
-    public function setTransport($transport)
-    {
-        $this->transport = $transport;
-    }
+
 
     /**
      * @param mixed $image
