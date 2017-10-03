@@ -6,52 +6,127 @@
 #greetings-home {
   text-align: center;
   font-family: Dusha;
-  font-size: 5em;
-  color: red;
+  font-size: 4em;
+  color: black;
+  margin-top: 1em;
 }
 
-#big-picture-home {
-  width: 500px;
-  height: 400px;
+/* cities images container */
+
+.home-picture-container {
+  display: flex;
+  justify-content: center;
 }
 
-#medium-picture-home {
-  width: 250px;
-  height: 200px;
+  #big-picture-home {
+    width: 600px;
+    height: 500px;
+  }
+
+  .medium-picture-home {
+    width: 350px;
+    height: 250px;
+  }
+
+  .small-picture-home {
+    width: 216.7px;
+    height: 150px;
+  }
+
+    #first-medium {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #second-medium {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #small-row {
+      display: flex;
+      justify-content: center;
+    }
+
+/* bottom navigation container */
+
+#bottom-nav-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  position: relative;
 }
 
-#small-picture-home {
-  width: 160px;
-  height: 120px;
-}
+  .image {
+   position: relative;
+  }
 
-#visa-nav-home {
-  width: 200px;
-  height: 250px;
-  background: url('../images/visa-home.jpg');
-  margin: 1em;
-}
+  .bottom-nav {
+    width: 350px;
+    height: 250px;
+    margin: 1em;
+  }
 
-#hotels-nav-home {
-  width: 200px;
-  height: 250px;
-  background: url('../images/hotels-home.jpg');
-  background-size: cover;
-  margin: 1em;
-}
+  #visa-home-container {
+   position: absolute;
+   top: 22px;
+   left: 40px;
+   background: rgba(146, 146, 146, 0.4);
+  }
 
-#competition-nav-home {
-  width: 200px;
-  height: 250px;
-  background: url('../images/competition-home.jpg');
-  background-size: cover;
-  margin: 1em;
-}
+  #visa-home-text {
+    color: white;
+    font-size: 3em;
+    padding: 2em 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
 
-#transports-nav-home {
-  width: 200px;
-  height: 250px;
-  background: url('../images/transportation-home.jpg');
-  background-size: cover;
-  margin: 1em;
-}
+  #hotels-home-container {
+   position: absolute;
+   top: 22px;
+   left: 45px;
+   background: rgba(146, 146, 146, 0.4);
+  }
+
+  #hotels-home-text {
+    color: white;
+    font-size: 3em;
+    padding: 2em 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
+
+  #competition-home-container {
+   position: absolute;
+   top: 22px;
+   left: 30px;
+   background: rgba(146, 146, 146, 0.4);
+  }
+
+  #competition-home-text {
+    color: white;
+    font-size: 3em;
+    padding: 2em 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
+
+  #transports-home-container {
+   position: absolute;
+   top: 22px;
+   left: 30px;
+   background: rgba(146, 146, 146, 0.4);
+  }
+
+  #transports-home-text {
+    color: white;
+    font-size: 3em;
+    padding: 2em 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
