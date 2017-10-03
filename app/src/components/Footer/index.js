@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 // Local import
 
 // Code
-
 class Footer extends React.Component {
   render() {
     return (
@@ -15,5 +14,6 @@ class Footer extends React.Component {
     );
   };
 }
+
 // Export
 export default Footer;

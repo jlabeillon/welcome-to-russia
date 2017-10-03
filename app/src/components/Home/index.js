@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 // Local import
 import Footer from 'src/components/Footer';
-// Code
 
+// Code
 class Home extends React.Component {
   render() {
     return (
@@ -55,5 +55,6 @@ class Home extends React.Component {
     );
   };
 }
+
 // Export
 export default Home;

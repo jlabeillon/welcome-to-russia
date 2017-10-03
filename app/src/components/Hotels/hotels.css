@@ -1,0 +1,13 @@
+#hotels-body {
+  text-align: center;
+}
+
+.hotels-image {
+  width: 300px;
+  height: 200px;
+  float: left;
+}
+
+.hotels-description {
+  padding: 5em;
+}
