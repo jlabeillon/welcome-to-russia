@@ -44,7 +44,7 @@ class Hotel
     private $address;
 
     /**
-     * @ORM\Column(type="integer", length=50)
+     * @ORM\Column(type="varchar", length=20)
      */
     private $phone;
 

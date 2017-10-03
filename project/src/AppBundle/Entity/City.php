@@ -52,14 +52,14 @@ class City
     /**
      * @ORM\OneToMany(targetEntity="Match", mappedBy="city")
      */
-    protected $matchs;
+    protected $matches;
 
     public function __construct()
     {
         $this->hotels = new ArrayCollection();
         $this->restaurants = new ArrayCollection();
         $this->fanzones = new ArrayCollection();
-        $this->matchs = new ArrayCollection();
+        $this->matches = new ArrayCollection();
     }
 
     /**
@@ -172,7 +172,7 @@ class City
 
     public function addMatch(Match $match)
     {
-        $this->matchs[] = $match;
+        $this->matches[] = $match;
     }
 
 }
