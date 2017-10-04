@@ -9,7 +9,7 @@ import Footer from 'src/components/Footer';
 class Restaurants extends React.Component {
   render() {
     return (
-      <div className="container-fluid" id="hotels-body">
+      <div className="container" id="hotels-body">
 
         <div className="row">
           <div className="col-xs-1">

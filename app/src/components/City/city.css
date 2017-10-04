@@ -1,0 +1,17 @@
+.nav-left {
+  display: block;
+}
+
+#city-container {
+  text-align: center;
+}
+
+#city-name {
+  font-family: Dusha;
+  font-size: 5em;
+}
+
+#city-description {
+  text-align: left;
+  margin-top: 3em;
+}

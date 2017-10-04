@@ -10,7 +10,7 @@ import Header from 'src/components/Header';
 class Home extends React.Component {
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container">
       {/* Header */}
         <Header />
       {/* Body */}
