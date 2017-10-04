@@ -1,6 +1,7 @@
 // Import
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
 // Local import
 import Footer from 'src/components/Footer';
@@ -15,10 +16,10 @@ class City extends React.Component {
         <div className="row">
 
           <div className="col-xs-2">
-            <a href="#" className="nav-left">Moscow stadium</a>
+            <NavLink to="/city/moscow/stadium" className="nav-left">Moscow stadium</NavLink>
             <a href="#" className="nav-left">Moscow transportation</a>
-            <a href="#" className="nav-left">Moscow hotels</a>
-            <a href="#" className="nav-left">Moscow restaurants</a>
+            <NavLink to="/city/moscow/hotels" className="nav-left">Moscow hotels</NavLink>
+            <NavLink to="/city/moscow/restaurants" className="nav-left">Moscow restaurants</NavLink>
           </div>
 
           <div className="col-xs-10" id="city-container">

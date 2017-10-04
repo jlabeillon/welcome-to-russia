@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+#hotels-body a {
+  text-decoration: none;
+  color: black;
+}
+
 .hotels-image {
   width: 300px;
   height: 200px;
@@ -10,4 +15,6 @@
 
 .hotels-description {
   padding: 5em;
+  text-align: left;
+  margin-left: 20em;
 }

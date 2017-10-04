@@ -42,11 +42,13 @@
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
-    "socket.io": "^2.0.3"
+    "socket.io": "^2.0.3",
+    "react-router-dom": "^4.2.2"
   },
   "scripts": {
     "start:node": "node server/index.js",
     "start:brunch": "brunch watch",
+    "start": "brunch watch --server",
     "save-deps": "rm -rf node_modules && npm update --save && npm update --save-dev",
     "lint": "eslint --fix app",
     "test": "mocha tests/.setup.js tests/**/*.test.js",
