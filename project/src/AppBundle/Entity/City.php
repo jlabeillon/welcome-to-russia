@@ -123,9 +123,9 @@ class City
     /**
      * @return mixed
      */
-    public function getMatchs()
+    public function getMatches()
     {
-        return $this->matchs;
+        return $this->matches;
     }
 
     /**
