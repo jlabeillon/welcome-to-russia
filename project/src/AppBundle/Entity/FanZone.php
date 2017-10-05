@@ -39,7 +39,7 @@ class FanZone
     private $capacity;
 
     /**
-     * @ORM\ManyToOne(targetEntity="City", inversedBy="fanzones")
+     * @ORM\ManyToOne(targetEntity="City", inversedBy="fanzone")
      */
     private $city;
 

@@ -37,29 +37,29 @@ class City
     /**
      * @ORM\OneToMany(targetEntity="Hotel", mappedBy="city")
      */
-    protected $hotels;
+    protected $hotel;
 
     /**
      * @ORM\OneToMany(targetEntity="Restaurant", mappedBy="city")
      */
-    protected $restaurants;
+    protected $restaurant;
 
     /**
      * @ORM\OneToMany(targetEntity="FanZone", mappedBy="city")
      */
-    protected $fanzones;
+    protected $fanzone;
 
     /**
-     * @ORM\OneToMany(targetEntity="Match", mappedBy="city")
+     * @ORM\OneToMany(targetEntity="Game", mappedBy="city")
      */
-    protected $matches;
+    protected $Game;
 
     public function __construct()
     {
-        $this->hotels = new ArrayCollection();
-        $this->restaurants = new ArrayCollection();
-        $this->fanzones = new ArrayCollection();
-        $this->matches = new ArrayCollection();
+        $this->hotel = new ArrayCollection();
+        $this->restaurant = new ArrayCollection();
+        $this->fanzone = new ArrayCollection();
+        $this->game = new ArrayCollection();
     }
 
     /**
@@ -99,33 +99,33 @@ class City
     /**
      * @return mixed
      */
-    public function getHotels()
+    public function getHotel()
     {
-        return $this->hotels;
+        return $this->hotel;
     }
 
     /**
      * @return mixed
      */
-    public function getRestaurants()
+    public function getRestaurant()
     {
-        return $this->restaurants;
+        return $this->restaurant;
     }
 
     /**
      * @return mixed
      */
-    public function getFanzones()
+    public function getFanzone()
     {
-        return $this->fanzones;
+        return $this->fanzone;
     }
 
     /**
      * @return mixed
      */
-    public function getMatches()
+    public function getGame()
     {
-        return $this->matches;
+        return $this->game;
     }
 
     /**
@@ -157,22 +157,22 @@ class City
 
     public function addHotel(Hotel $hotel)
     {
-        $this->hotels[] = $hotel;
+        $this->hotel[] = $hotel;
     }
 
     public function addRestaurant(Restaurant $restaurant)
     {
-        $this->restaurants[] = $restaurant;
+        $this->restaurant[] = $restaurant;
     }
 
     public function addFanZone(FanZone $fanzone)
     {
-        $this->fanzones[] = $fanzone;
+        $this->fanzone[] = $fanzone;
     }
 
-    public function addMatch(Match $match)
+    public function addGame(Game $game)
     {
-        $this->matches[] = $match;
+        $this->game[] = $game;
     }
 
 }
