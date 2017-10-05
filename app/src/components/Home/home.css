@@ -49,7 +49,6 @@
     }
 
 /* bottom navigation container */
-
 #bottom-nav-container {
   display: flex;
   justify-content: center;
@@ -66,7 +65,7 @@
     height: 250px;
     margin: 1em;
   }
-
+  /* Visa */
   #visa-home-container {
    position: absolute;
    top: 22px;
@@ -82,7 +81,7 @@
     text-transform: uppercase;
     font-family: Dusha;
   }
-
+  /* Hotels */
   #hotels-home-container {
    position: absolute;
    top: 22px;
@@ -98,7 +97,7 @@
     text-transform: uppercase;
     font-family: Dusha;
   }
-
+  /* Competition */
   #competition-home-container {
    position: absolute;
    top: 22px;
@@ -114,7 +113,7 @@
     text-transform: uppercase;
     font-family: Dusha;
   }
-
+  /* Transports */
   #transports-home-container {
    position: absolute;
    top: 22px;
@@ -126,6 +125,270 @@
     color: white;
     font-size: 3em;
     padding: 2em 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
+  /* Moscow */
+  #moscow-home-container {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.1);
+   opacity: 0
+  }
+
+    #moscow-home-container:hover {
+      opacity: 1;
+    }
+
+  #moscow-home-text {
+    color: white;
+    font-size: 3em;
+    padding-left: 4.8em;
+    padding-top: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
+  /* Saint-Petersbourg */
+  #petersbourg-home-container {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.1);
+   opacity: 0
+  }
+
+    #petersbourg-home-container:hover {
+      opacity: 1;
+    }
+
+  #petersbourg-home-text {
+    color: white;
+    font-size: 1.5em;
+    padding-left: 3.5em;
+    padding-top: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
+  /* Yekaterinburg */
+  #yekaterinburg-home-container {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.1);
+   opacity: 0
+  }
+
+    #yekaterinburg-home-container:hover {
+      opacity: 1;
+    }
+
+  #yekaterinburg-home-text {
+    color: white;
+    font-size: 1.5em;
+    padding-left: 4.5em;
+    padding-top: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
+  /* Sochi */
+  #sochi-home-container {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.1);
+   opacity: 0
+  }
+
+    #sochi-home-container:hover {
+      opacity: 1;
+    }
+
+  #sochi-home-text {
+    color: white;
+    font-size: 1.5em;
+    padding-left: 6.5em;
+    padding-top: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
+  /* Kaliningrad */
+  #kaliningrad-home-container {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.1);
+   opacity: 0
+  }
+
+    #kaliningrad-home-container:hover {
+      opacity: 1;
+    }
+
+  #kaliningrad-home-text {
+    color: white;
+    font-size: 1.5em;
+    padding-left: 5.5em;
+    padding-top: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
+  /* Volgograd */
+  #volgograd-home-container {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.1);
+   opacity: 0
+  }
+
+    #volgograd-home-container:hover {
+      opacity: 1;
+    }
+
+  #volgograd-home-text {
+    color: white;
+    font-size: 1em;
+    padding-left: 5em;
+    padding-top: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
+  /* Saransk*/
+  #saransk-home-container {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.1);
+   opacity: 0
+  }
+
+    #saransk-home-container:hover {
+      opacity: 1;
+    }
+
+  #saransk-home-text {
+    color: white;
+    font-size: 1em;
+    padding-left: 5em;
+    padding-top: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
+  /* Samara*/
+  #samara-home-container {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.1);
+   opacity: 0
+  }
+
+    #samara-home-container:hover {
+      opacity: 1;
+    }
+
+  #samara-home-text {
+    color: white;
+    font-size: 1em;
+    padding-left: 6em;
+    padding-top: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
+  /* Rostov*/
+  #rostov-home-container {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.1);
+   opacity: 0
+  }
+
+    #rostov-home-container:hover {
+      opacity: 1;
+    }
+
+  #rostov-home-text {
+    color: white;
+    font-size: 1em;
+    padding-left: 4em;
+    padding-top: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
+  /* Kazan*/
+  #kazan-home-container {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.1);
+   opacity: 0
+  }
+
+    #kazan-home-container:hover {
+      opacity: 1;
+    }
+
+  #kazan-home-text {
+    color: white;
+    font-size: 1em;
+    padding-left: 6em;
+    padding-top: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Dusha;
+  }
+  /* Novgorod*/
+  #novgorod-home-container {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background: rgba(255, 255, 255, 0.1);
+   opacity: 0
+  }
+
+    #novgorod-home-container:hover {
+      opacity: 1;
+    }
+
+  #novgorod-home-text {
+    color: white;
+    font-size: 1em;
+    padding-left: 3.5em;
+    padding-top: 1em;
     font-weight: bold;
     text-transform: uppercase;
     font-family: Dusha;

@@ -14,14 +14,13 @@ class City extends React.Component {
       <div className="container">
         <Header />
         <div className="row">
-
           <div className="col-xs-2">
             <NavLink to="/city/moscow/stadium" className="nav-left">Moscow stadium</NavLink>
             <a href="#" className="nav-left">Moscow transportation</a>
             <NavLink to="/city/moscow/hotels" className="nav-left">Moscow hotels</NavLink>
             <NavLink to="/city/moscow/restaurants" className="nav-left">Moscow restaurants</NavLink>
           </div>
-
+          {console.log(window.location.pathname)}
           <div className="col-xs-10" id="city-container">
             <h1 id="city-name">Moscow</h1>
             <span>Carousel component</span>

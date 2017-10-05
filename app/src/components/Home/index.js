@@ -9,6 +9,11 @@ import Header from 'src/components/Header';
 
 // Code
 class Home extends React.Component {
+
+  Tralala = () => (
+    console.log('yes')
+  );
+
   render() {
     return (
       <div className="container">
@@ -18,23 +23,71 @@ class Home extends React.Component {
       {/* Cities pictures and navigation */}
         <div className="row">
           <div className="home-picture-container">
-            <NavLink to="/city/moscow"><img id="big-picture-home" src="/images/moscow-1.jpg" /></NavLink>
+
+            <div className="image">
+              <NavLink to="/city/moscow" onClick={this.Tralala}><img id="big-picture-home" src="/images/moscow-1.jpg" />
+              <span id="moscow-home-container"><p id="moscow-home-text">Moscow</p></span></NavLink>
+            </div>
+
             <div id="first-medium">
-              <a href=""><img className="medium-picture-home" src="/images/petersbourg.jpg" /></a>
-              <a href=""><img className="medium-picture-home" src="/images/sochi.jpg" /></a>
+
+              <div className="image">
+                <NavLink to="/city/saint-petersbourg"><img className="medium-picture-home" src="/images/petersbourg.jpg" />
+                <span id="petersbourg-home-container"><p id="petersbourg-home-text">Saint-Petersbourg</p></span></NavLink>
+              </div>
+
+              <div className="image">
+                <NavLink to="/city/sochi"><img className="medium-picture-home" src="/images/sochi.jpg" />
+                <span id="sochi-home-container"><p id="sochi-home-text">Sochi</p></span></NavLink>
+              </div>
+
             </div>
             <div id="second-medium">
-            <a href=""><img className="medium-picture-home" src="/images/yekaterinburg.jpg" /></a>
-            <a href=""><img className="medium-picture-home" src="/images/kaliningrad.jpg" /></a>
+
+              <div className="image">
+                <a href="/city/yekaterinburg"><img className="medium-picture-home" src="/images/yekaterinburg.jpg" />
+                <span id="yekaterinburg-home-container"><p id="yekaterinburg-home-text">Yekaterinburg</p></span></a>
+              </div>
+
+              <div className="image">
+                <NavLink to="/city/kaliningrad"><img className="medium-picture-home" src="/images/kaliningrad.jpg" />
+                <span id="kaliningrad-home-container"><p id="kaliningrad-home-text">Kaliningrad</p></span></NavLink>
+              </div>
+
             </div>
           </div>
           <div id="small-row">
-            <a href=""><img className="small-picture-home" src="/images/volgograd.jpg" /></a>
-            <a href=""><img className="small-picture-home" src="/images/saransk.jpg" /></a>
-            <a href=""><img className="small-picture-home" src="/images/samara.jpg" /></a>
-            <a href=""><img className="small-picture-home" src="/images/rostov.jpg" /></a>
-            <a href=""><img className="small-picture-home" src="/images/kazan.jpg" /></a>
-            <a href=""><img className="small-picture-home" src="/images/novgorod.jpg" /></a>
+
+            <div className="image">
+              <NavLink to="/city/volgograd"><img className="small-picture-home" src="/images/volgograd.jpg" />
+              <span id="volgograd-home-container"><p id="volgograd-home-text">Volgograd</p></span></NavLink>
+            </div>
+
+            <div className="image">
+              <NavLink to="/city/saransk"><img className="small-picture-home" src="/images/saransk.jpg" />
+              <span id="saransk-home-container"><p id="saransk-home-text">Saransk</p></span></NavLink>
+            </div>
+
+            <div className="image">
+              <NavLink to="/city/samara"><img className="small-picture-home" src="/images/samara.jpg" />
+              <span id="samara-home-container"><p id="samara-home-text">Samara</p></span></NavLink>
+            </div>
+
+            <div className="image">
+              <NavLink to="/city/rostov"><img className="small-picture-home" src="/images/rostov.jpg" />
+              <span id="rostov-home-container"><p id="rostov-home-text">Rostov-on-Don</p></span></NavLink>
+            </div>
+
+            <div className="image">
+              <NavLink to="/city/kazan"><img className="small-picture-home" src="/images/kazan.jpg" />
+              <span id="kazan-home-container"><p id="kazan-home-text">Kazan</p></span></NavLink>
+            </div>
+
+            <div className="image">
+              <NavLink to="/city/novgorod"><img className="small-picture-home" src="/images/novgorod.jpg" />
+              <span id="novgorod-home-container"><p id="novgorod-home-text">Nizhny Novgorod</p></span></NavLink>
+            </div>
+
           </div>
         </div>
         {/* Greetings */}

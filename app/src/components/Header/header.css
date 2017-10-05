@@ -1,0 +1,31 @@
+#header-logo {
+  width: 150px;
+  height: 150px;
+  margin: 1em 0 2em 0;
+}
+
+#header-menu {
+  display: inline;
+  margin-left: 7em;
+}
+
+#header-menu a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5em;
+  font-family: Dusha;
+  font-size: 1.3em;
+}
+
+#header-connection {
+  display: inline;
+  margin-left: 8em;
+}
+
+#header-connection a {
+  color: red;
+  text-decoration: none;
+  padding: 0.5em;
+  font-size: 1.3em;
+  font-family: Dusha;
+}
