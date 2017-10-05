@@ -7,9 +7,9 @@ use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="match")
+ * @ORM\Table(name="game")
  */
-class Match
+class Game
 {
     /**
      * @ORM\Column(type="integer")
@@ -19,7 +19,7 @@ class Match
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="City", inversedBy="match")
+     * @ORM\ManyToOne(targetEntity="City", inversedBy="game")
      */
     private $city;
 

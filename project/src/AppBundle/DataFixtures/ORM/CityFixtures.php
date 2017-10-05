@@ -4,7 +4,7 @@ namespace AppBundle\DataFixtures\ORM;
 use AppBundle\Entity\City;
 use AppBundle\Entity\FanZone;
 use AppBundle\Entity\Hotel;
-use AppBundle\Entity\Match;
+use AppBundle\Entity\Game;
 use AppBundle\Entity\Restaurant;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -15,7 +15,7 @@ class CityFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
-            $date = '01/01/2017';
+            $date = new DateTime('');
 
             $city = new City();
             $manager->persist($city);
@@ -29,6 +29,7 @@ class CityFixtures extends Fixture
             $hotel->setEmail('Hotel');
             $hotel->setPhone('0555555555');
             $hotel->setCity($city);
+
             $manager->persist($hotel);
 
             $restaurant = new Restaurant();
@@ -38,6 +39,7 @@ class CityFixtures extends Fixture
             $restaurant->setName('Resto');
             $restaurant->setAddress('Resto');
             $restaurant->setCity($city);
+
             $manager->persist($restaurant);
 
 
@@ -47,14 +49,16 @@ class CityFixtures extends Fixture
             $fanzone->setCapacity(8000);
             $fanzone->setLocalization('Fan');
             $fanzone->setCity($city);
+
             $manager->persist($fanzone);
 
-            $match = new Match();
-            $match->setDate($date);
-            $match->setTeam('Match');
-            $match->setCity($city);
-            $match->setHour(18);
-            $manager->persist($match);
+            $game = new Game();
+            $game->setDate($date);
+            $game->setTeam('Game');
+            $game->setCity($city);
+            $game->setHour(18);
+
+            $manager->persist($game);
 
 
             $city->setName('City');
@@ -63,7 +67,8 @@ class CityFixtures extends Fixture
             $city->addHotel($hotel);
             $city->addRestaurant($restaurant);
             $city->addFanZone($fanzone);
-            $city->addMatch($match);
+            $city->addGame($game);
+
             $manager->persist($city);
 
 

@@ -50,16 +50,16 @@ class City
     protected $fanzone;
 
     /**
-     * @ORM\OneToMany(targetEntity="Match", mappedBy="city")
+     * @ORM\OneToMany(targetEntity="Game", mappedBy="city")
      */
-    protected $match;
+    protected $Game;
 
     public function __construct()
     {
         $this->hotel = new ArrayCollection();
         $this->restaurant = new ArrayCollection();
         $this->fanzone = new ArrayCollection();
-        $this->match = new ArrayCollection();
+        $this->game = new ArrayCollection();
     }
 
     /**
@@ -123,9 +123,9 @@ class City
     /**
      * @return mixed
      */
-    public function getMatch()
+    public function getGame()
     {
-        return $this->match;
+        return $this->game;
     }
 
     /**
@@ -170,9 +170,9 @@ class City
         $this->fanzone[] = $fanzone;
     }
 
-    public function addMatch(Match $match)
+    public function addGame(Game $game)
     {
-        $this->match[] = $match;
+        $this->game[] = $game;
     }
 
 }
