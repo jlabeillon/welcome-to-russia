@@ -8,7 +8,7 @@ class Fixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
-        // create 20 products! Bam!
+        // create 20 cities!
         for ($i = 0; $i < 20; $i++) {
             $City = new City();
             $City->setName('City '.$i);
