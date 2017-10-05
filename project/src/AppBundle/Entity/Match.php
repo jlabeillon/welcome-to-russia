@@ -19,7 +19,7 @@ class Match
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="City", inversedBy="matches")
+     * @ORM\ManyToOne(targetEntity="City", inversedBy="match")
      */
     private $city;
 

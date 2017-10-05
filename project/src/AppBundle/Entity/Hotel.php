@@ -54,7 +54,7 @@ class Hotel
     private $email;
 
     /**
-     * @ORM\ManyToOne(targetEntity="City", inversedBy="hotels")
+     * @ORM\ManyToOne(targetEntity="City", inversedBy="hotel")
      */
     private $city;
 
