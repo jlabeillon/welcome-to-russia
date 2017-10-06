@@ -60,7 +60,7 @@ class Game
     public function setCity($city)
     {
         $this->city = $city;
-        $city->addMatch($this);
+        $city->addGame($this);
 
         return $this;
     }

@@ -15,7 +15,7 @@ class CityFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
-            $date = new DateTime('');
+            $date = new \DateTime('');
 
             $city = new City();
             $manager->persist($city);
