@@ -8,7 +8,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class Hotels extends React.Component {
+class MoscowLuxury extends React.Component {
   render() {
     return (
       <div className="container" id="hotels-body">
@@ -18,9 +18,9 @@ class Hotels extends React.Component {
 
           <h1>Hotels</h1>
 
-          <button>ECO</button>
-          <button>AUTHENTIC</button>
-          <button>LUXURY</button>
+          <NavLink to="/city/moscow/hotels/eco">ECO</NavLink>
+          <NavLink to="/city/moscow/hotels/authentic">AUTHENTIC</NavLink>
+          <NavLink to="/city/moscow/hotels/luxury">LUXURY</NavLink>
 
           <div className="row">
             <div className="col-xs-12">
@@ -57,4 +57,4 @@ class Hotels extends React.Component {
 }
 
 // Export
-export default Hotels;
+export default MoscowLuxury;
