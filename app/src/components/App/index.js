@@ -22,6 +22,7 @@ class App extends React.Component {
           <Route path="/city/:slug/hotel" exact component={Hotel} />
           <Route path="/city/:slug/restaurants" exact component={Restaurants} />
           <Route path="/city/:slug/stadium" exact component={Stadium} />
+          <Route path="/city/:slug/stadium/:slug" exact component={Stadium} />
       </div>
     );
   };

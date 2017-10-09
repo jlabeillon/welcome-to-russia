@@ -37,7 +37,7 @@ class Home extends React.Component {
               </div>
 
               <div className="image">
-                <NavLink to="/city/sochi"><img className="medium-picture-home" src="/images/sochi.jpg" />
+                <NavLink to="/city/sochi"><img className="medium-picture-home" src="/images/sochi-1.jpg" />
                 <span id="sochi-home-container"><p id="sochi-home-text">Sochi</p></span></NavLink>
               </div>
 
@@ -50,8 +50,8 @@ class Home extends React.Component {
               </div>
 
               <div className="image">
-                <NavLink to="/city/kaliningrad"><img className="medium-picture-home" src="/images/kaliningrad.jpg" />
-                <span id="kaliningrad-home-container"><p id="kaliningrad-home-text">Kaliningrad</p></span></NavLink>
+                <NavLink to="/city/kazan"><img className="medium-picture-home" src="/images/kazan-1.jpg" />
+                <span id="kazan-home-container"><p id="kazan-home-text">Kazan</p></span></NavLink>
               </div>
 
             </div>
@@ -79,12 +79,12 @@ class Home extends React.Component {
             </div>
 
             <div className="image">
-              <NavLink to="/city/kazan"><img className="small-picture-home" src="/images/kazan.jpg" />
-              <span id="kazan-home-container"><p id="kazan-home-text">Kazan</p></span></NavLink>
+              <NavLink to="/city/kaliningrad"><img className="small-picture-home" src="/images/kaliningrad-3.jpg" />
+              <span id="kaliningrad-home-container"><p id="kaliningrad-home-text">Kaliningrad</p></span></NavLink>
             </div>
 
             <div className="image">
-              <NavLink to="/city/novgorod"><img className="small-picture-home" src="/images/novgorod.jpg" />
+              <NavLink to="/city/nizhny-novgorod"><img className="small-picture-home" src="/images/novgorod.jpg" />
               <span id="novgorod-home-container"><p id="novgorod-home-text">Nizhny Novgorod</p></span></NavLink>
             </div>
 

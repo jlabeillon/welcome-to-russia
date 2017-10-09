@@ -1,34 +1,41 @@
 // Import
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 // Local import
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
+import Luzhniki from 'src/components/Stadium/Stadiums/Moscow/Luzhniki';
+import Otkrytiye from 'src/components/Stadium/Stadiums/Moscow/Otkrytiye';
+import PetersbourgArena from 'src/components/Stadium/Stadiums/Petersbourg';
+import YekaterinburgArena from 'src/components/Stadium/Stadiums/Yekaterinburg';
+import SochiArena from 'src/components/Stadium/Stadiums/Sochi';
+import KazanArena from 'src/components/Stadium/Stadiums/Kazan';
+import VolgogradArena from 'src/components/Stadium/Stadiums/Volgograd';
+import SaranskArena from 'src/components/Stadium/Stadiums/Saransk';
+import SamaraArena from 'src/components/Stadium/Stadiums/Samara';
+import RostovArena from 'src/components/Stadium/Stadiums/Rostov';
+import KaliningradArena from 'src/components/Stadium/Stadiums/Kaliningrad';
+import NovgorodArena from 'src/components/Stadium/Stadiums/Novgorod';
 
 // Code
 class Stadium extends React.Component {
   render() {
     return (
-      <div className="container">
-        <Header />
-        <div className="row">
-
-          <div className="col-xs-2">
-            <a href="#" className="nav-left">Buy tickets</a>
-            <a href="#" className="nav-left">Stadium website</a>
-          </div>
-
-          <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Luzhniki Stadium</h1>
-            <span>Carousel component</span>
-            <p id="city-description">Luzhniki Stadium is a sports stadium in Moscow, Russia. Its total seating capacity is 81,000 seats, all covered (upgraded). The stadium is a part of the Luzhniki Olympic Complex, and is located in Khamovniki District of the Central Administrative Okrug of Moscow city. The name Luzhniki derives from the flood meadows in the bend of Moskva River where the stadium was built, translating roughly as "The Meadows". Its the biggest stadium in eastern Europe.
-
-            In the past its field has been used as the home ground (at various times) for football games played by PFC CSKA Moscow, Torpedo Moscow and Spartak Moscow, however, there are currently no clubs based at the stadium. Today it is mainly used as one of the home grounds of the Russian national football team. It is one of the few major European stadia to use an artificial pitch, having installed a FIFA-approved FieldTurf pitch in 2002. The pitch is necessary because regular grass pitches cannot withstand the harsh Russian winters and must be replaced at high cost. However, a temporary natural grass pitch was installed for the 2008 UEFA Champions League Final. The stadium is also used from time to time for various other sporting events and for concerts.</p>
-          </div>
-
-        </div>
-        <Footer />
+      <div>
+        <Route path="/city/moscow/stadium/luzhniki" exact component={Luzhniki} />
+        <Route path="/city/moscow/stadium/otkrytiye" exact component={Otkrytiye} />
+        <Route path="/city/petersbourg/stadium" exact component={PetersbourgArena} />
+        <Route path="/city/yekaterinburg/stadium" exact component={YekaterinburgArena} />
+        <Route path="/city/sochi/stadium" exact component={SochiArena} />
+        <Route path="/city/kazan/stadium" exact component={KazanArena} />
+        <Route path="/city/volgograd/stadium" exact component={VolgogradArena} />
+        <Route path="/city/saransk/stadium" exact component={SaranskArena} />
+        <Route path="/city/samara/stadium" exact component={SamaraArena} />
+        <Route path="/city/rostov/stadium" exact component={RostovArena} />
+        <Route path="/city/kaliningrad/stadium" exact component={KaliningradArena} />
+        <Route path="/city/novgorod/stadium" exact component={NovgorodArena} />
       </div>
     );
   };
