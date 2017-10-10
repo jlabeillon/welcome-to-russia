@@ -1,14 +1,19 @@
 Project Welcome to Russia 2018
 =======
 
-### At the beginning :  ``` composer install ```  !
+#### At the beginning :  ``` composer install ```  !
 
 #### Configure your database parameters in ``` app/config/parameters.yml ```
 
 #### Create your database with ``` php bin/console doctrine:database:create ```
 
-#### Create your database columns with ``` php bin/console doctrine:migrations:diff and php bin/console doctrine:migrations:migrate ``` 
+#### Create your database columns with ``` php bin/console doctrine:migrations:diff ``` and ``` php bin/console doctrine:migrations:migrate ``` 
+
 ###### ( MigrationsBundle must be installed, click here : https://symfony.com/doc/master/bundles/DoctrineMigrationsBundle/index.html )
+
+#### ( Use : ``` php bin/console doctrine:schema:update --force ``` if migrations give you an error )
+
+#### You can use ``` php bin/console doctrine:fixtures:load ``` to create fakes datas in your database
 
 ##### Don't forget to do : ``` sudo chmod -R 777 var ``` [ not safe ]
 

@@ -5,30 +5,27 @@ namespace AppBundle\Controller;
 use AppBundle\Entity\City;
 use AppBundle\Entity\FanZone;
 use AppBundle\Entity\Restaurant;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\ORM\EntityManagerInterface;
 
-class TestController extends Controller
+class CityController extends Controller
 {
-
     /**
-     * @Route("/testcity", name="testcity_show")
+     * @Route("/ville/{slug}", name="city_show")
      */
-    public function testCityAction()
+    public function showAction($slug)
     {
 
-
-
         $serializer = $this->container->get('jms_serializer');
-        $citytest = $this->getDoctrine()->getRepository(City::class)->find(1);
-        $jsonContent = $serializer->serialize($citytest, 'json');
-
+        $city = $this->getDoctrine()->getRepository(City::class)->findOneByName($slug);
+        $jsonContent = $serializer->serialize($city, 'json');
 
         return new Response($jsonContent);
 
-    }
 
+    }
 }
