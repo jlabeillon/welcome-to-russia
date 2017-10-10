@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class MoscowHotelLuxuryHotel1 extends React.Component {
+class MoscowHotelLuxuryHotel3 extends React.Component {
   render() {
     return (
       <div className="container">
@@ -19,17 +19,13 @@ class MoscowHotelLuxuryHotel1 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Ararat Park Hyatt</h1>
+            <h1 id="city-name">Four Seasons Hotel Moscow</h1>
             <span>Carousel component</span>
-            <p id="city-description">Ararat Park Hyatt has an excellent location 5 minutes from Red Square in the prime shopping area, moments from both TSUM and Detsky Mir department stores. It features superb service.
+            <p id="city-description">Four Seasons Hotel Moscow is located in the historic building of Moskva Hotel, in the very heart of Moscow, a minutes’ walk from the Kremlin, Red Square and the Bolshoi Theatre. Free WiFi access is available in this hotel.
 
-            The hotel rooms have been renovated in 2012 and feature new design by a famous architect Tony Chi.
+            Each elegant room and suite will provide you with air conditioning, a flat-screen TV, a Nespresso coffee machine and an Ipad. Featuring a bath, private bathroom also comes with a hairdryer and free toiletries by Roberto Cavalli. Extras include a desk and a safety deposit box.
 
-            Energize at the fitness centre. Rejuvenate at the spa and Turkish bath. Pamper yourself at the solarium, or with a massage in one of the treatment rooms. Have a drink at the juice bar and a dip in the pool.
-
-            When going out, ask for advice at the tours and tickets desk. Take a tasty packed lunch, and use the handy ATM. Return to write about the trip with the free Wi-Fi internet access, or to relax on the terrace.
-
-            Enjoy European cuisine and speciality Armenian food, or the flavours at the Japanese sushi bar. The Café features marble columns and carvings, while the rooftop lounge offers stunning views over a drink.  </p>
+            Quadrum Restaurant serves Italian cuisine, and Bystro offers Russian dishes with a Nordic touch. Guests can enjoy a drink at The Silk Lounge or Moskovsky Bar. Other facilities offered at the property include meeting facilities, a ticket service and luggage storage.</p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>
@@ -61,4 +57,4 @@ class MoscowHotelLuxuryHotel1 extends React.Component {
   };
 }
 // Export
-export default MoscowHotelLuxuryHotel1;
+export default MoscowHotelLuxuryHotel3;

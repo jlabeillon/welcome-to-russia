@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class MoscowHotelLuxuryHotel1 extends React.Component {
+class MoscowHotelEcoHotel3 extends React.Component {
   render() {
     return (
       <div className="container">
@@ -19,17 +19,15 @@ class MoscowHotelLuxuryHotel1 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Ararat Park Hyatt</h1>
+            <h1 id="city-name">Izmailovo Beta Hotel</h1>
             <span>Carousel component</span>
-            <p id="city-description">Ararat Park Hyatt has an excellent location 5 minutes from Red Square in the prime shopping area, moments from both TSUM and Detsky Mir department stores. It features superb service.
+            <p id="city-description">Set near the Izmailovsky Park, within a 3-minute walk of Partizanskaya Metro Station, Izmailovo Beta Hotel features free WiFi, banquet and meeting facilities and a variety of dining options. It is located within a 15-minute metro ride from the city centre.
 
-            The hotel rooms have been renovated in 2012 and feature new design by a famous architect Tony Chi.
+            The restaurant serves a selection of traditional Russian and European dishes. At the lobby café, fresh pastry from the hotel’s bakery is offered. Guests can enjoy a drink in one of the on-site bars or order room service.
 
-            Energize at the fitness centre. Rejuvenate at the spa and Turkish bath. Pamper yourself at the solarium, or with a massage in one of the treatment rooms. Have a drink at the juice bar and a dip in the pool.
+            The modern rooms have a TV and a private bathroom with a hairdryer. The hotel offers a business centre and 11 conference halls with a capacity from 10 to 700 guests.
 
-            When going out, ask for advice at the tours and tickets desk. Take a tasty packed lunch, and use the handy ATM. Return to write about the trip with the free Wi-Fi internet access, or to relax on the terrace.
-
-            Enjoy European cuisine and speciality Armenian food, or the flavours at the Japanese sushi bar. The Café features marble columns and carvings, while the rooftop lounge offers stunning views over a drink.  </p>
+            Lokomotiv Stadium is within a 10-minute drive of Izmailovo Beta Hotel and Kursky Train Station is 4 metro stops away. Kazansky, Leningradsky and Yaroslavsky Train Stations are within a 23-minute drive. Domodedovo International Airport is 57 km from the property. It takes 30 minutes to drive to Belorussky Train Station from which you can get to Sheremetyevo International Airport by Aeroexpress.  </p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>
@@ -61,4 +59,4 @@ class MoscowHotelLuxuryHotel1 extends React.Component {
   };
 }
 // Export
-export default MoscowHotelLuxuryHotel1;
+export default MoscowHotelEcoHotel3;

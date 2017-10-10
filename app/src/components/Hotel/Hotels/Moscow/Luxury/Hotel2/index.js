@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class MoscowHotelLuxuryHotel1 extends React.Component {
+class MoscowHotelLuxuryHotel2 extends React.Component {
   render() {
     return (
       <div className="container">
@@ -19,17 +19,15 @@ class MoscowHotelLuxuryHotel1 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Ararat Park Hyatt</h1>
+            <h1 id="city-name">The St. Regis Moscow Nikolskaya</h1>
             <span>Carousel component</span>
-            <p id="city-description">Ararat Park Hyatt has an excellent location 5 minutes from Red Square in the prime shopping area, moments from both TSUM and Detsky Mir department stores. It features superb service.
+            <p id="city-description">This hotel offers a central location in the heart of Moscow, right on Lubyanka Square, a 10-minute walk from the Kremlin. Rooms with free personalised St. Regis Butler Service and free WiFi are featured at St. Regis Moscow Nikolskaya.
 
-            The hotel rooms have been renovated in 2012 and feature new design by a famous architect Tony Chi.
+            The elegant, air-conditioned hotel rooms and suites are decorated in beige and brown colours. Every room comes complete with a flat-screen TV, a minibar, a seating area and a private bathroom with bathrobes and slippers. Some rooms feature views of the Kremlin and Red Square, while others have balconies with views of the interior courtyard.
 
-            Energize at the fitness centre. Rejuvenate at the spa and Turkish bath. Pamper yourself at the solarium, or with a massage in one of the treatment rooms. Have a drink at the juice bar and a dip in the pool.
+            Breakfasts are served in the Italian A Tavola Restaurant. Guests can also have Russian snacks and dishes from the Wok menu at Orlov Lobby Bar and Lounge, as well as enjoy evening champagne.
 
-            When going out, ask for advice at the tours and tickets desk. Take a tasty packed lunch, and use the handy ATM. Return to write about the trip with the free Wi-Fi internet access, or to relax on the terrace.
-
-            Enjoy European cuisine and speciality Armenian food, or the flavours at the Japanese sushi bar. The Café features marble columns and carvings, while the rooftop lounge offers stunning views over a drink.  </p>
+            Lubyanka Metro Station is only steps away. Belorussky Train Station is 4 km from St. Regis Moscow Nikolskaya, and Sheremetyevo International Airport is a 35-minute express train ride from this station. </p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>
@@ -61,4 +59,4 @@ class MoscowHotelLuxuryHotel1 extends React.Component {
   };
 }
 // Export
-export default MoscowHotelLuxuryHotel1;
+export default MoscowHotelLuxuryHotel2;

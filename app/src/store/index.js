@@ -1,19 +1,23 @@
 // Import
-import { applyMiddleware, compose, createStore } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 
 // Local import
-// import reducer from 'src/store/reducer';
-// import axios from 'src/store/axios';
+import ajax from './ajax';
+import reducer from './reducer';
 
 // Code
-let devTools = [];
+
+// Enhancer DevTools
+const devTools = [];
 if (window.devToolsExtension) {
-  devTools = [window.devToolsExtension()];
+  devTools.push(window.devToolsExtension());
 }
 
+// Enhancer Ajax
+const ajaxEnhancer = applyMiddleware(ajax);
+
 // Enhancers
-// const axiosEnhancer = applyMiddleware(axios);
-const enhancers = compose(...devTools);
+const enhancers = compose(ajaxEnhancer, ...devTools);
 
 // Store
 const store = createStore(reducer, enhancers);

@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import axios from 'axios';
 
 // Local import
 import Footer from 'src/components/Footer';
@@ -9,6 +10,18 @@ import Header from 'src/components/Header';
 
 // Code
 class Moscow extends React.Component {
+
+  componentWillMount() {
+    axios
+      .get('')
+      .then(({ data }) => {
+        console.log(data);
+      })
+      .catch(() => {
+        console.error('Ajax failed');
+      });
+  }
+
   render() {
     return (
       <div className="container">

@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class MoscowHotelLuxuryHotel1 extends React.Component {
+class MoscowHotelAuthenticHotel3 extends React.Component {
   render() {
     return (
       <div className="container">
@@ -19,17 +19,17 @@ class MoscowHotelLuxuryHotel1 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Ararat Park Hyatt</h1>
+            <h1 id="city-name">Ivan Chai - hotel and coffee </h1>
             <span>Carousel component</span>
-            <p id="city-description">Ararat Park Hyatt has an excellent location 5 minutes from Red Square in the prime shopping area, moments from both TSUM and Detsky Mir department stores. It features superb service.
+            <p id="city-description"> One of our bestsellers in Moscow!
 
-            The hotel rooms have been renovated in 2012 and feature new design by a famous architect Tony Chi.
+            Featuring free WiFi throughout the property, Ivan Chai - hotel and coffee offers accommodation in Moscow.
 
-            Energize at the fitness centre. Rejuvenate at the spa and Turkish bath. Pamper yourself at the solarium, or with a massage in one of the treatment rooms. Have a drink at the juice bar and a dip in the pool.
+            All rooms are equipped with a private bathroom. Extras include free toiletries and a hairdryer.
 
-            When going out, ask for advice at the tours and tickets desk. Take a tasty packed lunch, and use the handy ATM. Return to write about the trip with the free Wi-Fi internet access, or to relax on the terrace.
+            You will find a 24-hour front desk at the property.
 
-            Enjoy European cuisine and speciality Armenian food, or the flavours at the Japanese sushi bar. The Café features marble columns and carvings, while the rooftop lounge offers stunning views over a drink.  </p>
+            The hotel also offers free use of bicycles. Gorky Park is 6 km from Ivan Chai - hotel and coffee, while Luzhniki Stadium is 7 km away. The nearest airport is Vnukovo International Airport, 24 km from Ivan Chai - hotel and coffee. </p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>
@@ -61,4 +61,4 @@ class MoscowHotelLuxuryHotel1 extends React.Component {
   };
 }
 // Export
-export default MoscowHotelLuxuryHotel1;
+export default MoscowHotelAuthenticHotel3;

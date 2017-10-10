@@ -16,11 +16,12 @@ class App extends React.Component {
     return (
       <div>
           <Route path="/" exact component={Home} />
-          <Route path="/city/:slug" exact component={City} />
-          <Route path="/city/:slug/hotels/:slug" exact component={Hotel} />
-          <Route path="/city/:slug/restaurants" exact component={Restaurants} />
-          <Route path="/city/:slug/stadium" exact component={Stadium} />
-          <Route path="/city/:slug/stadium/:slug" exact component={Stadium} />
+          <Route path="/city/:city" exact component={City} />
+          <Route path="/city/:city/hotels/:category" exact component={Hotel} />
+          <Route path="/city/:city/hotels/:category/:hotel" exact component={Hotel} />
+          <Route path="/city/:city/restaurants" exact component={Restaurants} />
+          <Route path="/city/:city/stadium" exact component={Stadium} />
+          <Route path="/city/:city/stadium/:name" exact component={Stadium} />
       </div>
     );
   };

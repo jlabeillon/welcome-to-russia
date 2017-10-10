@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class MoscowHotelLuxuryHotel1 extends React.Component {
+class MoscowHotelAuthenticHotel2 extends React.Component {
   render() {
     return (
       <div className="container">
@@ -19,17 +19,15 @@ class MoscowHotelLuxuryHotel1 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Ararat Park Hyatt</h1>
+            <h1 id="city-name">Radisson Royal Hotel</h1>
             <span>Carousel component</span>
-            <p id="city-description">Ararat Park Hyatt has an excellent location 5 minutes from Red Square in the prime shopping area, moments from both TSUM and Detsky Mir department stores. It features superb service.
+            <p id="city-description">This luxury hotel is situated at the intersection of Moscow’s Kutuzovskiy Prospekt and Novy Arbat and occupies a Stalinist skyscraper. It offers free Wi-Fi, an indoor pool and modern spa facilities.
 
-            The hotel rooms have been renovated in 2012 and feature new design by a famous architect Tony Chi.
+            Rooms at Radisson Royal Hotel offer stylish décor and classic-style furniture, offering a flat-screen TV and views of the city or inner courtyard. All rooms have high ceilings, and some have a separate seating area.
 
-            Energize at the fitness centre. Rejuvenate at the spa and Turkish bath. Pamper yourself at the solarium, or with a massage in one of the treatment rooms. Have a drink at the juice bar and a dip in the pool.
+            11 restaurants of the Radisson Royal are known for their unique cuisine, original cocktails and panoramic views of Moscow. Breakfast, served at Veranda Restaurant, offers a variety of dining options. Guests can enjoy evening cocktails and light snacks at the Radisson’s 24-hour Lobby Bar and Club restaurant.
 
-            When going out, ask for advice at the tours and tickets desk. Take a tasty packed lunch, and use the handy ATM. Return to write about the trip with the free Wi-Fi internet access, or to relax on the terrace.
-
-            Enjoy European cuisine and speciality Armenian food, or the flavours at the Japanese sushi bar. The Café features marble columns and carvings, while the rooftop lounge offers stunning views over a drink.  </p>
+            After working out in the gym, visitors can relax in the sauna or in the spa bath. Massage services can also be booked. River boat trips along the Moskva River are available all year round.</p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>
@@ -61,4 +59,4 @@ class MoscowHotelLuxuryHotel1 extends React.Component {
   };
 }
 // Export
-export default MoscowHotelLuxuryHotel1;
+export default MoscowHotelAuthenticHotel2;
