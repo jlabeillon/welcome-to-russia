@@ -12,19 +12,20 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\ORM\EntityManagerInterface;
+use Cocur\Slugify\Slugify;
 
 class HotelController extends Controller
 {
     /**
-     * @Route("/hotel/{id}", name="hotel_show")
+     * @Route("/ville/{slug_parent}/hotel/{slug_child}", name="hotel_show")
      */
-    public function showAction($id)
+    public function showAction($slug_parent, $slug_child)
     {
 
         $serializer = $this->container->get('jms_serializer');
 
 
-        $hotel = $this->getDoctrine()->getRepository(Hotel::class)->findOneById($id);
+        $hotel = $this->getDoctrine()->getRepository(City::class)->findOneByName($slug_parent)->leftjoin();
         $jsonContentHotel = $serializer->serialize($hotel, 'json');
 
         return new Response($jsonContentHotel);

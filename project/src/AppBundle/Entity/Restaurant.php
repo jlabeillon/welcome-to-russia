@@ -4,6 +4,7 @@ namespace AppBundle\Entity;
 use Symfony\Component\Validator\Constraints as Assert;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use Cocur\Slugify\Slugify;
 
 /**
  * @ORM\Entity
@@ -24,6 +25,11 @@ class Restaurant
      * @ORM\Column(type="string", length=180)
      */
     private $name;
+
+    /**
+     * @ORM\Column(type="string", length=180)
+     */
+    private $slug;
 
 
     /**
@@ -158,6 +164,22 @@ class Restaurant
         return $this;
     }
 
+
+    /**
+     * @return mixed
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+    /**
+     * @param mixed $slug
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+    }
 
 
 }
