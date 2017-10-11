@@ -16,14 +16,12 @@ class DefaultController extends Controller
     /**
      * @Route("/", name="homepage")
      */
-    public function homePageAction(Request $request)
+    public function homePageAction()
     {
 
-        $serializer = $this->container->get('jms_serializer');
-        $cities = $this->getDoctrine()->getRepository(City::class)->findAll();
-        $jsonContent = $serializer->serialize($cities, 'json');
-
-        return new Response($jsonContent);
+        $response = new Response();
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        return $response;
 
 
     }

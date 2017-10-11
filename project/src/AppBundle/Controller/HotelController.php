@@ -17,7 +17,7 @@ use Cocur\Slugify\Slugify;
 class HotelController extends Controller
 {
     /**
-     * @Route("/ville/{slug_parent}/hotel/{slug_child}", name="hotel_show")
+     * @Route("/city/{slug_parent}/hotel/{slug_child}", name="hotel_show")
      */
     public function showAction($slug_parent, $slug_child)
     {

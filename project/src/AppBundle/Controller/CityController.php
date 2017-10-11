@@ -15,7 +15,7 @@ use Doctrine\ORM\EntityManagerInterface;
 class CityController extends Controller
 {
     /**
-     * @Route("/ville/{slug}", name="city_show")
+     * @Route("/city/{slug}", name="city_show")
      */
     public function showAction($slug)
     {
