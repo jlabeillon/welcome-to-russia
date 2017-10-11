@@ -19,17 +19,17 @@ class MoscowHotelAuthenticHotel3 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Ivan Chai - hotel and coffee </h1>
+            <h1 id="city-name">The State Hermitage Museum Official Hotel </h1>
             <span>Carousel component</span>
-            <p id="city-description"> One of our bestsellers in Moscow!
+            <p id="city-description">This exclusive 5-star hotel is set in the 1830s mansion in the centre of Saint Petersburg and represents the atmosphere of the original Hermitage Museum. Spa and wellness centre and free Wi-Fi is featured here.
 
-            Featuring free WiFi throughout the property, Ivan Chai - hotel and coffee offers accommodation in Moscow.
+            The luxurious rooms and suites of The State Hermitage Museum Official Hotel Saint Petersburg offer elegant furnishings, designed by Italian woodwork masters from Florence. Every room includes a flat-screen TV, a minibar and a private bathroom decorated with Italian and Greek marble and fitted with bathrobes.
 
-            All rooms are equipped with a private bathroom. Extras include free toiletries and a hairdryer.
+            Michelangelo Boutique Restaurant offers traditional Italian dishes and exquisite desserts. The quiet Lobby Bar welcomes guests to the tradition of Russian pastime of tea drinking. The elegant Catherine the Great Restaurant serves Russian cuisine based on the menu of the historic Winter Palace.
 
-            You will find a 24-hour front desk at the property.
+            The lively Nevsky Prospekt is a 15-minute walk away, and the Hermitage Museum itself is 3 km from the hotel.
 
-            The hotel also offers free use of bicycles. Gorky Park is 6 km from Ivan Chai - hotel and coffee, while Luzhniki Stadium is 7 km away. The nearest airport is Vnukovo International Airport, 24 km from Ivan Chai - hotel and coffee. </p>
+            Vladimirskaya Metro Station is a 7-minute walk from The State Hermitage Museum Official Hotel Saint Petersburg. Moskovsky Train Station is 1.8 km away, and Pulkovo International Airport is 22 km from the hotel. </p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>

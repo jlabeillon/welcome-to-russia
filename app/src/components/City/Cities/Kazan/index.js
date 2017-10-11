@@ -17,7 +17,7 @@ class Kazan extends React.Component {
           <div className="col-xs-2">
             <NavLink to="/city/kazan/stadium" className="nav-left">Kazan stadium</NavLink>
             <a href="#" className="nav-left">Kazan transportation</a>
-            <NavLink to="/city/moscow/hotels" className="nav-left">Kazan hotels</NavLink>
+            <NavLink to="/city/kazan/hotels/eco" className="nav-left">Kazan hotels</NavLink>
             <NavLink to="/city/moscow/restaurants" className="nav-left">Kazan restaurants</NavLink>
           </div>
 

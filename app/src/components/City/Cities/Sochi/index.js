@@ -17,7 +17,7 @@ class Sochi extends React.Component {
           <div className="col-xs-2">
             <NavLink to="/city/sochi/stadium" className="nav-left">Sochi stadium</NavLink>
             <a href="#" className="nav-left">Sochi transportation</a>
-            <NavLink to="/city/moscow/hotels" className="nav-left">Sochi hotels</NavLink>
+            <NavLink to="/city/sochi/hotels/eco" className="nav-left">Sochi hotels</NavLink>
             <NavLink to="/city/moscow/restaurants" className="nav-left">Sochi restaurants</NavLink>
           </div>
 

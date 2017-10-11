@@ -10,18 +10,18 @@ import PetersbourgHotelEcoHotel2 from 'src/components/Hotel/Hotels/Petersbourg/E
 import PetersbourgHotelEcoHotel3 from 'src/components/Hotel/Hotels/Petersbourg/Eco/Hotel3';
 
 // Code
-class MoscowEco extends React.Component {
+class PetersbourgEco extends React.Component {
   render() {
     return (
       <div>
         <Route path="/city/petersbourg/hotels/eco" exact component={PetersbourgHotelEcoMain} />
-        <Route path="/city/petersbourg/hotels/eco/novinsky" exact component={PetersbourgHotelEcoHotel1} />
-        <Route path="/city/petersbourg/hotels/eco/cosmos" exact component={PetersbourgHotelEcoHotel2} />
-        <Route path="/city/petersbourg/hotels/eco/izmailovo" exact component={PetersbourgHotelEcoHotel3} />
+        <Route path="/city/petersbourg/hotels/eco/piter" exact component={PetersbourgHotelEcoHotel1} />
+        <Route path="/city/petersbourg/hotels/eco/capital" exact component={PetersbourgHotelEcoHotel2} />
+        <Route path="/city/petersbourg/hotels/eco/gora" exact component={PetersbourgHotelEcoHotel3} />
       </div>
     );
   };
 }
 
 // Export
-export default MoscowEco;
+export default PetersbourgEco;

@@ -19,17 +19,15 @@ class MoscowHotelLuxuryHotel1 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Ararat Park Hyatt</h1>
+            <h1 id="city-name">Four Seasons Hotel Lion Palace St. Petersburg </h1>
             <span>Carousel component</span>
-            <p id="city-description">Ararat Park Hyatt has an excellent location 5 minutes from Red Square in the prime shopping area, moments from both TSUM and Detsky Mir department stores. It features superb service.
+            <p id="city-description">Four Seasons Hotel Lion Palace is located in the heart of Saint Petersburg, just 300 m from the Dvortsovaya Square. It boasts luxury interiors in Russian Empire style and exclusive fine dining options.
 
-            The hotel rooms have been renovated in 2012 and feature new design by a famous architect Tony Chi.
+            All elegant, air conditioned rooms come with a flat-screen TV, a DVD player, a minibar and a coffee machine. Free Wi-Fi and 2 telephone lines are provided. Marble bathrooms are fitted with a soak bath tub, separated walk-in tropical shower and built-in mirror flat-screen TV. The free toiletries are by Lorenzo Villoresi.
 
-            Energize at the fitness centre. Rejuvenate at the spa and Turkish bath. Pamper yourself at the solarium, or with a massage in one of the treatment rooms. Have a drink at the juice bar and a dip in the pool.
+            Percorso Restaurant specializes in fine Italian cuisine, while Sintoho Restaurant offers contemporary Asian dishes. Guests can have a drink at the stylish Xander Bar or enjoy delicious snacks and pastry at the Tea Lounge. The exquisite breakfast is served there every morning.
 
-            When going out, ask for advice at the tours and tickets desk. Take a tasty packed lunch, and use the handy ATM. Return to write about the trip with the free Wi-Fi internet access, or to relax on the terrace.
-
-            Enjoy European cuisine and speciality Armenian food, or the flavours at the Japanese sushi bar. The Café features marble columns and carvings, while the rooftop lounge offers stunning views over a drink.  </p>
+            The Hermitage Museum is 3 minutes’ walk from Four Seasons Hotel Lion Palace, and the lively Nevsky Prospekt is 400 m away. The Mariinsky Theatre is within a 15-minute walk of the hotel.</p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>

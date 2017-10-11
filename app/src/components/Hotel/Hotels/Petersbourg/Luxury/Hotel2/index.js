@@ -19,15 +19,15 @@ class MoscowHotelLuxuryHotel2 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">The St. Regis Moscow Nikolskaya</h1>
+            <h1 id="city-name">Lotte Hotel St. Petersburg</h1>
             <span>Carousel component</span>
-            <p id="city-description">This hotel offers a central location in the heart of Moscow, right on Lubyanka Square, a 10-minute walk from the Kremlin. Rooms with free personalised St. Regis Butler Service and free WiFi are featured at St. Regis Moscow Nikolskaya.
+            <p id="city-description">Offering a terrace and spa centre, Lotte Hotel St. Petersburg is located in Saint Petersburg. The hotel has a sauna and fitness centre, and guests can enjoy a meal at the restaurant.
 
-            The elegant, air-conditioned hotel rooms and suites are decorated in beige and brown colours. Every room comes complete with a flat-screen TV, a minibar, a seating area and a private bathroom with bathrobes and slippers. Some rooms feature views of the Kremlin and Red Square, while others have balconies with views of the interior courtyard.
+            Every room is equipped with a flat-screen TV. All rooms come with a private bathroom equipped with a bath or shower. For your comfort, you will find bathrobes, slippers and a hairdryer.
 
-            Breakfasts are served in the Italian A Tavola Restaurant. Guests can also have Russian snacks and dishes from the Wok menu at Orlov Lobby Bar and Lounge, as well as enjoy evening champagne.
+            There is a 24-hour front desk at the property.
 
-            Lubyanka Metro Station is only steps away. Belorussky Train Station is 4 km from St. Regis Moscow Nikolskaya, and Sheremetyevo International Airport is a 35-minute express train ride from this station. </p>
+            Saint Isaac’s Cathedral is 400 m from Lotte Hotel St. Petersburg, while Admiralty Building is 700 m away. The nearest airport is Pulkovo Airport, 21 km from the property. </p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>

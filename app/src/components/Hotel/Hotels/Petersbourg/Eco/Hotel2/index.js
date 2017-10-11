@@ -19,15 +19,15 @@ class MoscowHotelEcoHotel2 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Cosmos Hotel</h1>
+            <h1 id="city-name">Capital Hotel</h1>
             <span>Carousel component</span>
-            <p id="city-description">Located next to the All-Russia Exhibition Centre, this hotel offers a spa with a swimming pool, fitness centre and massage services. VDNKh Metro Station is 400 m away.
+            <p id="city-description">This hotel is located in the heart of Saint Petersburg, just a 4-minute walk from the Sennaya Square and Sadovaya Metro Station. Free Wi-Fi is featured at Capital Hotel.
 
-            The colourful rooms at the Cosmos Hotel have Wi-Fi access, a flat-screen TV with satellite channels, and a refrigerator. Toiletries and a hairdryer are provided in the private bathrooms.
+            The bright hotel rooms offer warm-coloured interiors and classic-style decor. Every room comes with a cable flat-screen TV and a private bathroom. Slippers and free toiletries are provided.
 
-            There are 11 restaurants and cafés at Cosmos Hotel. Planet Cosmos restaurant serves Russian and European cuisine and offers views of the Moscow skyline from the 25th floor.
+            A microwave and a refrigerator are available at the hotel. A variety of cafes, shops and restaurants can be found within a 2-minute walk from the hotel.
 
-            An American-style breakfast is served in the Kalinka restaurant. Guests can also enjoy Mediterranean dishes in the Il Gusto restaurant, and Chinese meals and karaoke in the Empress Hall restaurant. </p>
+            The Kazansky Cathedral and the lively Nevsky Prospekt are a 15-minute walk from the hotel. The Hermitage Museum and the Neva River Embankment are a 20-minute walk away.</p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>

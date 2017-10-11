@@ -19,13 +19,17 @@ class MoscowHotelLuxuryHotel3 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Four Seasons Hotel Moscow</h1>
+            <h1 id="city-name">Belmond Grand Hotel Europe</h1>
             <span>Carousel component</span>
-            <p id="city-description">Four Seasons Hotel Moscow is located in the historic building of Moskva Hotel, in the very heart of Moscow, a minutes’ walk from the Kremlin, Red Square and the Bolshoi Theatre. Free WiFi access is available in this hotel.
+            <p id="city-description">Set in a stunning central location of St. Petersburg is this grand hotel that offers elegant accommodation in a fantastic setting.
 
-            Each elegant room and suite will provide you with air conditioning, a flat-screen TV, a Nespresso coffee machine and an Ipad. Featuring a bath, private bathroom also comes with a hairdryer and free toiletries by Roberto Cavalli. Extras include a desk and a safety deposit box.
+            Belmond Grand Hotel Europe provides luxurious living in rooms that are gracefully designed and equipped with all modern facilities you require. Satellite TV and minibar are offered in air-conditioned rooms. The private bathroom is fitted with bathrobes, slippers, hairdryer and free toiletries.
 
-            Quadrum Restaurant serves Italian cuisine, and Bystro offers Russian dishes with a Nordic touch. Guests can enjoy a drink at The Silk Lounge or Moskovsky Bar. Other facilities offered at the property include meeting facilities, a ticket service and luggage storage.</p>
+            To ensure a stress free stay, the property offers concierge service, tour desk and ticket service. Cash machine can be found on site.
+
+            There are many nearby theatres, museums and attractions including the Arts Square, the Admiralty, and the Tsar’s former Winter Palace. Alternatively, there are a wide variety of shops, bars and cafés along the well known Nevsky Avenue to pass enjoyable moments.
+
+            After a day’s exploration, return to Belmond Grand Hotel Europe and select one of the 6 restaurants and/or cafés for delightful cuisines and refreshing drinks. The friendly and helpful staff provides 24-hour assistance, making sure your stay is as hassle-free and as pleasant as possible.</p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>

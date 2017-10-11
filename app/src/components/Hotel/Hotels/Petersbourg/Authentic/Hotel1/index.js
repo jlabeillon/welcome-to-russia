@@ -19,15 +19,17 @@ class MoscowHotelAuthenticHotel1 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Tchaikovsky Hotel</h1>
+            <h1 id="city-name">Pushka INN hotel</h1>
             <span>Carousel component</span>
-            <p id="city-description">Situated in Moscow, 1 km from Kremlin, Red Square and State Historical Museum, Tchaikovsky Hotel boasts air-conditioned rooms with free WiFi throughout the property. The hotel is located in the historical building. Guests can enjoy the on-site bar. Private parking is available on site.
+            <p id="city-description">Pushka Inn is a 18th Century mansion located in an historic part of St. Petersburg, one minute walk from the Palace Square. It offers non-smoking rooms with air conditioning, satellite TV and free Wi-Fi.
 
-            Each room has a flat-screen TV. Some rooms feature a seating area for your convenience. You will find a coffee machine in the room. For your comfort, you will find bathrobes, slippers and free toiletries.
+            The Pushka Inn’s restaurant offers European and Russian cuisine and has an extensive wine list.
 
-            You will find a 24-hour front desk at the property. Russian and European cuisine is offered in the on’site restaurant. Banquet facilities are also offered.
+            Pushka Inn’s concierge service can provide assistance with booking of flights, train tickets, and theatre and concert tickets.
 
-            Arbat Street is 1 km from Tchaikovsky Hotel, while The Kremlin is 1.1 km away. The nearest airport is Sheremetyevo International Airport, 26 km from Tchaikovsky Hotel.  </p>
+            Tsentralny district is a great choice for travellers interested in museums, culture and ambience.
+
+            This is our guests’ favourite part of Saint Petersburg, according to independent reviews.</p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>

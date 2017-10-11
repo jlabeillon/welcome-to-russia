@@ -17,7 +17,7 @@ class Yekaterinburg extends React.Component {
           <div className="col-xs-2">
             <NavLink to="/city/yekaterinburg/stadium" className="nav-left">Yekaterinburg stadium</NavLink>
             <a href="#" className="nav-left">Yekaterinburg transportation</a>
-            <NavLink to="/city/moscow/hotels" className="nav-left">Yekaterinburg hotels</NavLink>
+            <NavLink to="/city/yekaterinburg/hotels/eco" className="nav-left">Yekaterinburg hotels</NavLink>
             <NavLink to="/city/moscow/restaurants" className="nav-left">Yekaterinburg restaurants</NavLink>
           </div>
 

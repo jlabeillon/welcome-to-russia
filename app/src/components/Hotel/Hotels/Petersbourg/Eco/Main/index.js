@@ -18,33 +18,35 @@ class MoscowEco extends React.Component {
 
           <h1>Hotels</h1>
 
-          <NavLink to="/city/moscow/hotels/eco">ECO</NavLink>
-          <NavLink to="/city/moscow/hotels/authentic">AUTHENTIC</NavLink>
-          <NavLink to="/city/moscow/hotels/luxury">LUXURY</NavLink>
+          <NavLink to="/city/petersbourg/hotels/eco">ECO</NavLink>
+          <NavLink to="/city/petersbourg/hotels/authentic">AUTHENTIC</NavLink>
+          <NavLink to="/city/petersbourg/hotels/luxury">LUXURY</NavLink>
 
           <div className="row">
             <div className="col-xs-12">
-              <NavLink to="/city/moscow/hotels/eco/novinsky">
-              <img className="hotels-image" src="/images/hotels/moscow-eco-novinsky.jpg" />
-              <p className="hotels-description">Located 50 m from Moscow’s vibrant Noviy Arbat Street, PEOPLE Business Novinsky Hotel is just 2 metro stops from the Kremlin. Rooms feature a flat-screen TV and free Wi-Fi.</p>
+              <NavLink to="/city/petersbourg/hotels/eco/piter">
+              <img className="hotels-image" src="/images/hotels/petersbourg-eco-piters.jpg" />
+              <p className="hotels-description">Piter’s house na Nevskom is located in the Tsentralny district district in Saint Petersburg, 2.7 km from State Russian Museum.
+
+              Each room has a flat-screen TV. Certain units feature a seating area for your convenience. You will find a kettle in the room. Every room is equipped with a private bathroom. For your comfort, you will find slippers, free toiletries and a hairdryer. Piters house na Nevskom features free WiFi throughout the property.</p>
               </NavLink>
             </div>
           </div>
 
           <div className="row">
           <div className="col-xs-12">
-            <NavLink to="/city/moscow/hotels/eco/cosmos">
-            <img className="hotels-image" src="/images/hotels/moscow-eco-cosmos.jpg" />
-            <p className="hotels-description">Located next to the All-Russia Exhibition Centre, this hotel offers a spa with a swimming pool, fitness centre and massage services. VDNKh Metro Station is 400 m away.</p>
+            <NavLink to="/city/petersbourg/hotels/eco/capital">
+            <img className="hotels-image" src="/images/hotels/petersbourg-eco-capital.jpg" />
+            <p className="hotels-description">This hotel is located in the heart of Saint Petersburg, just a 4-minute walk from the Sennaya Square and Sadovaya Metro Station. Free Wi-Fi is featured at Capital Hotel.</p>
             </NavLink>
           </div>
           </div>
 
           <div className="row">
           <div className="col-xs-12">
-            <NavLink to="/city/moscow/hotels/eco/izmailovo">
-            <img className="hotels-image" src="/images/hotels/moscow-eco-izmailovo.jpg" />
-            <p className="hotels-description">Set near the Izmailovsky Park, within a 3-minute walk of Partizanskaya Metro Station, Izmailovo Beta Hotel features free WiFi, banquet and meeting facilities and a variety of dining options. It is located within a 15-minute metro ride from the city centre.</p>
+            <NavLink to="/city/petersbourg/hotels/eco/gora">
+            <img className="hotels-image" src="/images/hotels/petersbourg-eco-gora.jpg" />
+            <p className="hotels-description">Featuring free WiFi throughout the property, Staraya Gora Hostel is located in Saint Petersburg, 900 m from State Russian Museum.</p>
             </NavLink>
           </div>
           </div>

@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class MoscowHotelEcoHotel1 extends React.Component {
+class PetersbourgHotelEcoHotel1 extends React.Component {
   render() {
     return (
       <div className="container">
@@ -19,13 +19,13 @@ class MoscowHotelEcoHotel1 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">People Business Novinsky Hotel</h1>
+            <h1 id="city-name">Piter’s house na Nevskom</h1>
             <span>Carousel component</span>
-            <p id="city-description">One of our top picks in Moscow. Located 50 m from Moscow’s vibrant Noviy Arbat Street, PEOPLE Business Novinsky Hotel is just 2 metro stops from the Kremlin. Rooms feature a flat-screen TV and free Wi-Fi.
+            <p id="city-description">Piter’s house na Nevskom is located in the Tsentralny district district in Saint Petersburg, 2.7 km from State Russian Museum.
 
-            Set in a historic building with a grand façade and private yard, the hotel offers simply decorated rooms. Guests have use of a lounge with a flat-screen TV. Public computers with free internet access are also available.
+            Each room has a flat-screen TV. Certain units feature a seating area for your convenience. You will find a kettle in the room. Every room is equipped with a private bathroom. For your comfort, you will find slippers, free toiletries and a hairdryer. Piters house na Nevskom features free WiFi throughout the property.
 
-            PEOPLE Business Novinsky Hotel offers a 24-hour front desk, where guests can book a wide variety of tours in and around Moscow. Help with visas and registration is also provided. Smolenskaya Metro Station (500 m) offers direct connections to Moscow’s city centre and all Moscow train stations. The American Embassy is a 2-minute walk away. </p>
+            Church of the Savior on Spilled Blood is 2.9 km from Piter’s house na Nevskom, while Palace Square is 3.5 km away. The nearest airport is Pulkovo Airport, 15 km from the property.  </p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>
@@ -57,4 +57,4 @@ class MoscowHotelEcoHotel1 extends React.Component {
   };
 }
 // Export
-export default MoscowHotelEcoHotel1;
+export default PetersbourgHotelEcoHotel1;

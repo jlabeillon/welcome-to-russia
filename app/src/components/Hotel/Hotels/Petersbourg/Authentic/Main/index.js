@@ -8,7 +8,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class MoscowEco extends React.Component {
+class PetersbourgAuthentic extends React.Component {
   render() {
     return (
       <div className="container" id="hotels-body">
@@ -18,33 +18,33 @@ class MoscowEco extends React.Component {
 
           <h1>Hotels</h1>
 
-          <NavLink to="/city/moscow/hotels/eco">ECO</NavLink>
-          <NavLink to="/city/moscow/hotels/authentic">AUTHENTIC</NavLink>
-          <NavLink to="/city/moscow/hotels/luxury">LUXURY</NavLink>
+          <NavLink to="/city/petersbourg/hotels/eco">ECO</NavLink>
+          <NavLink to="/city/petersbourg/hotels/authentic">AUTHENTIC</NavLink>
+          <NavLink to="/city/petersbourg/hotels/luxury">LUXURY</NavLink>
 
           <div className="row">
             <div className="col-xs-12">
-              <NavLink to="/city/moscow/hotels/authentic/tchaikovsky">
-              <img className="hotels-image" src="/images/hotels/moscow-authentic-tchaikovsky.jpg" />
-              <p className="hotels-description">Situated in Moscow, 1 km from Kremlin, Red Square and State Historical Museum, Tchaikovsky Hotel boasts air-conditioned rooms with free WiFi throughout the property. The hotel is located in the historical building. Guests can enjoy the on-site bar. Private parking is available on site.</p>
+              <NavLink to="/city/petersbourg/hotels/authentic/pushka">
+              <img className="hotels-image" src="/images/hotels/petersbourg-authentic-pushka.jpg" />
+              <p className="hotels-description">Pushka Inn is a 18th Century mansion located in an historic part of St. Petersburg, one minute walk from the Palace Square. It offers non-smoking rooms with air conditioning, satellite TV and free Wi-Fi.</p>
               </NavLink>
             </div>
           </div>
 
           <div className="row">
           <div className="col-xs-12">
-            <NavLink to="/city/moscow/hotels/authentic/radisson">
-            <img className="hotels-image" src="/images/hotels/moscow-authentic-radisson.jpg" />
-            <p className="hotels-description">This luxury hotel is situated at the intersection of Moscow’s Kutuzovskiy Prospekt and Novy Arbat and occupies a Stalinist skyscraper. It offers free Wi-Fi, an indoor pool and modern spa facilities.</p>
+            <NavLink to="/city/petersbourg/hotels/authentic/ekaterina">
+            <img className="hotels-image" src="/images/hotels/petersbourg-authentic-ekaterina.jpg" />
+            <p className="hotels-description">Featuring free WiFi and a restaurant, Ekaterina Hotel offers accommodation in Saint Petersburg, 600 m from Church of the Savior on Spilled Blood and 700 m from Hermitage.</p>
             </NavLink>
           </div>
           </div>
 
           <div className="row">
           <div className="col-xs-12">
-            <NavLink to="/city/moscow/hotels/authentic/ivan">
-            <img className="hotels-image" src="/images/hotels/moscow-authentic-ivan.jpg" />
-            <p className="hotels-description">Featuring free WiFi throughout the property, Ivan Chai - hotel and coffee offers accommodation in Moscow. All rooms are equipped with a private bathroom. Extras include free toiletries and a hairdryer.</p>
+            <NavLink to="/city/petersbourg/hotels/authentic/hermitage">
+            <img className="hotels-image" src="/images/hotels/petersbourg-authentic-hermitage.jpg" />
+            <p className="hotels-description">This exclusive 5-star hotel is set in the 1830s mansion in the centre of Saint Petersburg and represents the atmosphere of the original Hermitage Museum. Spa and wellness centre and free Wi-Fi is featured here.</p>
             </NavLink>
           </div>
           </div>
@@ -58,4 +58,4 @@ class MoscowEco extends React.Component {
 }
 
 // Export
-export default MoscowEco;
+export default PetersbourgAuthentic;

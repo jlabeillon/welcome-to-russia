@@ -19,15 +19,15 @@ class MoscowHotelAuthenticHotel2 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Radisson Royal Hotel</h1>
+            <h1 id="city-name">Ekaterina Hotel</h1>
             <span>Carousel component</span>
-            <p id="city-description">This luxury hotel is situated at the intersection of Moscow’s Kutuzovskiy Prospekt and Novy Arbat and occupies a Stalinist skyscraper. It offers free Wi-Fi, an indoor pool and modern spa facilities.
+            <p id="city-description">Featuring free WiFi and a restaurant, Ekaterina Hotel offers accommodation in Saint Petersburg, 600 m from Church of the Savior on Spilled Blood and 700 m from Hermitage.
 
-            Rooms at Radisson Royal Hotel offer stylish décor and classic-style furniture, offering a flat-screen TV and views of the city or inner courtyard. All rooms have high ceilings, and some have a separate seating area.
+            Rooms are air conditioned and have a flat-screen TV. The private bathrooms come with bathrobes.
 
-            11 restaurants of the Radisson Royal are known for their unique cuisine, original cocktails and panoramic views of Moscow. Breakfast, served at Veranda Restaurant, offers a variety of dining options. Guests can enjoy evening cocktails and light snacks at the Radisson’s 24-hour Lobby Bar and Club restaurant.
+            There is a 24-hour front desk at the property. Plenty of dining options can be found within a 5-minute walk from Ekaterina Hotel.
 
-            After working out in the gym, visitors can relax in the sauna or in the spa bath. Massage services can also be booked. River boat trips along the Moskva River are available all year round.</p>
+            Palace Square is 700 m away. Moskovsky Train Station is 4 km from the hotel, and Pulkovo Airport is 20 km away. </p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>

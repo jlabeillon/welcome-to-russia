@@ -8,7 +8,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class MoscowLuxury extends React.Component {
+class PetersbourgLuxury extends React.Component {
   render() {
     return (
       <div className="container" id="hotels-body">
@@ -18,33 +18,33 @@ class MoscowLuxury extends React.Component {
 
           <h1>Hotels</h1>
 
-          <NavLink to="/city/moscow/hotels/eco">ECO</NavLink>
-          <NavLink to="/city/moscow/hotels/authentic">AUTHENTIC</NavLink>
-          <NavLink to="/city/moscow/hotels/luxury">LUXURY</NavLink>
+          <NavLink to="/city/petersbourg/hotels/eco">ECO</NavLink>
+          <NavLink to="/city/petersbourg/hotels/authentic">AUTHENTIC</NavLink>
+          <NavLink to="/city/petersbourg/hotels/luxury">LUXURY</NavLink>
 
           <div className="row">
             <div className="col-xs-12">
-              <NavLink to="/city/moscow/hotels/luxury/ararat">
-              <img className="hotels-image" src="/images/hotels/moscow-luxury-ararat.jpg" />
-              <p className="hotels-description">Ararat Park Hyatt has an excellent location 5 minutes from Red Square in the prime shopping area, moments from both TSUM and Detsky Mir department stores. It features superb service.</p>
+              <NavLink to="/city/petersbourg/hotels/luxury/four">
+              <img className="hotels-image" src="/images/hotels/petersbourg-luxury-four.jpg" />
+              <p className="hotels-description">Four Seasons Hotel Lion Palace is located in the heart of Saint Petersburg, just 300 m from the Dvortsovaya Square. It boasts luxury interiors in Russian Empire style and exclusive fine dining options.</p>
               </NavLink>
             </div>
           </div>
 
           <div className="row">
           <div className="col-xs-12">
-            <NavLink to="/city/moscow/hotels/luxury/regis">
-            <img className="hotels-image" src="/images/hotels/moscow-luxury-regis.jpg" />
-            <p className="hotels-description">This 5-star hotel is in a central location in the heart of Moscow, right on Lubyanka Square, a 10-minute walk from the Kremlin. Rooms with personalized St. Regis Butler Service and free Wi-Fi are featured at St. Regis Moscow Nikolskaya.</p>
+            <NavLink to="/city/petersbourg/hotels/luxury/lotte">
+            <img className="hotels-image" src="/images/hotels/petersbourg-luxury-lotte.jpg" />
+            <p className="hotels-description">Offering a terrace and spa centre, Lotte Hotel St. Petersburg is located in Saint Petersburg. The hotel has a sauna and fitness centre, and guests can enjoy a meal at the restaurant.</p>
             </NavLink>
           </div>
           </div>
 
           <div className="row">
           <div className="col-xs-12">
-            <NavLink to="/city/moscow/hotels/luxury/four">
-            <img className="hotels-image" src="/images/hotels/moscow-luxury-four.jpg" />
-            <p className="hotels-description">Four Seasons Hotel Moscow is in the historic building of Moskva Hotel, in the very heart of Moscow, a short walk from the Kremlin, Red Square and the Bolshoi Theatre. Free Wi-Fi access is available in this 5-star hotel.</p>
+            <NavLink to="/city/petersbourg/hotels/luxury/belmond">
+            <img className="hotels-image" src="/images/hotels/petersbourg-luxury-belmond.jpg" />
+            <p className="hotels-description">Set in a stunning central location of St. Petersburg is this grand hotel that offers elegant accommodation in a fantastic setting.</p>
             </NavLink>
           </div>
           </div>
@@ -57,4 +57,4 @@ class MoscowLuxury extends React.Component {
 }
 
 // Export
-export default MoscowLuxury;
+export default PetersbourgLuxury;
