@@ -24,6 +24,18 @@ import KazanEco from 'src/components/Hotel/Hotels/Kazan/Eco';
 import KazanAuthentic from 'src/components/Hotel/Hotels/Kazan/Authentic';
 import KazanLuxury from 'src/components/Hotel/Hotels/Kazan/Luxury';
 
+import VolgogradEco from 'src/components/Hotel/Hotels/Volgograd/Eco';
+import VolgogradAuthentic from 'src/components/Hotel/Hotels/Volgograd/Authentic';
+import VolgogradLuxury from 'src/components/Hotel/Hotels/Volgograd/Luxury';
+
+import SaranskEco from 'src/components/Hotel/Hotels/Saransk/Eco';
+import SaranskAuthentic from 'src/components/Hotel/Hotels/Saransk/Authentic';
+import SaranskLuxury from 'src/components/Hotel/Hotels/Saransk/Luxury';
+
+import SamaraEco from 'src/components/Hotel/Hotels/Samara/Eco';
+import SamaraAuthentic from 'src/components/Hotel/Hotels/Samara/Authentic';
+import SamaraLuxury from 'src/components/Hotel/Hotels/Samara/Luxury';
+
 // Code
 class Hotel extends React.Component {
   render() {
@@ -48,6 +60,18 @@ class Hotel extends React.Component {
         <Route path="/city/kazan/hotels/eco" component={KazanEco} />
         <Route path="/city/kazan/hotels/authentic" component={KazanAuthentic} />
         <Route path="/city/kazan/hotels/luxury" component={KazanLuxury} />
+
+        <Route path="/city/volgograd/hotels/eco" component={VolgogradEco} />
+        <Route path="/city/volgograd/hotels/authentic" component={VolgogradAuthentic} />
+        <Route path="/city/volgograd/hotels/luxury" component={VolgogradLuxury} />
+
+        <Route path="/city/saransk/hotels/eco" component={SaranskEco} />
+        <Route path="/city/saransk/hotels/authentic" component={SaranskAuthentic} />
+        <Route path="/city/saransk/hotels/luxury" component={SaranskLuxury} />
+
+        <Route path="/city/samara/hotels/eco" component={SamaraEco} />
+        <Route path="/city/samara/hotels/authentic" component={SamaraAuthentic} />
+        <Route path="/city/samara/hotels/luxury" component={SamaraLuxury} />
       </div>
     );
   };

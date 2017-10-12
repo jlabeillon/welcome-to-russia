@@ -13,9 +13,9 @@ class Moscow extends React.Component {
 
   componentWillMount() {
     axios
-      .get('')
-      .then(({ data }) => {
-        console.log(data);
+      .get('http://localhost/Projet/back/welcome-to-russia/project/web/app_dev.php/json/city/moscou')
+      .then((response) => {
+        console.log(response);
       })
       .catch(() => {
         console.error('Ajax failed');

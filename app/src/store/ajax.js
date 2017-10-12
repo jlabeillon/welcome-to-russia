@@ -8,17 +8,17 @@ import axios from 'axios';
 export default store => next => (action) => {
 
   switch (action.type) {
-    case RECIPES_LOAD: {
-      axios
-        .get('url')
-        .then(({ data }) => {
-          console.log(data);
-        })
-        .catch(() => {
-          console.error('La requête ajax a échoué :(');
-        });
-      break;
-    }
+    // case RECIPES_LOAD: {
+    //   axios
+    //     .get('url')
+    //     .then(({ data }) => {
+    //       console.log(data);
+    //     })
+    //     .catch(() => {
+    //       console.error('La requête ajax a échoué :(');
+    //     });
+    //   break;
+    // }
 
     default:
   }

@@ -17,7 +17,7 @@ class Volgograd extends React.Component {
           <div className="col-xs-2">
             <NavLink to="/city/volgograd/stadium" className="nav-left">Volgograd stadium</NavLink>
             <a href="#" className="nav-left">Volgograd transportation</a>
-            <NavLink to="/city/moscow/hotels" className="nav-left">Volgograd hotels</NavLink>
+            <NavLink to="/city/volgograd/hotels/eco" className="nav-left">Volgograd hotels</NavLink>
             <NavLink to="/city/moscow/restaurants" className="nav-left">Volgograd restaurants</NavLink>
           </div>
 
