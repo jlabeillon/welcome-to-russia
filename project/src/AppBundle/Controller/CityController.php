@@ -16,7 +16,7 @@ class CityController extends Controller
 {
 
     /**
-     * @Route("/json/city/all.json", name="city_all")
+     * @Route("/json/city/all", name="city_all")
      */
     public function allAction()
     {
@@ -29,13 +29,13 @@ class CityController extends Controller
     }
 
     /**
-     * @Route("/json/city/{id}", name="city_show")
+     * @Route("/json/city/{slug}", name="city_show")
      */
-    public function showAction($id)
+    public function showAction($slug)
     {
 
         $serializer = $this->container->get('jms_serializer');
-        $city = $this->getDoctrine()->getRepository(City::class)->findOneById($id);
+        $city = $this->getDoctrine()->getRepository(City::class)->findOneById($slug);
         $jsonContent = $serializer->serialize($city, 'json');
 
         return new Response($jsonContent);
