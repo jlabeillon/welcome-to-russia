@@ -16,7 +16,7 @@ class CityController extends Controller
 {
 
     /**
-     * @Route("/json/city/all", name="city_all")
+     * @Route("/json/city/all.json", name="city_all")
      */
     public function allAction()
     {
