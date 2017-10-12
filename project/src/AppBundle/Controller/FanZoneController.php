@@ -12,31 +12,31 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\ORM\EntityManagerInterface;
 
-class CityController extends Controller
+class FanZoneController extends Controller
 {
 
     /**
-     * @Route("/json/city/all", name="city_all")
+     * @Route("/json/fanzone/all", name="fanzone_all")
      */
     public function allAction()
     {
 
         $serializer = $this->container->get('jms_serializer');
-        $city = $this->getDoctrine()->getRepository(City::class)->findAll();
-        $jsonContent = $serializer->serialize($city, 'json');
+        $fanzone = $this->getDoctrine()->getRepository(FanZone::class)->findAll();
+        $jsonContent = $serializer->serialize($fanzone, 'json');
 
         return new Response($jsonContent);
     }
 
     /**
-     * @Route("/json/city/{id}", name="city_show")
+     * @Route("/json/fanzone/{id}", name="fanzone_show")
      */
     public function showAction($id)
     {
 
         $serializer = $this->container->get('jms_serializer');
-        $city = $this->getDoctrine()->getRepository(City::class)->findOneById($id);
-        $jsonContent = $serializer->serialize($city, 'json');
+        $fanzone = $this->getDoctrine()->getRepository(FanZone::class)->findOneById($id);
+        $jsonContent = $serializer->serialize($fanzone, 'json');
 
         return new Response($jsonContent);
 

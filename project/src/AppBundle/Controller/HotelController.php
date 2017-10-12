@@ -17,18 +17,48 @@ use Cocur\Slugify\Slugify;
 class HotelController extends Controller
 {
     /**
-     * @Route("/city/{slug_parent}/hotel/{slug_child}", name="hotel_show")
+     * @Route("/json/hotel/all/", name="hotel_all")
      */
-    public function showAction($slug_parent, $slug_child)
+    public function allAction()
     {
 
         $serializer = $this->container->get('jms_serializer');
 
 
-        $hotel = $this->getDoctrine()->getRepository(City::class)->findOneByName($slug_parent)->leftjoin();
-        $jsonContentHotel = $serializer->serialize($hotel, 'json');
+        $hotel = $this->getDoctrine()->getRepository(Hotel::class)->findAll();
+        $jsonContent = $serializer->serialize($hotel, 'json');
 
-        return new Response($jsonContentHotel);
+        return new Response($jsonContent);
+
+    }
+
+    /**
+     * @Route("json/hotel/{id}", name="hotel_show")
+     */
+    public function showAction($id)
+    {
+
+        $serializer = $this->container->get('jms_serializer');
+        $hotel = $this->getDoctrine()->getRepository(Hotel::class)->findOneById($id);
+        $jsonContent = $serializer->serialize($hotel, 'json');
+
+        return new Response($jsonContent);
+
+
+    }
+
+    /**
+     * @Route("json/hotel/by/{slug}", name="hotel_by_city")
+     */
+    public function byCityAction($slug)
+    {
+
+        $serializer = $this->container->get('jms_serializer');
+
+        $hotel = $this->getDoctrine()->getRepository(Hotel::class);
+        $jsonContent = $serializer->serialize($hotel, 'json');
+
+        return new Response($jsonContent);
 
 
     }
