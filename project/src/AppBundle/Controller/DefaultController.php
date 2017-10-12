@@ -22,7 +22,5 @@ class DefaultController extends Controller
         $response = new Response();
         $response->headers->set('Access-Control-Allow-Origin', '*');
         return $response;
-
-
-    }
+      }
 }
