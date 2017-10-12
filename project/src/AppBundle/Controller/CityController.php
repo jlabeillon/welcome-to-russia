@@ -35,7 +35,7 @@ class CityController extends Controller
     {
 
         $serializer = $this->container->get('jms_serializer');
-        $city = $this->getDoctrine()->getRepository(City::class)->findOneById($slug);
+        $city = $this->getDoctrine()->getRepository(City::class)->findOneBySlug($slug);
         $jsonContent = $serializer->serialize($city, 'json');
 
         return new Response($jsonContent);
