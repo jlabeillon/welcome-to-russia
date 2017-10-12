@@ -17,7 +17,7 @@ class Kaliningrad extends React.Component {
           <div className="col-xs-2">
             <NavLink to="/city/kaliningrad/stadium" className="nav-left">Kaliningrad stadium</NavLink>
             <a href="#" className="nav-left">Kaliningrad transportation</a>
-            <NavLink to="/city/kaliningrad/hotels" className="nav-left">Kaliningrad hotels</NavLink>
+            <NavLink to="/city/kaliningrad/hotels/luxury" className="nav-left">Kaliningrad hotels</NavLink>
             <NavLink to="/city/kaliningrad/restaurants" className="nav-left">Kaliningrad restaurants</NavLink>
           </div>
 

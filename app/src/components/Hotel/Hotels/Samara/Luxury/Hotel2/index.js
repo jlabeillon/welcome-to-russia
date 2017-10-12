@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class SaranskHotelLuxuryHotel2 extends React.Component {
+class SamaraHotelLuxuryHotel2 extends React.Component {
   render() {
     return (
       <div className="container">
@@ -19,15 +19,17 @@ class SaranskHotelLuxuryHotel2 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Hotel Victoria at the sports school</h1>
+            <h1 id="city-name">Renaissance Samara Hotel </h1>
             <span>Carousel component</span>
-            <p id="city-description">Located in Saransk, 6 km from Mordovia Arena, Hotel Victoria at the sports school features air-conditioned rooms with free WiFi throughout the property. The hotel has a hot tub and sauna, and guests can enjoy a drink at the bar.
+            <p id="city-description">The Renaissance Samara Hotel is a luxury hotel with river views, located in the city centre. It combines impressive interiors with facilities that include restaurants and indoor swimming pool.
 
-            All rooms include a flat-screen TV with cable channels. Certain accommodations have a sitting area for your convenience. Enjoy a cup of tea while looking out at the garden or city. The rooms are equipped with a private bathroom. For your comfort, you will find bathrobes and slippers.
+            Renaissance Samara Hotel also features a business centre with meeting rooms, sauna and 24-hour gym.
 
-            You will find a 24-hour front desk and gift shop at the property.
+            All the rooms are equipped with air conditioning, minibar, safe and cable TV. You can easily stay in touch with Wi-Fi connection and double-line telephone, and benefit from 24-hour room service.
 
-            Bike rental is available at this hotel and the area is popular for hiking. Saransk Bus Station is 1.9 km from Hotel Victoria at the sports school, and Leninsky District Park is 2.1 km from the property. </p>
+            The Renaissance Hotel includes a Viennese-style café, Sunlight restaurant and In Alto restaurant with panoramic views of the Volga River.
+
+            Kurumoch International Airport is 31 km from the hotel. </p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>
@@ -59,4 +61,4 @@ class SaranskHotelLuxuryHotel2 extends React.Component {
   };
 }
 // Export
-export default SaranskHotelLuxuryHotel2;
+export default SamaraHotelLuxuryHotel2;

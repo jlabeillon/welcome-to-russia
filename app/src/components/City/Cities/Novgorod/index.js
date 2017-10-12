@@ -17,7 +17,7 @@ class Novgorod extends React.Component {
           <div className="col-xs-2">
             <NavLink to="/city/novgorod/stadium" className="nav-left">Novgorod stadium</NavLink>
             <a href="#" className="nav-left">Novgorod transportation</a>
-            <NavLink to="/city/novgorod/hotels" className="nav-left">Novgorod hotels</NavLink>
+            <NavLink to="/city/novgorod/hotels/luxury" className="nav-left">Novgorod hotels</NavLink>
             <NavLink to="/city/novgorod/restaurants" className="nav-left">Novgorod restaurants</NavLink>
           </div>
 

@@ -8,7 +8,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class SaranskAuthenticMain extends React.Component {
+class SamaraAuthenticMain extends React.Component {
   render() {
     return (
       <div className="container" id="hotels-body">
@@ -18,33 +18,33 @@ class SaranskAuthenticMain extends React.Component {
 
           <h1>Hotels</h1>
 
-          <NavLink to="/city/saransk/hotels/eco">ECO</NavLink>
-          <NavLink to="/city/saransk/hotels/authentic">AUTHENTIC</NavLink>
-          <NavLink to="/city/saransk/hotels/luxury">LUXURY</NavLink>
+          <NavLink to="/city/samara/hotels/eco">ECO</NavLink>
+          <NavLink to="/city/samara/hotels/authentic">AUTHENTIC</NavLink>
+          <NavLink to="/city/samara/hotels/luxury">LUXURY</NavLink>
 
           <div className="row">
             <div className="col-xs-12">
-              <NavLink to="/city/saransk/hotels/authentic/meridian">
-              <img className="hotels-image" src="/images/hotels/saransk-authentic-meridian.jpg" />
-              <p className="hotels-description">This hotel is located in the centre of Saransk, a 5-minute walk from the National Theatre of Mordovia. Free Wi-Fi, a sauna, billiards and a 24-hour reception are featured at Meridian Hotel.</p>
+              <NavLink to="/city/samara/hotels/authentic/hotel19">
+              <img className="hotels-image" src="/images/hotels/samara-authentic-hotel19.jpg" />
+              <p className="hotels-description">Featuring free WiFi, HOTEL 19 offers accommodation in Mekhzavod. Guests can enjoy the on-site restaurant. Free private parking is available on site.</p>
               </NavLink>
             </div>
           </div>
 
           <div className="row">
           <div className="col-xs-12">
-            <NavLink to="/city/saransk/hotels/authentic/park">
-            <img className="hotels-image" src="/images/hotels/saransk-authentic-park.jpg" />
-            <p className="hotels-description">Located 1.3 km from Mordovia Arena in Saransk, Park Hotel features a restaurant and free WiFi. The hotel has a sauna and fitness center, and guests can enjoy a meal at the restaurant. Free private parking is available on site.</p>
+            <NavLink to="/city/samara/hotels/authentic/sivre">
+            <img className="hotels-image" src="/images/hotels/samara-authentic-sivre.jpg" />
+            <p className="hotels-description">This property is 4 minutes walk from the beach. Offering bike rental, Dom Sivre Hotel is located in Samara, a minutes’ walk from the bank of the Volga River. Free WiFi and private parking are available.</p>
             </NavLink>
           </div>
           </div>
 
           <div className="row">
           <div className="col-xs-12">
-            <NavLink to="/city/saransk/hotels/authentic/makarovskaya">
-            <img className="hotels-image" src="/images/hotels/saransk-authentic-makarovskaya.jpg" />
-            <p className="hotels-description">Located 8 km from the city centre of Saransk, Hotel Makarovskaya features an on-site restaurant serving Russian cuisine, free internet access, and free private parking.</p>
+            <NavLink to="/city/samara/hotels/authentic/europe">
+            <img className="hotels-image" src="/images/hotels/samara-authentic-europe.jpg" />
+            <p className="hotels-description">This property is 11 minutes walk from the beach. Situated in the historic city centre of Samara, this hotel features free Wi-Fi. Russian specialities are served in the hotel restaurant, and guests benefit from a 24-hour reception.</p>
             </NavLink>
           </div>
           </div>
@@ -58,4 +58,4 @@ class SaranskAuthenticMain extends React.Component {
 }
 
 // Export
-export default SaranskAuthenticMain;
+export default SamaraAuthenticMain;

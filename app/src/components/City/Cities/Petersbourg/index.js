@@ -17,7 +17,7 @@ class Petersbourg extends React.Component {
           <div className="col-xs-2">
             <NavLink to="/city/petersbourg/stadium" className="nav-left">Saint-Petersbourg stadium</NavLink>
             <a href="#" className="nav-left">Saint-Petersbourg transportation</a>
-            <NavLink to="/city/petersbourg/hotels/eco" className="nav-left">Saint-Petersbourg hotels</NavLink>
+            <NavLink to="/city/petersbourg/hotels/luxury" className="nav-left">Saint-Petersbourg hotels</NavLink>
             <NavLink to="/city/moscow/restaurants" className="nav-left">Saint-Petersbourg restaurants</NavLink>
           </div>
 

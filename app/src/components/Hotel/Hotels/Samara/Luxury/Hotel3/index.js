@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class SaranskHotelLuxuryHotel3 extends React.Component {
+class SamaraHotelLuxuryHotel3 extends React.Component {
   render() {
     return (
       <div className="container">
@@ -19,15 +19,15 @@ class SaranskHotelLuxuryHotel3 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Severny Zamok Hotel</h1>
+            <h1 id="city-name">Hotel Moya Glinka</h1>
             <span>Carousel component</span>
-            <p id="city-description">Located in Saransk, Severny Zamok Hotel features free WiFi and free private parking.
+            <p id="city-description">Located in Samara, Hotel Moya Glinka features a spa centre, and guests can enjoy a meal at the restaurant or a drink at the bar. Free WiFi is provided throughout the property and free private parking is available on site.
 
-            Each room offers a air conditioning and a flat-screen TV with satellite channels. You will also find a fridge. The private bathrooms are fitted with a hairdryer.
+            The rooms are fitted with a flat-screen TV. Extras include free toiletries and a hairdryer.
 
-            Guests can enjoy breakfast or lunch at the properties cafe. Banquet facilities with an à la carte service are also available. An array of activities offered on site include billiards and table tennis.
+            You will find a 24-hour front desk at the property.
 
-            Saransk Train Station is 7 km away, and Saransk Airport is 13.5 km from Severny Zamok Hotel. </p>
+            The nearest airport is Kurumoch International Airport, 13 km from the property.  </p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>
@@ -59,4 +59,4 @@ class SaranskHotelLuxuryHotel3 extends React.Component {
   };
 }
 // Export
-export default SaranskHotelLuxuryHotel3;
+export default SamaraHotelLuxuryHotel3;

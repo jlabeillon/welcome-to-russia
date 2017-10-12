@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class SaranskHotelAuthenticHotel3 extends React.Component {
+class SamaraHotelAuthenticHotel3 extends React.Component {
   render() {
     return (
       <div className="container">
@@ -19,13 +19,15 @@ class SaranskHotelAuthenticHotel3 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Hotel Makarovskaya</h1>
+            <h1 id="city-name">Hotel Europe</h1>
             <span>Carousel component</span>
-            <p id="city-description">Located 8 km from the city centre of Saransk, Hotel Makarovskaya features an on-site restaurant serving Russian cuisine, free internet access, and free private parking.
+            <p id="city-description">This property is 11 minutes walk from the beach. Situated in the historic city centre of Samara, this hotel features free Wi-Fi. Russian specialities are served in the hotel restaurant, and guests benefit from a 24-hour reception.
 
-            The classically designed rooms here provide guests with a flat-screen TV, a desk, heating, and a private bathroom with a shower and free toiletries.
+            The air-conditioned rooms at Hotel Europe are decorated in shades of peach, and come with satellite TV and a seating area. A hairdryer is provided in the en suite bathroom.
 
-            Other hotel facilities include a 24-hour front desk, meeting and banquet facilities, a garden, a billiards table and a tennis table.</p>
+            A variety of traditional cuisine is served in the Europe Hotel’s Dublin restaurant, a continental breakfast is served there too. After dinner guests can enjoy a drink at the bar.
+
+            The Volga River is a 10-minute walk from the hotel, and Samara Opera and Drama Theatre is a 5-minute drive away. After a day of sightseeing, guests can relax in the hotel’s sauna.</p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>
@@ -57,4 +59,4 @@ class SaranskHotelAuthenticHotel3 extends React.Component {
   };
 }
 // Export
-export default SaranskHotelAuthenticHotel3;
+export default SamaraHotelAuthenticHotel3;

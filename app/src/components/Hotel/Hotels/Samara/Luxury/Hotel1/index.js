@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class SaranskHotelLuxuryHotel1 extends React.Component {
+class SamaraHotelLuxuryHotel1 extends React.Component {
   render() {
     return (
       <div className="container">
@@ -19,15 +19,15 @@ class SaranskHotelLuxuryHotel1 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Admiral Hotel</h1>
+            <h1 id="city-name">Holiday Inn Samara</h1>
             <span>Carousel component</span>
-            <p id="city-description">Located a 10-minute walk from Sovetskaya Square in Saransk, Admiral Hotel features a free access to indoor pool and a gym. A spa and wellness centre and a bar are also featured.
+            <p id="city-description">This property is 3 minutes walk from the beach. Holiday Inn Samara is located in the historic centre of Samara, a 5-minute walk from the Volga River Embankment. Free WiFi, Swedish and Finnish saunas, swimming pool and a 24-hour fitness centre are offered.
 
-            All rooms are air-conditioned and come with flat-screen TV with satellite channels, and safety deposit box.
+            All rooms are air conditioned and have satellite TV and tea/coffee facilities.
 
-            The hotel serves a buffet breakfast. Guests can dine in the property’s à la carte restaurant offering European, Mediterranean and Mordovian cuisine.
+            A rich buffet breakfast is served every morning in the Atrium Restaurant. Brazeria Restaurant serves dishes of Russian and European cuisine. Guests can enjoy a dessert and a coffe at the Atrium lobby bar. The hotel also features 13 conference rooms.
 
-            Saransk Airport is within a 20-minute drive of Admiral Hotel. A shuttle service to the airport and Central Train Station is provided upon request. </p>
+            Samara Central Train Station is 3 km from Holiday Inn Samara. Kurumoch International Airport is 47 km away. </p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>
@@ -59,4 +59,4 @@ class SaranskHotelLuxuryHotel1 extends React.Component {
   };
 }
 // Export
-export default SaranskHotelLuxuryHotel1;
+export default SamaraHotelLuxuryHotel1;

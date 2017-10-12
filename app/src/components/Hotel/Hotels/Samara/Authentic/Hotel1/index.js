@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class SaranskHotelAuthenticHotel1 extends React.Component {
+class SamaraHotelAuthenticHotel1 extends React.Component {
   render() {
     return (
       <div className="container">
@@ -19,15 +19,15 @@ class SaranskHotelAuthenticHotel1 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Meridian</h1>
+            <h1 id="city-name">HOTEL 19</h1>
             <span>Carousel component</span>
-            <p id="city-description">This hotel is located in the centre of Saransk, a 5-minute walk from the National Theatre of Mordovia. Free Wi-Fi, a sauna, billiards and a 24-hour reception are featured at Meridian Hotel.
+            <p id="city-description">Featuring free WiFi, HOTEL 19 offers accommodation in Mekhzavod. Guests can enjoy the on-site restaurant. Free private parking is available on site.
 
-            The bright, air-conditioned rooms offer warm-coloured interiors and classic-style décor. Each room includes a flat-screen TV, a minibar and a private bathroom.
+            All rooms have a flat-screen TV. Each room is fitted with a private bathroom. Extras include free toiletries and a hairdryer.
 
-            Meridian Restaurant serves European cuisine, and a variety of drinks is offered at the bar.
+            You will find a 24-hour front desk at the property. The hotel offers a shuttle service at surcharge.
 
-            Saransk Central Train Station is a 15-minute walk from Meridian Hotel, and Saransk Airport is 12 km away. </p>
+            Samara historical centre is 15 km from the property. Kurumoch International Airport is 25 km away. </p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>
@@ -59,4 +59,4 @@ class SaranskHotelAuthenticHotel1 extends React.Component {
   };
 }
 // Export
-export default SaranskHotelAuthenticHotel1;
+export default SamaraHotelAuthenticHotel1;

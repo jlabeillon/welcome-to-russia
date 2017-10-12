@@ -7,7 +7,7 @@ import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
 
 // Code
-class SaranskHotelAuthenticHotel2 extends React.Component {
+class SamaraHotelAuthenticHotel2 extends React.Component {
   render() {
     return (
       <div className="container">
@@ -19,15 +19,15 @@ class SaranskHotelAuthenticHotel2 extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Park Hotel</h1>
+            <h1 id="city-name">Dom Sivre Hotel</h1>
             <span>Carousel component</span>
-            <p id="city-description">Located 1.3 km from Mordovia Arena in Saransk, Park Hotel features a restaurant and free WiFi. The hotel has a sauna and fitness center, and guests can enjoy a meal at the restaurant. Free private parking is available on site.
+            <p id="city-description">This property is 4 minutes walk from the beach. Offering bike rental, Dom Sivre Hotel is located in Samara, a minutes’ walk from the bank of the Volga River. Free WiFi and private parking are available.
 
-            A TV is available.
+            The bright rooms have a TV and a fridge. Some rooms have a balcony. Bathroom facilities are shared or private.
 
-            You will find a 24-hour front desk at the property.
+            Dom Sivre Hotel has a shared kitchen. The 24-hour front desk offers luggage storage and tour desk services.
 
-            You can play pool at the hotel. Pushkin Park is 201 m from Park Hotel, and Sobornaya Square is 400 m from the property. </p>
+            Samara Train Station is 3 km from the property. Kurumoch International Airport is 47 km away. </p>
 
             <div id="form-hotel" className="col-xs-6">
               <form>
@@ -59,4 +59,4 @@ class SaranskHotelAuthenticHotel2 extends React.Component {
   };
 }
 // Export
-export default SaranskHotelAuthenticHotel2;
+export default SamaraHotelAuthenticHotel2;

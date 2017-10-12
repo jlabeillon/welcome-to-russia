@@ -4,24 +4,24 @@ import PropTypes from 'prop-types';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 // Local import
-import SaranskHotelAuthenticMain from 'src/components/Hotel/Hotels/Saransk/Authentic/Main'
-import SaranskHotelAuthenticHotel1 from 'src/components/Hotel/Hotels/Saransk/Authentic/Hotel1';
-import SaranskHotelAuthenticHotel2 from 'src/components/Hotel/Hotels/Saransk/Authentic/Hotel2';
-import SaranskHotelAuthenticHotel3 from 'src/components/Hotel/Hotels/Saransk/Authentic/Hotel3';
+import SamaraHotelAuthenticMain from 'src/components/Hotel/Hotels/Samara/Authentic/Main'
+import SamaraHotelAuthenticHotel1 from 'src/components/Hotel/Hotels/Samara/Authentic/Hotel1';
+import SamaraHotelAuthenticHotel2 from 'src/components/Hotel/Hotels/Samara/Authentic/Hotel2';
+import SamaraHotelAuthenticHotel3 from 'src/components/Hotel/Hotels/Samara/Authentic/Hotel3';
 
 // Code
-class SaranskAuthentic extends React.Component {
+class SamaraAuthentic extends React.Component {
   render() {
     return (
       <div>
-        <Route path="/city/saransk/hotels/authentic" exact component={SaranskHotelAuthenticMain} />
-        <Route path="/city/saransk/hotels/authentic/meridian" exact component={SaranskHotelAuthenticHotel1} />
-        <Route path="/city/saransk/hotels/authentic/park" exact component={SaranskHotelAuthenticHotel2} />
-        <Route path="/city/saransk/hotels/authentic/makarovskaya" exact component={SaranskHotelAuthenticHotel3} />
+        <Route path="/city/samara/hotels/authentic" exact component={SamaraHotelAuthenticMain} />
+        <Route path="/city/samara/hotels/authentic/hotel19" exact component={SamaraHotelAuthenticHotel1} />
+        <Route path="/city/samara/hotels/authentic/sivre" exact component={SamaraHotelAuthenticHotel2} />
+        <Route path="/city/samara/hotels/authentic/europe" exact component={SamaraHotelAuthenticHotel3} />
       </div>
     );
   };
 }
 
 // Export
-export default SaranskAuthentic;
+export default SamaraAuthentic;

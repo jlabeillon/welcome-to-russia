@@ -31,7 +31,7 @@ class Moscow extends React.Component {
             <NavLink to="/city/moscow/stadium/luzhniki" className="nav-left">Luzhniki stadium</NavLink>
             <NavLink to="/city/moscow/stadium/otkrytiye" className="nav-left">Otkrytiye stadium</NavLink>
             <a href="#" className="nav-left">Moscow transportation</a>
-            <NavLink to="/city/moscow/hotels/eco" className="nav-left">Moscow hotels</NavLink>
+            <NavLink to="/city/moscow/hotels/luxury" className="nav-left">Moscow hotels</NavLink>
             <NavLink to="/city/moscow/restaurants" className="nav-left">Moscow restaurants</NavLink>
           </div>
 

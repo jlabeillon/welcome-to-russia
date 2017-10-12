@@ -17,7 +17,7 @@ class Rostov extends React.Component {
           <div className="col-xs-2">
             <NavLink to="/city/rostov/stadium" className="nav-left">Rostov-on-Don stadium</NavLink>
             <a href="#" className="nav-left">Rostov-on-Don transportation</a>
-            <NavLink to="/city/rostov/hotels" className="nav-left">Rostov-on-Don hotels</NavLink>
+            <NavLink to="/city/rostov/hotels/luxury" className="nav-left">Rostov-on-Don hotels</NavLink>
             <NavLink to="/city/rostov/restaurants" className="nav-left">Rostov-on-Don restaurants</NavLink>
           </div>
 

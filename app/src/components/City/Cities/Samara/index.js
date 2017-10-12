@@ -17,7 +17,7 @@ class Samara extends React.Component {
           <div className="col-xs-2">
             <NavLink to="/city/samara/stadium" className="nav-left">Samara stadium</NavLink>
             <a href="#" className="nav-left">Samara transportation</a>
-            <NavLink to="/city/samara/hotels/eco" className="nav-left">Samara hotels</NavLink>
+            <NavLink to="/city/samara/hotels/luxury" className="nav-left">Samara hotels</NavLink>
             <NavLink to="/city/samara/restaurants" className="nav-left">Samara restaurants</NavLink>
           </div>
 

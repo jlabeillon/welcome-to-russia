@@ -36,6 +36,18 @@ import SamaraEco from 'src/components/Hotel/Hotels/Samara/Eco';
 import SamaraAuthentic from 'src/components/Hotel/Hotels/Samara/Authentic';
 import SamaraLuxury from 'src/components/Hotel/Hotels/Samara/Luxury';
 
+import RostovEco from 'src/components/Hotel/Hotels/Rostov/Eco';
+import RostovAuthentic from 'src/components/Hotel/Hotels/Rostov/Authentic';
+import RostovLuxury from 'src/components/Hotel/Hotels/Rostov/Luxury';
+
+import KaliningradEco from 'src/components/Hotel/Hotels/Kaliningrad/Eco';
+import KaliningradAuthentic from 'src/components/Hotel/Hotels/Kaliningrad/Authentic';
+import KaliningradLuxury from 'src/components/Hotel/Hotels/Kaliningrad/Luxury';
+
+import NovgorodEco from 'src/components/Hotel/Hotels/Novgorod/Eco';
+import NovgorodAuthentic from 'src/components/Hotel/Hotels/Novgorod/Authentic';
+import NovgorodLuxury from 'src/components/Hotel/Hotels/Novgorod/Luxury';
+
 // Code
 class Hotel extends React.Component {
   render() {
@@ -72,6 +84,18 @@ class Hotel extends React.Component {
         <Route path="/city/samara/hotels/eco" component={SamaraEco} />
         <Route path="/city/samara/hotels/authentic" component={SamaraAuthentic} />
         <Route path="/city/samara/hotels/luxury" component={SamaraLuxury} />
+
+        <Route path="/city/rostov/hotels/eco" component={RostovEco} />
+        <Route path="/city/rostov/hotels/authentic" component={RostovAuthentic} />
+        <Route path="/city/rostov/hotels/luxury" component={RostovLuxury} />
+
+        <Route path="/city/kaliningrad/hotels/eco" component={KaliningradEco} />
+        <Route path="/city/kaliningrad/hotels/authentic" component={KaliningradAuthentic} />
+        <Route path="/city/kaliningrad/hotels/luxury" component={KaliningradLuxury} />
+
+        <Route path="/city/novgorod/hotels/eco" component={NovgorodEco} />
+        <Route path="/city/novgorod/hotels/authentic" component={NovgorodAuthentic} />
+        <Route path="/city/novgorod/hotels/luxury" component={NovgorodLuxury} />
       </div>
     );
   };
