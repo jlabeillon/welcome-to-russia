@@ -95,20 +95,20 @@ class Home extends React.Component {
         {/* Bottom nav */}
         <div className="row col-xs-12" id="bottom-nav-container">
           <div className="image">
-            <a href=""><img className="bottom-nav" src="/images/visa-home.jpg" />
-            <span id="visa-home-container"><p id="visa-home-text">visa</p></span></a>
+            <NavLink to="/visa"><img className="bottom-nav" src="/images/visa-home.jpg" />
+            <span id="visa-home-container"><p id="visa-home-text">visa</p></span></NavLink>
           </div>
           <div className="image">
-            <a href=""><img className="bottom-nav" src="/images/hotels-home.jpg" />
-            <span id="hotels-home-container"><p id="hotels-home-text">hotels</p></span></a>
+            <NavLink to="/hotels"><img className="bottom-nav" src="/images/hotels-home.jpg" />
+            <span id="hotels-home-container"><p id="hotels-home-text">hotels</p></span></NavLink>
           </div>
           <div className="image">
-            <a href=""><img className="bottom-nav" src="/images/competition-home.jpg" />
-            <span id="competition-home-container"><p id="competition-home-text">competition</p></span></a>
+            <NavLink to="/competition"><img className="bottom-nav" src="/images/competition-home.jpg" />
+            <span id="competition-home-container"><p id="competition-home-text">competition</p></span></NavLink>
           </div>
           <div className="image">
-            <a href=""><img className="bottom-nav" src="/images/transportation-home.jpg" />
-            <span id="transports-home-container"><p id="transports-home-text">transports</p></span></a>
+            <NavLink to="/transports"><img className="bottom-nav" src="/images/transportation-home.jpg" />
+            <span id="transports-home-container"><p id="transports-home-text">transports</p></span></NavLink>
           </div>
         </div>
         {/* Footer */}

@@ -25,7 +25,7 @@ class NovgorodEcoMain extends React.Component {
           <div className="row">
             <div className="col-xs-12">
               <NavLink to="/city/novgorod/hotels/eco/mona">
-              <img className="hotels-image" src="/images/hotels/novgorod-eco-mona.jpg" />
+              <img className="hotels-image" src="/images/hotels/Novgorod/novgorod-eco-mona.jpg" />
               <p className="hotels-description">Located in a green area of Nizhniy Novgorod, a 30-minute drive to the city centre, Hotel Mona Lisa features an outdoor swimming pool. The Volga River is a 15-minute walk away.</p>
               </NavLink>
             </div>
@@ -34,7 +34,7 @@ class NovgorodEcoMain extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/novgorod/hotels/eco/baget">
-            <img className="hotels-image" src="/images/hotels/novgorod-eco-baget.jpg" />
+            <img className="hotels-image" src="/images/hotels/Novgorod/novgorod-eco-baget.jpg" />
             <p className="hotels-description">Located a 10-minute walk from the Nizhny Novgorod Kremlin, Baget Hotel features rooms with a contemporary décor. It offers a 24-hour front desk.</p>
             </NavLink>
           </div>
@@ -43,7 +43,7 @@ class NovgorodEcoMain extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/novgorod/hotels/eco/max">
-            <img className="hotels-image" src="/images/hotels/novgorod-eco-max.jpg" />
+            <img className="hotels-image" src="/images/hotels/Novgorod/novgorod-eco-max.jpg" />
             <p className="hotels-description">Offering a restaurant, MaxxRoyal Hotel is located in Nizhniy Novgorod, a 20-minute drive from city centre. Free WiFi access is available.</p>
             </NavLink>
           </div>

@@ -25,7 +25,7 @@ class MoscowLuxury extends React.Component {
           <div className="row">
             <div className="col-xs-12">
               <NavLink to="/city/moscow/hotels/luxury/ararat">
-              <img className="hotels-image" src="/images/hotels/moscow-luxury-ararat.jpg" />
+              <img className="hotels-image" src="/images/hotels/Moscow/moscow-luxury-ararat.jpg" />
               <p className="hotels-description">Ararat Park Hyatt has an excellent location 5 minutes from Red Square in the prime shopping area, moments from both TSUM and Detsky Mir department stores. It features superb service.</p>
               </NavLink>
             </div>
@@ -34,7 +34,7 @@ class MoscowLuxury extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/moscow/hotels/luxury/regis">
-            <img className="hotels-image" src="/images/hotels/moscow-luxury-regis.jpg" />
+            <img className="hotels-image" src="/images/hotels/Moscow/moscow-luxury-regis.jpg" />
             <p className="hotels-description">This 5-star hotel is in a central location in the heart of Moscow, right on Lubyanka Square, a 10-minute walk from the Kremlin. Rooms with personalized St. Regis Butler Service and free Wi-Fi are featured at St. Regis Moscow Nikolskaya.</p>
             </NavLink>
           </div>
@@ -43,7 +43,7 @@ class MoscowLuxury extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/moscow/hotels/luxury/four">
-            <img className="hotels-image" src="/images/hotels/moscow-luxury-four.jpg" />
+            <img className="hotels-image" src="/images/hotels/Moscow/moscow-luxury-four.jpg" />
             <p className="hotels-description">Four Seasons Hotel Moscow is in the historic building of Moskva Hotel, in the very heart of Moscow, a short walk from the Kremlin, Red Square and the Bolshoi Theatre. Free Wi-Fi access is available in this 5-star hotel.</p>
             </NavLink>
           </div>

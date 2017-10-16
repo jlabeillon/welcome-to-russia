@@ -25,7 +25,7 @@ class KazanLuxuryMain extends React.Component {
           <div className="row">
             <div className="col-xs-12">
               <NavLink to="/city/kazan/hotels/luxury/hilton">
-              <img className="hotels-image" src="/images/hotels/kazan-luxury-hilton.jpg" />
+              <img className="hotels-image" src="/images/hotels/Kazan/kazan-luxury-hilton.jpg" />
               <p className="hotels-description">Located in the heart of Kazan city, the hotel is a 5-minute walk from historic sites such as the Kazan Kremlin, the National Museum of Tatarstan and Kazan Academic Drama Theatre. Free WiFi and free private parking are available on site.</p>
               </NavLink>
             </div>
@@ -34,7 +34,7 @@ class KazanLuxuryMain extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/kazan/hotels/luxury/shalyapin">
-            <img className="hotels-image" src="/images/hotels/kazan-luxury-shalyapin.jpg" />
+            <img className="hotels-image" src="/images/hotels/Kazan/kazan-luxury-shalyapin.jpg" />
             <p className="hotels-description">The Shalyapin Palace is a 4-star hotel, centrally located in Kazan near the pedestrian zone of Baumana street. The hotel has a total of 123 classically-designed guest rooms, offering the guest a clean and comfortable place to stay.</p>
             </NavLink>
           </div>
@@ -43,7 +43,7 @@ class KazanLuxuryMain extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/kazan/hotels/luxury/luciano">
-            <img className="hotels-image" src="/images/hotels/kazan-luxury-luciano.jpg" />
+            <img className="hotels-image" src="/images/hotels/Kazan/kazan-luxury-luciano.jpg" />
             <p className="hotels-description">This spa hotel features 5 indoor swimming pools, 7 saunas, 3 thermal baths, and a fully-equipped fitness centre. It is located just one metro stop from the impressive Kazan Kremlin. Free private parking is featured.</p>
             </NavLink>
           </div>

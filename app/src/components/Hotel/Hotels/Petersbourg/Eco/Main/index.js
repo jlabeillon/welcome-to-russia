@@ -25,7 +25,7 @@ class MoscowEco extends React.Component {
           <div className="row">
             <div className="col-xs-12">
               <NavLink to="/city/petersbourg/hotels/eco/piter">
-              <img className="hotels-image" src="/images/hotels/petersbourg-eco-piters.jpg" />
+              <img className="hotels-image" src="/images/hotels/Petersbourg/petersbourg-eco-piters.jpg" />
               <p className="hotels-description">Piter’s house na Nevskom is located in the Tsentralny district district in Saint Petersburg, 2.7 km from State Russian Museum.
 
               Each room has a flat-screen TV. Certain units feature a seating area for your convenience. You will find a kettle in the room. Every room is equipped with a private bathroom. For your comfort, you will find slippers, free toiletries and a hairdryer. Piters house na Nevskom features free WiFi throughout the property.</p>
@@ -36,7 +36,7 @@ class MoscowEco extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/petersbourg/hotels/eco/capital">
-            <img className="hotels-image" src="/images/hotels/petersbourg-eco-capital.jpg" />
+            <img className="hotels-image" src="/images/hotels/Petersbourg/petersbourg-eco-capital.jpg" />
             <p className="hotels-description">This hotel is located in the heart of Saint Petersburg, just a 4-minute walk from the Sennaya Square and Sadovaya Metro Station. Free Wi-Fi is featured at Capital Hotel.</p>
             </NavLink>
           </div>
@@ -45,7 +45,7 @@ class MoscowEco extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/petersbourg/hotels/eco/gora">
-            <img className="hotels-image" src="/images/hotels/petersbourg-eco-gora.jpg" />
+            <img className="hotels-image" src="/images/hotels/Petersbourg/petersbourg-eco-gora.jpg" />
             <p className="hotels-description">Featuring free WiFi throughout the property, Staraya Gora Hostel is located in Saint Petersburg, 900 m from State Russian Museum.</p>
             </NavLink>
           </div>

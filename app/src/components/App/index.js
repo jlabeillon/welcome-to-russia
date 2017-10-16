@@ -7,8 +7,9 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import City from 'src/components/City';
 import Home from 'src/components/Home';
 import Hotel from 'src/components/Hotel';
-import Restaurants from 'src/components/Restaurants';
+import Restaurant from 'src/components/Restaurant';
 import Stadium from 'src/components/Stadium';
+import Visa from 'src/components/Visa';
 
 // Code
 class App extends React.Component {
@@ -19,9 +20,10 @@ class App extends React.Component {
           <Route path="/city/:city" exact component={City} />
           <Route path="/city/:city/hotels/:category" exact component={Hotel} />
           <Route path="/city/:city/hotels/:category/:hotel" exact component={Hotel} />
-          <Route path="/city/:city/restaurants" exact component={Restaurants} />
+          <Route path="/city/:city/restaurants" exact component={Restaurant} />
           <Route path="/city/:city/stadium" exact component={Stadium} />
           <Route path="/city/:city/stadium/:name" exact component={Stadium} />
+          <Route path="/visa" exact component={Visa} />
       </div>
     );
   };

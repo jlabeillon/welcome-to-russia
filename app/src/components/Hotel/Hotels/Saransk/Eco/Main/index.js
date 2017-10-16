@@ -25,10 +25,8 @@ class SaranskEcoMain extends React.Component {
           <div className="row">
             <div className="col-xs-12">
               <NavLink to="/city/saransk/hotels/eco/shpinat">
-              <img className="hotels-image" src="/images/hotels/saransk-eco-shpinat.jpg" />
-              <p className="hotels-description">Hostel Shpinat is located in Saransk, just 1.9 km from Mordovia Arena.
-
-              There is a 24-hour front desk at the property.</p>
+              <img className="hotels-image" src="/images/hotels/Saransk/saransk-eco-shpinat.jpg" />
+              <p className="hotels-description">Hostel Shpinat is located in Saransk, just 1.9 km from Mordovia Arena.</p>
               </NavLink>
             </div>
           </div>
@@ -36,7 +34,7 @@ class SaranskEcoMain extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/saransk/hotels/eco/olympia">
-            <img className="hotels-image" src="/images/hotels/saransk-eco-olympia.jpg" />
+            <img className="hotels-image" src="/images/hotels/Saransk/saransk-eco-olympia.jpg" />
             <p className="hotels-description">Located just a 15-minute walk from Mordovian Fine Arts Museum, Hotel Olympia features a sauna, indoor swimming pool and wellness centre. This property offers a steam bath, fitness centre and billiards.</p>
             </NavLink>
           </div>
@@ -45,7 +43,7 @@ class SaranskEcoMain extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/saransk/hotels/eco/vizit">
-            <img className="hotels-image" src="/images/hotels/saransk-eco-vizit.jpg" />
+            <img className="hotels-image" src="/images/hotels/Saransk/saransk-eco-vizit.jpg" />
             <p className="hotels-description">Featuring free WiFi throughout the property, Hotel Vizit offers accommodations in Saransk. Guests can enjoy the on-site restaurant. Free private parking is available on site.</p>
             </NavLink>
           </div>

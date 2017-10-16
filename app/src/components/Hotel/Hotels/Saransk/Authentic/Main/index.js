@@ -25,7 +25,7 @@ class SaranskAuthenticMain extends React.Component {
           <div className="row">
             <div className="col-xs-12">
               <NavLink to="/city/saransk/hotels/authentic/meridian">
-              <img className="hotels-image" src="/images/hotels/saransk-authentic-meridian.jpg" />
+              <img className="hotels-image" src="/images/hotels/Saransk/saransk-authentic-meridian.jpg" />
               <p className="hotels-description">This hotel is located in the centre of Saransk, a 5-minute walk from the National Theatre of Mordovia. Free Wi-Fi, a sauna, billiards and a 24-hour reception are featured at Meridian Hotel.</p>
               </NavLink>
             </div>
@@ -34,7 +34,7 @@ class SaranskAuthenticMain extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/saransk/hotels/authentic/park">
-            <img className="hotels-image" src="/images/hotels/saransk-authentic-park.jpg" />
+            <img className="hotels-image" src="/images/hotels/Saransk/saransk-authentic-park.jpg" />
             <p className="hotels-description">Located 1.3 km from Mordovia Arena in Saransk, Park Hotel features a restaurant and free WiFi. The hotel has a sauna and fitness center, and guests can enjoy a meal at the restaurant. Free private parking is available on site.</p>
             </NavLink>
           </div>
@@ -43,7 +43,7 @@ class SaranskAuthenticMain extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/saransk/hotels/authentic/makarovskaya">
-            <img className="hotels-image" src="/images/hotels/saransk-authentic-makarovskaya.jpg" />
+            <img className="hotels-image" src="/images/hotels/Saransk/saransk-authentic-makarovskaya.jpg" />
             <p className="hotels-description">Located 8 km from the city centre of Saransk, Hotel Makarovskaya features an on-site restaurant serving Russian cuisine, free internet access, and free private parking.</p>
             </NavLink>
           </div>

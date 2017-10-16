@@ -25,7 +25,7 @@ class SamaraAuthenticMain extends React.Component {
           <div className="row">
             <div className="col-xs-12">
               <NavLink to="/city/samara/hotels/authentic/hotel19">
-              <img className="hotels-image" src="/images/hotels/samara-authentic-hotel19.jpg" />
+              <img className="hotels-image" src="/images/hotels/Samara/samara-authentic-hotel19.jpg" />
               <p className="hotels-description">Featuring free WiFi, HOTEL 19 offers accommodation in Mekhzavod. Guests can enjoy the on-site restaurant. Free private parking is available on site.</p>
               </NavLink>
             </div>
@@ -34,7 +34,7 @@ class SamaraAuthenticMain extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/samara/hotels/authentic/sivre">
-            <img className="hotels-image" src="/images/hotels/samara-authentic-sivre.jpg" />
+            <img className="hotels-image" src="/images/hotels/Samara/samara-authentic-sivre.jpg" />
             <p className="hotels-description">This property is 4 minutes walk from the beach. Offering bike rental, Dom Sivre Hotel is located in Samara, a minutes’ walk from the bank of the Volga River. Free WiFi and private parking are available.</p>
             </NavLink>
           </div>
@@ -43,7 +43,7 @@ class SamaraAuthenticMain extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/samara/hotels/authentic/europe">
-            <img className="hotels-image" src="/images/hotels/samara-authentic-europe.jpg" />
+            <img className="hotels-image" src="/images/hotels/Samara/samara-authentic-europe.jpg" />
             <p className="hotels-description">This property is 11 minutes walk from the beach. Situated in the historic city centre of Samara, this hotel features free Wi-Fi. Russian specialities are served in the hotel restaurant, and guests benefit from a 24-hour reception.</p>
             </NavLink>
           </div>

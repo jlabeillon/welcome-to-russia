@@ -25,7 +25,7 @@ class PetersbourgAuthentic extends React.Component {
           <div className="row">
             <div className="col-xs-12">
               <NavLink to="/city/petersbourg/hotels/authentic/pushka">
-              <img className="hotels-image" src="/images/hotels/petersbourg-authentic-pushka.jpg" />
+              <img className="hotels-image" src="/images/hotels/Petersbourg/petersbourg-authentic-pushka.jpg" />
               <p className="hotels-description">Pushka Inn is a 18th Century mansion located in an historic part of St. Petersburg, one minute walk from the Palace Square. It offers non-smoking rooms with air conditioning, satellite TV and free Wi-Fi.</p>
               </NavLink>
             </div>
@@ -34,7 +34,7 @@ class PetersbourgAuthentic extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/petersbourg/hotels/authentic/ekaterina">
-            <img className="hotels-image" src="/images/hotels/petersbourg-authentic-ekaterina.jpg" />
+            <img className="hotels-image" src="/images/hotels/Petersbourg/petersbourg-authentic-ekaterina.jpg" />
             <p className="hotels-description">Featuring free WiFi and a restaurant, Ekaterina Hotel offers accommodation in Saint Petersburg, 600 m from Church of the Savior on Spilled Blood and 700 m from Hermitage.</p>
             </NavLink>
           </div>
@@ -43,7 +43,7 @@ class PetersbourgAuthentic extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/petersbourg/hotels/authentic/hermitage">
-            <img className="hotels-image" src="/images/hotels/petersbourg-authentic-hermitage.jpg" />
+            <img className="hotels-image" src="/images/hotels/Petersbourg/petersbourg-authentic-hermitage.jpg" />
             <p className="hotels-description">This exclusive 5-star hotel is set in the 1830s mansion in the centre of Saint Petersburg and represents the atmosphere of the original Hermitage Museum. Spa and wellness centre and free Wi-Fi is featured here.</p>
             </NavLink>
           </div>

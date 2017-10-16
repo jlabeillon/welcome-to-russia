@@ -25,7 +25,7 @@ class SochiEcoMain extends React.Component {
           <div className="row">
             <div className="col-xs-12">
               <NavLink to="/city/sochi/hotels/eco/victor">
-              <img className="hotels-image" src="/images/hotels/sochi-eco-victor.jpg" />
+              <img className="hotels-image" src="/images/hotels/Sochi/sochi-eco-victor.jpg" />
               <p className="hotels-description">This property is 7 minutes walk from the beach. Just 450 m from the Black Sea, this non-smoking hotel in Sochi stands beside the Arboretum Park and State Circus. It offers Wi-Fi, a 24-hour reception, and a spacious terrace.</p>
               </NavLink>
             </div>
@@ -34,7 +34,7 @@ class SochiEcoMain extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/sochi/hotels/eco/prima">
-            <img className="hotels-image" src="/images/hotels/sochi-eco-prima.jpg" />
+            <img className="hotels-image" src="/images/hotels/Sochi/sochi-eco-prima.jpg" />
             <p className="hotels-description">This property is 4 minutes walk from the beach. Featuring free WiFi, a year-round outdoor pool and a seasonal outdoor pool, Pansionat PrimaVera offers accommodation in Sochi. Guests can enjoy the on-site restaurant.</p>
             </NavLink>
           </div>
@@ -43,7 +43,7 @@ class SochiEcoMain extends React.Component {
           <div className="row">
           <div className="col-xs-12">
             <NavLink to="/city/sochi/hotels/eco/marika">
-            <img className="hotels-image" src="/images/hotels/sochi-eco-marika.jpg" />
+            <img className="hotels-image" src="/images/hotels/Sochi/sochi-eco-marika.jpg" />
             <p className="hotels-description">Offering an outdoor pool and barbecue, Marika Hotel is set in Sochi, a 10-minute walk of the Black Sea coast. Guests can enjoy the on-site restaurant. Free WiFi is provided and free private parking is available on site.</p>
             </NavLink>
           </div>
