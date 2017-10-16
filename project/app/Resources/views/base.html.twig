@@ -19,8 +19,16 @@
 		     <a href="/competition">Competition</a>
 		   </div>
 		   <div id="header-connection">
-		     <a href="/signup">Signup</a>
-		     <a href="/signin">Signin</a>
+			   {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+	   {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+	   <a href="{{ path('fos_user_security_logout') }}">
+		   {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+	   </a>
+   {% else %}
+	   <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+   {% endif %}
+</div>
+
 		   </div>
 		 </div>
 	 </header>

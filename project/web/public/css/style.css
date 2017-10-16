@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Dusha;
+    src: url(Dusha.ttf);
+}
 h1 {
 	color: red;
 	font-size: 100px;
