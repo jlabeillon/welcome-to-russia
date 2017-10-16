@@ -4,10 +4,26 @@
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-		<link rel="stylesheet" type="text/css" href="{{ asset('public/css/style.css') }}" />
+         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('public/css/style.css') }}" />
     </head>
     <body>
+		<header><div>
+		   <img id="header-logo" src="/images/FIFA_World_Cup_2018_Logo.png" />
+		   <div id="header-menu">
+		     <a href="/">Home</a>
+		     <a href="/transports">Transports</a>
+		     <a href="/accommodation">Accommodation</a>
+		     <a href="/come-to-russia">Come to Russia</a>
+		     <a href="/fan-zone">Fan zone</a>
+		     <a href="/competition">Competition</a>
+		   </div>
+		   <div id="header-connection">
+		     <a href="/signup">Signup</a>
+		     <a href="/signin">Signin</a>
+		   </div>
+		 </div>
+	 </header>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
