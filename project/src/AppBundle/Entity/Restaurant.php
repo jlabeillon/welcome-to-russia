@@ -43,19 +43,31 @@ class Restaurant
     private $phone;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string")
      */
-    private $email;
+    private $image;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="string")
      */
-    private $description;
+    private $cuisine;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    private $goodfor;
+
+    /**
+     * @ORM\Column(type="string", length=50)
+     */
+    private $price;
 
     /**
      * @ORM\ManyToOne(targetEntity="City", inversedBy="restaurant")
      */
     private $city;
+
+
 
     /**
      * @return mixed
@@ -113,37 +125,9 @@ class Restaurant
         $this->phone = $phone;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getEmail()
-    {
-        return $this->email;
-    }
 
-    /**
-     * @param mixed $email
-     */
-    public function setEmail($email)
-    {
-        $this->email = $email;
-    }
 
-    /**
-     * @return mixed
-     */
-    public function getDescription()
-    {
-        return $this->description;
-    }
 
-    /**
-     * @param mixed $description
-     */
-    public function setDescription($description)
-    {
-        $this->description = $description;
-    }
 
     /**
      * @return mixed
@@ -180,6 +164,55 @@ class Restaurant
     {
         $this->slug = $slug;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param mixed $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCuisine()
+    {
+        return $this->cuisine;
+    }
+
+    /**
+     * @param mixed $cuisine
+     */
+    public function setCuisine($cuisine)
+    {
+        $this->cuisine = $cuisine;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGoodfor()
+    {
+        return $this->goodfor;
+    }
+
+    /**
+     * @param mixed $goodfor
+     */
+    public function setGoodfor($goodfor)
+    {
+        $this->goodfor = $goodfor;
+    }
+
 
 
 }

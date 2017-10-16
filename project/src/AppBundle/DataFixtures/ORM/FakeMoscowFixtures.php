@@ -65,10 +65,14 @@ class FakeMoscowFixtures extends Fixture
         $manager->persist($hotelMoscowLux);
 
         $restaurantMoscow1 = new Restaurant();
-        $restaurantMoscow1->setPhone('05 55 87 91 06');
-        $restaurantMoscow1->setEmail('turandot@gmail.com');
-        $restaurantMoscow1->setDescription('Lieu magnifique, on se croirait au 19ème siècle dans un palace italien. Accueil chaleureux et serveurs attentionnés et discrets. Repas délicieux, poisson cuisines avec délicatesse, desserts succulents.');
-        $restaurantMoscow1->setName('Turandot');
+        $restaurantMoscow1->setPhone('+7 343 285-19-74');
+        $restaurantMoscow1->setName('Cafe Pushkin');
+        $restaurantMoscow1->setImage('/images/restaurants/Moscow/moscow-pushkin.jpg');
+        $restaurantMoscow1->setCuisine('European, Russian, Eastern European, Central European, Vegetarian, Friendly, Vegan Options, Gluten Free Options');
+        $restaurantMoscow1->setGoodfor('ocal cuisine, Large groups, Special occasions, Business meetings, Families with children, Romantic');
+
+
+
         $slug = new Slugify();
         $restaurantMoscow1Slug = $slug->slugify($restaurantMoscow1->getName());
         $restaurantMoscow1->setSlug($restaurantMoscow1Slug);
@@ -79,8 +83,6 @@ class FakeMoscowFixtures extends Fixture
 
         $restaurantMoscow2 = new Restaurant();
         $restaurantMoscow2->setPhone('05 55 87 91 06');
-        $restaurantMoscow2->setEmail('whiterabbit@gmail.com');
-        $restaurantMoscow2->setDescription('Le classement parmi les 50 meilleurs restaurants au Monde n\'est pas usurpé. Le menu de dégustation est un véritable plongeon dans la cuisine Russe revisité.');
         $restaurantMoscow2->setName('White Rabbit');
         $slug = new Slugify();
         $restaurantMoscow2Slug = $slug->slugify($restaurantMoscow2->getName());
