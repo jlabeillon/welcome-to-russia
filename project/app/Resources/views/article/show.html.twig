@@ -2,7 +2,9 @@
 
 {% block body %}
     <h1>{{article.title}}</h1>
+	<img src="{{asset('public/pic/' ~ article.image)}}"> 
 <h3>{{article.content}}</h3>
+
 
 
 	<h2>Commentaires</h2>

@@ -6,6 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 // Ajout de la classe ArrayCollection de Doctrine
 use Doctrine\Common\Collections\ArrayCollection;
 use AppBundle\Entity\Commentaire;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity
@@ -29,6 +30,14 @@ class Article
      * @ORM\Column(type="text")
      */
     private $content;
+
+    /**
+     * @ORM\Column(type="string")
+     *
+     * @Assert\NotBlank(message="Please, upload a image.")
+     * @Assert\File(mimeTypes={ "image/jpeg" })
+     */
+    private $image;
 
     /**
      * @ORM\OneToMany(targetEntity="Commentaire", mappedBy="article")
@@ -146,6 +155,18 @@ class Article
     public function setCommentaires($commentaires)
     {
         $this->commentaires = $commentaires;
+
+        return $this;
+    }
+
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    public function setImage($image)
+    {
+        $this->image = $image;
 
         return $this;
     }

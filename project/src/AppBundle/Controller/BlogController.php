@@ -46,6 +46,21 @@ class BlogController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+             /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
+            $file = $article->getImage();
+
+            // Generate a unique name for the file before saving it
+            $fileName = md5(uniqid()).'.'.$file->guessExtension();
+
+            // Move the file to the directory where brochures are stored
+            $file->move(
+                $this->getParameter('images_directory'),
+                $fileName
+            );
+
+            // Update the 'brochure' property to store the PDF file name
+            // instead of its contents
+            $article->setImage($fileName);
             $em->persist($article);
             $em->flush();
 
