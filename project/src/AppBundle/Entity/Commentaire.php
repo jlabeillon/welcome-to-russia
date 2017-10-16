@@ -29,13 +29,13 @@ class Commentaire
      */
     private $content;
     /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="publishedAt", type="datetime")
-     */
+    * @var \DateTime
+    * @ORM\Column(name="publishedAt", type="datetime")
+    */
     private $publishedAt;
     /**
      * @ORM\ManyToOne(targetEntity="Article", inversedBy="commentaires")
+     * @ORM\JoinColumn(name="article_id", referencedColumnName="id")
      */
 
     private $article;
@@ -107,7 +107,6 @@ class Commentaire
     {
         return $this->publishedAt;
     }
-
     /**
      * Set the value of Published At
      *
@@ -118,7 +117,6 @@ class Commentaire
     public function setPublishedAt(\DateTime $publishedAt)
     {
         $this->publishedAt = $publishedAt;
-
         return $this;
     }
 

@@ -74,9 +74,12 @@ class BlogController extends Controller
         if ($form->isSubmitted() && $form->isValid())
         {
             $em = $this->getDoctrine()->getManager();
+            //$article->addCommentaire($commentaire);
+            $commentaire->setArticle($article);
+            $commentaire->setPublishedAt(new \DateTime());
             $em->persist($commentaire);
             $em->flush();
-            return $this->redirectToRoute('article_index', array('id' => $commentaire->getId()));
+            return $this->redirectToRoute('article_show', array('id' => $article->getId()));
         }
         return $this->render('article/show.html.twig', array(
             'article' => $article,

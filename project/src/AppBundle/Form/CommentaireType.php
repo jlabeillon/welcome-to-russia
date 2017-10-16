@@ -4,6 +4,8 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+
 class CommentaireType extends AbstractType
 {
     /**
@@ -13,14 +15,7 @@ class CommentaireType extends AbstractType
     {
         $builder
         ->add('username')
-        ->add('content', null, [
-            'label' => 'Contenu',
-            'attr' => [
-                'placeholder' => 'Veuillez entrez votre commentaire',
-            ]
-        ])
-        ->add('publishedAt')
-        ->add('article');
+        ->add('content', TextareaType::class);
     }
     /**
      * {@inheritdoc}

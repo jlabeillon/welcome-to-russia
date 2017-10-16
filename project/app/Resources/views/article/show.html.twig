@@ -9,17 +9,14 @@
 	{% for commentaire in article.commentaires %}
 
 	<p>{{commentaire.content}}</p>
-	<p>Le {% if commentaire.publishedAt %}{{ commentaire.publishedAt|date('Y-m-d H:i:s') }}{% endif %} par {{commentaire.username}} </p>
-
+	<p>By {{commentaire.username}} on <time datetime="{{ commentaire.publishedAt|date('c') }}">{{commentaire.publishedAt|date('l, F j, Y') }}</time></p>
 	{% endfor %}
 
 	<h3>	Poster un commentaire 	</h3>
 
 	 {{ form_start(form) }}
         {{ form_row(form.content) }}
-		{{ form_row(form.article) }}
 		{{ form_row(form.username) }}
-		{{ form_row(form.publishedAt) }}
 
 
 
