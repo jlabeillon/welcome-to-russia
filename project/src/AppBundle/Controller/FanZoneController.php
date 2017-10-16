@@ -25,8 +25,9 @@ class FanZoneController extends Controller
         $fanzone = $this->getDoctrine()->getRepository(FanZone::class)->findAll();
         $jsonContent = $serializer->serialize($fanzone, 'json');
 
-        return new Response($jsonContent);
-    }
+        $response = new Response($jsonContent);
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        return $response;    }
 
     /**
      * @Route("/json/fanzone/{id}", name="fanzone_show")
@@ -38,8 +39,9 @@ class FanZoneController extends Controller
         $fanzone = $this->getDoctrine()->getRepository(FanZone::class)->findOneById($id);
         $jsonContent = $serializer->serialize($fanzone, 'json');
 
-        return new Response($jsonContent);
-
+        $response = new Response($jsonContent);
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        return $response;
 
     }
 }

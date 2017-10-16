@@ -13,6 +13,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\ORM\EntityManagerInterface;
 use Cocur\Slugify\Slugify;
+use AppBundle\Repository\HotelRepository;
 
 class HotelController extends Controller
 {
@@ -28,38 +29,42 @@ class HotelController extends Controller
         $hotel = $this->getDoctrine()->getRepository(Hotel::class)->findAll();
         $jsonContent = $serializer->serialize($hotel, 'json');
 
-        return new Response($jsonContent);
+        $response = new Response($jsonContent);
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        return $response;
 
     }
 
     /**
-     * @Route("json/hotel/{id}", name="hotel_show")
+     * @Route("json/hotel/{slug}", name="hotel_show")
      */
-    public function showAction($id)
+    public function showAction($slug)
     {
 
         $serializer = $this->container->get('jms_serializer');
-        $hotel = $this->getDoctrine()->getRepository(Hotel::class)->findOneById($id);
+        $hotel = $this->getDoctrine()->getRepository(Hotel::class)->findOneBySlug($slug);
         $jsonContent = $serializer->serialize($hotel, 'json');
 
-        return new Response($jsonContent);
-
+        $response = new Response($jsonContent);
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        return $response;
 
     }
 
     /**
-     * @Route("json/hotel/by/{slug}", name="hotel_by_city")
+     * @Route("json/hotel/by/city/{id}", name="hotel_by_city")
      */
-    public function byCityAction($slug)
+    public function byCityAction($id)
     {
 
         $serializer = $this->container->get('jms_serializer');
 
-        $hotel = $this->getDoctrine()->getRepository(Hotel::class);
+        $hotel = $this->getDoctrine()->getRepository(Hotel::class)->findByCity($id);
         $jsonContent = $serializer->serialize($hotel, 'json');
 
-        return new Response($jsonContent);
-
+        $response = new Response($jsonContent);
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        return $response;
 
     }
 }

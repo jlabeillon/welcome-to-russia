@@ -11,6 +11,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\ORM\EntityManagerInterface;
+use AppBundle\Repository\RestaurantRepository;
+
 
 class RestaurantController extends Controller
 {
@@ -25,8 +27,9 @@ class RestaurantController extends Controller
         $restaurant = $this->getDoctrine()->getRepository(Restaurant::class)->findAll();
         $jsonContent = $serializer->serialize($restaurant, 'json');
 
-        return new Response($jsonContent);
-    }
+        $response = new Response($jsonContent);
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        return $response;    }
 
     /**
      * @Route("/json/restaurant/{id}", name="restaurant_show")
@@ -38,8 +41,27 @@ class RestaurantController extends Controller
         $restaurant = $this->getDoctrine()->getRepository(Restaurant::class)->findOneById($id);
         $jsonContent = $serializer->serialize($restaurant, 'json');
 
-        return new Response($jsonContent);
-
+        $response = new Response($jsonContent);
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        return $response;
 
     }
+
+    /**
+     * @Route("json/restaurant/by/city/{id}", name="restaurant_by_city")
+     */
+    public function byCityAction($id)
+    {
+
+        $serializer = $this->container->get('jms_serializer');
+
+        $hotel = $this->getDoctrine()->getRepository(Restaurant::class)->findByCity($id);
+        $jsonContent = $serializer->serialize($hotel, 'json');
+
+        $response = new Response($jsonContent);
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        return $response;
+
+    }
+
 }

@@ -40,7 +40,9 @@ class CityController extends Controller
         $city = $this->getDoctrine()->getRepository(City::class)->findOneBySlug($slug);
         $jsonContent = $serializer->serialize($city, 'json');
 
-        return new Response($jsonContent);
+        $response = new Response($jsonContent);
+        $response->headers->set('Access-Control-Allow-Origin', '*');
+        return $response;
 
 
     }
