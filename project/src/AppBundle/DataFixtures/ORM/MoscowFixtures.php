@@ -18,6 +18,8 @@ class MoscowFixtures extends Fixture
     {
         $moscow = New City();
         $manager->persist($moscow);
+    ####################################################################################################################
+
 
 
 
@@ -25,6 +27,7 @@ class MoscowFixtures extends Fixture
 
 
         #Hotel Fixtures
+    ####################################################################################################################
         $hotelMoscow1 = new Hotel();
         $hotelMoscow1->setName('People Business Novinsky Hotel');
         $hotelMoscow1->setShortdescription('Located 50 m from Moscow’s vibrant Noviy Arbat Street, PEOPLE Business Novinsky Hotel is just 2 metro stops from the Kremlin. Rooms feature a flat-screen TV and free Wi-Fi.');
@@ -166,12 +169,16 @@ class MoscowFixtures extends Fixture
         $hotelMoscow9->setSlug($hotelMoscow9Slug);
         $hotelMoscow9->setCity($moscow);
         $manager->persist($hotelMoscow9);
+    ####################################################################################################################
+
+
 
 
 
 
 
         #Restaurant Fixtures
+    ####################################################################################################################
         $restaurantMoscow1 = new Restaurant();
         $restaurantMoscow1->setPhone('+7 495 739-00-33');
         $restaurantMoscow1->setName('Cafe Pushkin');
@@ -210,7 +217,7 @@ class MoscowFixtures extends Fixture
         $restaurantMoscow3->setSlug($restaurantMoscow3Slug);
         $restaurantMoscow3->setCity($moscow);
         $manager->persist($restaurantMoscow3);
-
+    ####################################################################################################################
 
 
 
@@ -218,6 +225,7 @@ class MoscowFixtures extends Fixture
 
 
         #City Fixtures
+    ####################################################################################################################
         $moscow->setName('Moscow');
         $slug = new Slugify();
         $moscowSlug = $slug->slugify($moscow->getName());
@@ -232,13 +240,11 @@ class MoscowFixtures extends Fixture
         $moscow->addHotel($hotelMoscow7);
         $moscow->addHotel($hotelMoscow8);
         $moscow->addHotel($hotelMoscow9);
-
         $moscow->addRestaurant($restaurantMoscow1);
         $moscow->addRestaurant($restaurantMoscow2);
         $moscow->addRestaurant($restaurantMoscow3);
-
-
         $manager->persist($moscow);
+    ####################################################################################################################
 
 
 
