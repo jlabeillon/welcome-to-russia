@@ -1,8 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>{{article.title}}</h1>
-	<img src="{{asset('public/pic/' ~ article.image)}}"> 
+    <h1 class="blog-title">{{article.title}}</h1>
+	<img src="{{asset('public/pic/' ~ article.image)}}">
 <h3>{{article.content}}</h3>
 
 
