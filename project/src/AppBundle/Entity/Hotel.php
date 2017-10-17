@@ -154,7 +154,7 @@ class Hotel
         $this->address = $address;
     }
 
-    
+
     /**
      * @return mixed
      */
