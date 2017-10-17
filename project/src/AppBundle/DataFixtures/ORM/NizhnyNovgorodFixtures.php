@@ -27,7 +27,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $restaurantNizhnyNovgorod1Slug = $slug->slugify($restaurantNizhnyNovgorod1->getName());
         $restaurantNizhnyNovgorod1->setSlug($restaurantNizhnyNovgorod1Slug);
         $restaurantNizhnyNovgorod1->setAddress('Minina St., 12 & Bolshaya Pokrovskaya st, 47, Nizhny Novgorod 603005, Russia');
-        $restaurantNizhnyNovgorod1->setCity($NizhnyNovgorod);
+        $restaurantNizhnyNovgorod1->setCity($nizhnyNovgorod);
 
         $manager->persist($restaurantNizhnyNovgorod1);
 
@@ -44,7 +44,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $restaurantNizhnyNovgorod2Slug = $slug->slugify($restaurantNizhnyNovgorod2->getName());
         $restaurantNizhnyNovgorod2->setSlug($restaurantNizhnyNovgorod2Slug);
         $restaurantNizhnyNovgorod2->setAddress('Biblioteka ul. Bolshaya Pokrovskaya 46, Nizhny Novgorod 603000, Russia');
-        $restaurantNizhnyNovgorod2->setCity($NizhnyNovgorod);
+        $restaurantNizhnyNovgorod2->setCity($nizhnyNovgorod);
 
         $manager->persist($restaurantNizhnyNovgorod2);
 
@@ -60,7 +60,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $restaurantNizhnyNovgorod3Slug = $slug->slugify($restaurantNizhnyNovgorod3->getName());
         $restaurantNizhnyNovgorod3->setSlug($restaurantNizhnyNovgorod3Slug);
         $restaurantNizhnyNovgorod3->setAddress('Angliyskoye Posolstvo ul. Zvezdinka 12, Nizhny Novgorod 603000, Russia');
-        $restaurantNizhnyNovgorod3->setCity($NizhnyNovgorod);
+        $restaurantNizhnyNovgorod3->setCity($nizhnyNovgorod);
 
         $manager->persist($restaurantNizhnyNovgorod3);
         $manager->flush();

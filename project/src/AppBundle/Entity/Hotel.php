@@ -32,6 +32,11 @@ class Hotel
     /**
      * @ORM\Column(type="text")
      */
+    private $shortdescription;
+
+    /**
+     * @ORM\Column(type="text")
+     */
     private $description;
 
     /**
@@ -49,10 +54,7 @@ class Hotel
      */
     private $address;
 
-    /**
-     * @ORM\Column(type="string", length=20)
-     */
-    private $phone;
+
 
     /**
      * @ORM\Column(type="string", length=180)
@@ -152,22 +154,7 @@ class Hotel
         $this->address = $address;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getPhone()
-    {
-        return $this->phone;
-    }
-
-    /**
-     * @param mixed $phone
-     */
-    public function setPhone($phone)
-    {
-        $this->phone = $phone;
-    }
-
+    
     /**
      * @return mixed
      */
@@ -217,6 +204,22 @@ class Hotel
     public function setSlug($slug)
     {
         $this->slug = $slug;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getShortdescription()
+    {
+        return $this->shortdescription;
+    }
+
+    /**
+     * @param mixed $shortdescription
+     */
+    public function setShortdescription($shortdescription)
+    {
+        $this->shortdescription = $shortdescription;
     }
 
 

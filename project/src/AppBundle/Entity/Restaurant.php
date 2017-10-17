@@ -57,6 +57,8 @@ class Restaurant
      */
     private $goodfor;
 
+
+
     /**
      * @ORM\Column(type="string", length=50)
      */
@@ -211,6 +213,22 @@ class Restaurant
     public function setGoodfor($goodfor)
     {
         $this->goodfor = $goodfor;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param mixed $price
+     */
+    public function setPrice($price)
+    {
+        $this->price = $price;
     }
 
 

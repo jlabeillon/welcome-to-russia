@@ -12,7 +12,7 @@ use Symfony\Component\Validator\Constraints\DateTime;
 use Cocur\Slugify\Slugify;
 
 
-class FakeMoscowFixtures extends Fixture
+class MoscowFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
