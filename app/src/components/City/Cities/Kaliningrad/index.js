@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 // Local import
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
+import Carousel from 'src/components/Carousel';
 
 // Code
 class Kaliningrad extends React.Component {
@@ -23,8 +24,10 @@ class Kaliningrad extends React.Component {
 
           <div className="col-xs-10" id="city-container">
             <h1 id="city-name">Kaliningrad</h1>
-            <span>Carousel component</span>
-            <p id="city-description">Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital. In its historic core is the Kremlin, a complex that’s home to the president and tsarist treasures in the Armoury. Outside its walls is Red Square, Russia’s symbolic center. It’s home to Lenin’s Mausoleum, the State Historical Museum’s comprehensive collection and St. Basil’s Cathedral, known for its colorful, onion-shaped domes.</p>
+            <div id="carousel"><Carousel /></div>
+            <p id="city-description">Kaliningrad is the administrative center of Kaliningrad Oblast, a Russian exclave between Poland and Lithuania on the Baltic Sea.
+
+            In the Middle Ages, it was the site of Old Prussian settlement Twangste. In 1255, during the Northern Crusades, a new fortress was built by the Teutonic Knights. The city became the capital of the Duchy of Prussia and East Prussia (part of Germany). It was heavily damaged during World War II and its population fled or was removed by force when it became a Russian city. According to the 2010 Census, its population was 431,902.</p>
           </div>
 
         </div>

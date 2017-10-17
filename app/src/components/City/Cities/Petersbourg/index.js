@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 // Local import
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
+import Carousel from 'src/components/Carousel';
 
 // Code
 class Petersbourg extends React.Component {
@@ -23,8 +24,8 @@ class Petersbourg extends React.Component {
 
           <div className="col-xs-10" id="city-container">
             <h1 id="city-name">Saint-Petersbourg</h1>
-            <span>Carousel component</span>
-            <p id="city-description">Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital. In its historic core is the Kremlin, a complex that’s home to the president and tsarist treasures in the Armoury. Outside its walls is Red Square, Russia’s symbolic center. It’s home to Lenin’s Mausoleum, the State Historical Museum’s comprehensive collection and St. Basil’s Cathedral, known for its colorful, onion-shaped domes.</p>
+            <div id="carousel"><Carousel /></div>
+          <p id="city-description">Saint Petersburg is Russia’s second-largest city after Moscow, with five million inhabitants in 2012. An important Russian port on the Baltic Sea, it is politically administered as a federal subject (a federal city). Situated on the Neva River, at the head of the Gulf of Finland on the Baltic Sea, it was founded by Tsar Peter the Great on May 27 1703. In 1914, the name was changed from Saint Petersburg to Petrograd, in 1924 to Leningrad, and in 1991 back to Saint Petersburg. Between 1713 and 1728 and in 1732–1918, Saint Petersburg was the capital of imperial Russia. In 1918, the central government bodies moved to Moscow. Saint Petersburg is one of the modern cities of Russia, as well as its cultural capital. The Historic Centre of Saint Petersburg and Related Groups of Monuments constitute a UNESCO World Heritage Site. Saint Petersburg is home to The Hermitage, one of the largest art museums in the world. Many foreign consulates, international corporations, banks, and businesses have offices in Saint Petersburg.</p>
           </div>
 
         </div>

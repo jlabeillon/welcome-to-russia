@@ -7,6 +7,120 @@ const App = React.createClass({
 
   render() {
 
+    { /* Cities carousels */ }
+
+    if (window.location.pathname == '/city/moscow') {
+    return (
+      <Carousel>
+          <img src="https://www.accessmba.com/application/public/cache/event-moscow-620x370.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="http://russiatrek.org/blog/wp-content/uploads/2014/11/birds-eye-views-of-moscow-russia-12.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://securecdn.pymnts.com/wp-content/uploads/2016/11/moscow-russia-tech-center.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/saint-petersbourg') {
+    return (
+      <Carousel>
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/05/a4/e0/27/st-petersburg.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="https://www.voyageursdumonde.fr/vdm/imgProduits/RUS/404816.ori.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="http://static.promovacances.com/photos/vacances-russie/saint-petersbourg/ville_300290_pgbighd.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/yekaterinburg') {
+    return (
+      <Carousel>
+        <img src="http://askural.com/wp-content/uploads/2010/12/P1050466.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="https://i2.wp.com/explorerussia.org/wp-content/uploads/2016/10/Yekaterinburg-City.jpg?w=516&h=344&crop" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="http://budgettravelrussia.com/Technicals/images/Yekaterinburg%20city.png" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/sochi') {
+    return (
+      <Carousel>
+        <img src="http://img.fifa.com/mm/photo/tournament/competition/02/84/64/38/2846438_full-lnd.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="https://cdni.rt.com/files/news/22/c6/90/00/sochi-was-_the-right-choice_-tourism-and-investment-to-follow-olympic-buzz.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="https://www.sailonboard.com/wp-content/uploads/2016/06/sochi-port-800x530.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/kazan') {
+    return (
+      <Carousel>
+        <img src="https://s.inyourpocket.com/gallery/131443.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="http://www.airpano.ru/files/Kazan-Russia/images/image1.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="https://s.inyourpocket.com/gallery/117712.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/volgograd') {
+    return (
+      <Carousel>
+        <img src="http://blog.kudoybook.com/wp-content/uploads/images/Volgograd_10272.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="http://russiatrek.org/blog/wp-content/uploads/2016/10/volgograd-from-above-russia-1.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="https://photos.smugmug.com/Russia/Southern-Russia/i-HLtg2B7/0/0b638d1d/XL/Russia-Astrakan-Volgograd-5-XL.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/saransk') {
+    return (
+      <Carousel>
+        <img src="http://www.vpitravel.com/wp-vpi/wp-content/uploads/2017/08/Saransk_VPI_WCRussia2018.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="https://citiesandstadiums2018.weebly.com/uploads/2/5/7/8/25789968/473390653_orig.jpg?463" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="http://scd.rfi.fr/sites/filesrfi/imagecache/rfi_16x9_1024_578/sites/images.rfi.fr/files/aef_image/saransk_russie_2017_0.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/samara') {
+    return (
+      <Carousel>
+        <img src="http://god2017.com/wp-content/uploads/2016/06/samara-10.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="http://img-2005-10.photosight.ru/15/1082720.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="http://ntt.com.ru/images/gd/samara.jpeg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/rostov') {
+    return (
+      <Carousel>
+        <img src="https://www.airpano.ru/files/Rostov-the-Great-Russia/images/image8.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="https://media1.britannica.com/eb-media/43/144543-004-F9A41A7D.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="http://russiatrek.org/blog/wp-content/uploads/2017/07/rostov-on-don-from-above-russia-4.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/kaliningrad') {
+    return (
+      <Carousel>
+        <img src="http://www.worldatlas.com/r/w728-h425-c728x425/upload/53/45/e6/shutterstock-458840206.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="http://russiatrek.org/blog/wp-content/uploads/2016/11/kaliningrad-from-above-russia-1.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="http://www.airpano.ru/files/Kaliningrad-Russia/images/image1.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/nizhny-novgorod') {
+    return (
+      <Carousel>
+        <img src="http://www.planetatalantov.ru/img/photos/photo_0259.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="http://nesiditsa.ru/wp-content/uploads/2012/07/image01717.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+        <img src="https://www.niann.ru/_data/objects/0051/4111/icon.jpg?1506436384" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    { /* Stadiums carousels */ }
+
     if (window.location.pathname == '/city/moscow/stadium/luzhniki') {
     return (
       <Carousel>

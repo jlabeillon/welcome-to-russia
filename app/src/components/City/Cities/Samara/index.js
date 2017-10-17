@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 // Local import
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
+import Carousel from 'src/components/Carousel';
 
 // Code
 class Samara extends React.Component {
@@ -23,8 +24,8 @@ class Samara extends React.Component {
 
           <div className="col-xs-10" id="city-container">
             <h1 id="city-name">Samara</h1>
-            <span>Carousel component</span>
-            <p id="city-description">Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital. In its historic core is the Kremlin, a complex that’s home to the president and tsarist treasures in the Armoury. Outside its walls is Red Square, Russia’s symbolic center. It’s home to Lenin’s Mausoleum, the State Historical Museum’s comprehensive collection and St. Basil’s Cathedral, known for its colorful, onion-shaped domes.</p>
+            <div id="carousel"><Carousel /></div>
+            <p id="city-description">Samara, known from 1935 to 1991 as Kuybyshev, is the sixth largest city in Russia and the administrative center of Samara Oblast. It is situated in the southeastern part of European Russia at the confluence of the Volga and Samara Rivers on the east bank of the Volga. The Volga acts as the city’s western boundary; across the river are the Zhiguli Mountains, after which the local beer (Zhigulyovskoye) is named. The northern boundary is formed by the Sokolyi Hills and by the steppes in the south and east. The land within the city boundaries covers 46,597 hectares (115,140 acres). Population: 1,164,685 (2010 Census). The metropolitan area of Samara-Tolyatti-Syzran within Samara Oblast contains a population of over three million.</p>
           </div>
 
         </div>

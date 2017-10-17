@@ -7,6 +7,7 @@ import axios from 'axios';
 // Local import
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
+import Carousel from 'src/components/Carousel';
 
 // Code
 class Moscow extends React.Component {
@@ -37,8 +38,10 @@ class Moscow extends React.Component {
 
           <div className="col-xs-10" id="city-container">
             <h1 id="city-name">Moscow</h1>
-            <span>Carousel component</span>
-            <p id="city-description">Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital. In its historic core is the Kremlin, a complex that’s home to the president and tsarist treasures in the Armoury. Outside its walls is Red Square, Russia’s symbolic center. It’s home to Lenin’s Mausoleum, the State Historical Museum’s comprehensive collection and St. Basil’s Cathedral, known for its colorful, onion-shaped domes.</p>
+            <div id="carousel"><Carousel /></div>
+            <p id="city-description">Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital. In its historic core is the Kremlin, a complex that’s home to the president and tsarist treasures in the Armoury. Outside its walls is Red Square, Russia’s symbolic center. It’s home to Lenin’s Mausoleum, the State Historical Museum’s comprehensive collection and St. Basil’s Cathedral, known for its colorful, onion-shaped domes.
+
+            Moscow is a major political, economic, cultural, and scientific centre of Russia and Eastern Europe, as well as the largest city entirely on the European continent. By broader definitions Moscow is among the world’s largest cities, being the 14th largest metro area, the 18th largest agglomeration, the 15th largest urban area, and the 11th largest by population within city limits worldwide.</p>
           </div>
 
         </div>

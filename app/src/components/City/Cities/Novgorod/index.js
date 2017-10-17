@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 // Local import
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
+import Carousel from 'src/components/Carousel';
 
 // Code
 class Novgorod extends React.Component {
@@ -22,9 +23,9 @@ class Novgorod extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Novgorod</h1>
-            <span>Carousel component</span>
-            <p id="city-description">Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital. In its historic core is the Kremlin, a complex that’s home to the president and tsarist treasures in the Armoury. Outside its walls is Red Square, Russia’s symbolic center. It’s home to Lenin’s Mausoleum, the State Historical Museum’s comprehensive collection and St. Basil’s Cathedral, known for its colorful, onion-shaped domes.</p>
+            <h1 id="city-name">Nizhny Novgorod</h1>
+            <div id="carousel"><Carousel /></div>
+            <p id="city-description">Nizhny Novgorod, colloquially shortened to Nizhny, is a city in the administrative center of Volga Federal District and Nizhny Novgorod Oblast in Russia. From 1932 to 1990, it was known as Gorky after the writer Maxim Gorky, who was born there. The city is an important economic, transportation, scientific, educational and cultural center in Russia and the vast Volga-Vyatka economic region, and is the main center of river tourism in Russia. In the historic part of the city there is a large number of universities, theaters, museums and churches. Nizhny Novgorod is located about 400 km east of Moscow, where the Oka empties into the Volga. Population: 1,250,619 (2010 Census)</p>
           </div>
 
         </div>

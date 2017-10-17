@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 // Local import
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
+import Carousel from 'src/components/Carousel';
 
 // Code
 class Rostov extends React.Component {
@@ -23,8 +24,8 @@ class Rostov extends React.Component {
 
           <div className="col-xs-10" id="city-container">
             <h1 id="city-name">Rostov-on-Don</h1>
-            <span>Carousel component</span>
-            <p id="city-description">Moscow, on the Moskva River in western Russia, is the nation’s cosmopolitan capital. In its historic core is the Kremlin, a complex that’s home to the president and tsarist treasures in the Armoury. Outside its walls is Red Square, Russia’s symbolic center. It’s home to Lenin’s Mausoleum, the State Historical Museum’s comprehensive collection and St. Basil’s Cathedral, known for its colorful, onion-shaped domes.</p>
+            <div id="carousel"><Carousel /></div>
+            <p id="city-description">Rostov-on-Don is a port city and the administrative center of Rostov Oblast and the Southern Federal District of Russia. It lies in the southeastern part of the East European Plain on the Don River, 32 kilometers from the Sea of Azov. The southwestern suburbs of the city abut the Don River delta. Population: 1,089,261 (2010 Census)</p>
           </div>
 
         </div>
