@@ -42,10 +42,6 @@ class Restaurant
      */
     private $phone;
 
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $image;
 
     /**
      * @ORM\Column(type="string")
@@ -167,21 +163,6 @@ class Restaurant
         $this->slug = $slug;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
-
-    /**
-     * @param mixed $image
-     */
-    public function setImage($image)
-    {
-        $this->image = $image;
-    }
 
     /**
      * @return mixed

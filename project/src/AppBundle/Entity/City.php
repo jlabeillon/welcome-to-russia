@@ -34,12 +34,6 @@ class City
      */
     private $description;
 
-
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $image;
-
     /**
      * @ORM\OneToMany(targetEntity="Hotel", mappedBy="city")
      */
@@ -52,17 +46,21 @@ class City
 
 
 
-    /**
-     * @ORM\OneToMany(targetEntity="Game", mappedBy="city")
-     */
-    protected $Game;
+
+
+
 
     public function __construct()
     {
         $this->hotel = new ArrayCollection();
         $this->restaurant = new ArrayCollection();
-        $this->game = new ArrayCollection();
     }
+
+
+
+
+
+
 
     /**
      * @return mixed
@@ -88,16 +86,6 @@ class City
         return $this->description;
     }
 
-
-
-    /**
-     * @return mixed
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
-
     /**
      * @return mixed
      */
@@ -116,13 +104,9 @@ class City
 
 
 
-    /**
-     * @return mixed
-     */
-    public function getGame()
-    {
-        return $this->game;
-    }
+
+
+
 
     /**
      * @param mixed $name
@@ -140,17 +124,6 @@ class City
         $this->description = $description;
     }
 
-
-
-    /**
-     * @param mixed $image
-     */
-    public function setImage($image)
-    {
-        $this->image = $image;
-    }
-
-
     public function addHotel(Hotel $hotel)
     {
         $this->hotel[] = $hotel;
@@ -159,11 +132,6 @@ class City
     public function addRestaurant(Restaurant $restaurant)
     {
         $this->restaurant[] = $restaurant;
-    }
-
-    public function addGame(Game $game)
-    {
-        $this->game[] = $game;
     }
 
     /**
@@ -181,9 +149,6 @@ class City
     {
         $this->slug = $slug;
     }
-
-
-
 }
 
 

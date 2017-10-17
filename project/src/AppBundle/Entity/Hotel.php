@@ -39,10 +39,7 @@ class Hotel
      */
     private $description;
 
-    /**
-     * @ORM\Column(type="string")
-     */
-    private $image;
+
 
     /**
      * @ORM\Column(type="string", length=180)
@@ -106,21 +103,7 @@ class Hotel
         $this->description = $description;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
 
-    /**
-     * @param mixed $image
-     */
-    public function setImage($image)
-    {
-        $this->image = $image;
-    }
 
     /**
      * @return mixed
