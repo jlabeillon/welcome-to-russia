@@ -2,13 +2,10 @@
 namespace AppBundle\DataFixtures\ORM;
 
 use AppBundle\Entity\City;
-use AppBundle\Entity\FanZone;
 use AppBundle\Entity\Hotel;
-use AppBundle\Entity\Game;
 use AppBundle\Entity\Restaurant;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
-use Symfony\Component\Validator\Constraints\DateTime;
 use Cocur\Slugify\Slugify;
 
 
