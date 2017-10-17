@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 // Local import
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
+import Carousel from 'src/components/Carousel';
 
 // Code
 class KaliningradArena extends React.Component {
@@ -21,10 +22,8 @@ class KaliningradArena extends React.Component {
 
           <div className="col-xs-10" id="city-container">
             <h1 id="city-name">Kaliningrad Stadium</h1>
-            <span>Carousel component</span>
-            <p id="city-description">Luzhniki Stadium is a sports stadium in Moscow, Russia. Its total seating capacity is 81,000 seats, all covered (upgraded). The stadium is a part of the Luzhniki Olympic Complex, and is located in Khamovniki District of the Central Administrative Okrug of Moscow city. The name Luzhniki derives from the flood meadows in the bend of Moskva River where the stadium was built, translating roughly as "The Meadows". Its the biggest stadium in eastern Europe.
-
-            In the past its field has been used as the home ground (at various times) for football games played by PFC CSKA Moscow, Torpedo Moscow and Spartak Moscow, however, there are currently no clubs based at the stadium. Today it is mainly used as one of the home grounds of the Russian national football team. It is one of the few major European stadia to use an artificial pitch, having installed a FIFA-approved FieldTurf pitch in 2002. The pitch is necessary because regular grass pitches cannot withstand the harsh Russian winters and must be replaced at high cost. However, a temporary natural grass pitch was installed for the 2008 UEFA Champions League Final. The stadium is also used from time to time for various other sporting events and for concerts.</p>
+            <div id="carousel"><Carousel /></div>
+            <p id="city-description">Kaliningrad Stadium (also called Arena Baltika) is an association football stadium under construction in Oktyabrsky Island, Kaliningrad, Russia. It will host some of the games of the 2018 FIFA World Cup. It will also host FC Baltika Kaliningrad of the Russian Football National League, replacing Baltika Stadium. This will be a two-tier stadium, equipped with ultramodern security systems and CCTV. The project is based on the concept of the Allianz Arena, which hosted matches of the 2006 World Cup in Germany. The project cost is planned around 11 billion rubles. Commissioning is planned in 2017. The stadium following the 2018 World Cup will turn into 25,000 seating capacity and part of the roof will be retracted.</p>
           </div>
 
         </div>
