@@ -10,6 +10,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 
+
 /**
  * Article controller.
  *
@@ -25,7 +26,6 @@ class BlogController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
-
         $articles = $em->getRepository('AppBundle:Article')->findAll();
         return $this->render('article/index.html.twig', array(
             'articles' => $articles,

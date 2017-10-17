@@ -31,6 +31,7 @@ class Article
      */
     private $content;
 
+
     /**
      * @ORM\Column(type="string")
      *

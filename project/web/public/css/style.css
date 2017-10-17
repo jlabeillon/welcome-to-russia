@@ -4,21 +4,6 @@
 	font-family:Quicksand-Regular;
 	src: url(Quicksand-Regular.ttf);
 }
-.blog-title {
-	color: #484F57;
-	font-size: 50px;
-	text-align: center;
-    font-family: Dusha;
-	padding-top: 20px;
-}
-h3 {
-
-}
-li {
-	margin-bottom: 15px;
-
-
-}
 
 /* ZONE HEADER */
 
@@ -55,7 +40,13 @@ li {
 }
 
 /*ZONE USER*/
-
+.form-title {
+	color: #484F57;
+	font-size: 50px;
+	text-align: center;
+    font-family: Dusha;
+	padding-top: 20px;
+}
 
 .form-user {
 	margin: auto;
@@ -109,4 +100,32 @@ li {
 }
 .input-style:focus {
 	background-color: lightblue;
+}
+
+/*BLOG */
+
+#container-blog {
+	position: relative;
+	margin: auto;
+	width: 80%;
+
+}
+
+.blog-title {
+	display: inline-block;
+	color: #484F57;
+	font-size: 50px;
+    font-family: Dusha;
+	overflow: hidden;
+	margin-left: 20px;
+	padding: 0;
+}
+
+.link-article {
+	text-decoration: none;
+}
+
+.img-blog {
+	width: 20%;
+
 }
