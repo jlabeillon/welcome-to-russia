@@ -50,10 +50,7 @@ class City
      */
     protected $restaurant;
 
-    /**
-     * @ORM\OneToMany(targetEntity="FanZone", mappedBy="city")
-     */
-    protected $fanzone;
+
 
     /**
      * @ORM\OneToMany(targetEntity="Game", mappedBy="city")
@@ -64,7 +61,6 @@ class City
     {
         $this->hotel = new ArrayCollection();
         $this->restaurant = new ArrayCollection();
-        $this->fanzone = new ArrayCollection();
         $this->game = new ArrayCollection();
     }
 
@@ -118,13 +114,7 @@ class City
         return $this->restaurant;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getFanzone()
-    {
-        return $this->fanzone;
-    }
+
 
     /**
      * @return mixed
@@ -169,11 +159,6 @@ class City
     public function addRestaurant(Restaurant $restaurant)
     {
         $this->restaurant[] = $restaurant;
-    }
-
-    public function addFanZone(FanZone $fanzone)
-    {
-        $this->fanzone[] = $fanzone;
     }
 
     public function addGame(Game $game)
