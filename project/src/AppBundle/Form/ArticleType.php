@@ -14,7 +14,7 @@ class ArticleType extends AbstractType
     {
         $builder->add('title')
         ->add('content')
-        ->add('image', FileType::class, array('label' => 'image(JPG,PNG file)'));
+        ->add('image', FileType::class, array('data_class' => null));
     }
 
     /**
@@ -24,6 +24,7 @@ class ArticleType extends AbstractType
     {
         $resolver->setDefaults(array(
             'data_class' => 'AppBundle\Entity\Article'
+
         ));
     }
     /**
