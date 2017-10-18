@@ -15,11 +15,11 @@ class Yekaterinburg extends React.Component {
       <div className="container">
         <Header />
         <div className="row">
-          <div className="col-xs-2">
-            <NavLink to="/city/yekaterinburg/stadium" className="nav-left">Yekaterinburg stadium</NavLink>
-            <a href="#" className="nav-left">Yekaterinburg transportation</a>
-            <NavLink to="/city/yekaterinburg/hotels/luxury" className="nav-left">Yekaterinburg hotels</NavLink>
-            <NavLink to="/city/moscow/restaurants" className="nav-left">Yekaterinburg restaurants</NavLink>
+          <div className="col-xs-2 nav">
+            <NavLink to="/city/yekaterinburg/stadium" className="nav-left">Stadium</NavLink>
+            <a href="#" className="nav-left">Transportation</a>
+            <NavLink to="/city/yekaterinburg/hotels/luxury" className="nav-left">Hotels</NavLink>
+            <NavLink to="/city/moscow/restaurants" className="nav-left">Restaurants</NavLink>
           </div>
 
           <div className="col-xs-10" id="city-container">

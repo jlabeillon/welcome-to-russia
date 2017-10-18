@@ -19,3 +19,20 @@
   text-align: left;
   margin-left: 20em;
 }
+
+.nav-options {
+  font-family: Dusha;
+  color: #131486 !important;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+
+.nav-options-container {
+  margin-bottom: 3em;
+}
+
+.active-nav {
+  color: red !important;
+}

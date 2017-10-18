@@ -48,6 +48,8 @@ import NovgorodEco from 'src/components/Hotel/Hotels/Novgorod/Eco';
 import NovgorodAuthentic from 'src/components/Hotel/Hotels/Novgorod/Authentic';
 import NovgorodLuxury from 'src/components/Hotel/Hotels/Novgorod/Luxury';
 
+import EmailSended from 'src/components/Hotel/Email';
+
 // Code
 class Hotel extends React.Component {
   render() {
@@ -96,6 +98,8 @@ class Hotel extends React.Component {
         <Route path="/city/novgorod/hotels/eco" component={NovgorodEco} />
         <Route path="/city/novgorod/hotels/authentic" component={NovgorodAuthentic} />
         <Route path="/city/novgorod/hotels/luxury" component={NovgorodLuxury} />
+
+        <Route path="/email-sended" component={EmailSended} />
       </div>
     );
   };

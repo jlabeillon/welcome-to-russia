@@ -24,6 +24,7 @@ class App extends React.Component {
           <Route path="/city/:city/stadium" exact component={Stadium} />
           <Route path="/city/:city/stadium/:name" exact component={Stadium} />
           <Route path="/visa" exact component={Visa} />
+          <Route path="/email-sended" exact component={Hotel} />
       </div>
     );
   };

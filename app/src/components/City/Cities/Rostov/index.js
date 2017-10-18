@@ -15,11 +15,11 @@ class Rostov extends React.Component {
       <div className="container">
         <Header />
         <div className="row">
-          <div className="col-xs-2">
-            <NavLink to="/city/rostov/stadium" className="nav-left">Rostov-on-Don stadium</NavLink>
-            <a href="#" className="nav-left">Rostov-on-Don transportation</a>
-            <NavLink to="/city/rostov/hotels/luxury" className="nav-left">Rostov-on-Don hotels</NavLink>
-            <NavLink to="/city/rostov/restaurants" className="nav-left">Rostov-on-Don restaurants</NavLink>
+          <div className="col-xs-2 nav">
+            <NavLink to="/city/rostov/stadium" className="nav-left">Stadium</NavLink>
+            <a href="#" className="nav-left">Transportation</a>
+            <NavLink to="/city/rostov/hotels/luxury" className="nav-left">Hotels</NavLink>
+            <NavLink to="/city/rostov/restaurants" className="nav-left">Restaurants</NavLink>
           </div>
 
           <div className="col-xs-10" id="city-container">

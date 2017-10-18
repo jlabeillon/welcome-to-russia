@@ -15,11 +15,11 @@ class Kazan extends React.Component {
       <div className="container">
         <Header />
         <div className="row">
-          <div className="col-xs-2">
-            <NavLink to="/city/kazan/stadium" className="nav-left">Kazan stadium</NavLink>
-            <a href="#" className="nav-left">Kazan transportation</a>
-            <NavLink to="/city/kazan/hotels/luxury" className="nav-left">Kazan hotels</NavLink>
-            <NavLink to="/city/moscow/restaurants" className="nav-left">Kazan restaurants</NavLink>
+          <div className="col-xs-2 nav">
+            <NavLink to="/city/kazan/stadium" className="nav-left">Stadium</NavLink>
+            <a href="#" className="nav-left">Transportation</a>
+            <NavLink to="/city/kazan/hotels/luxury" className="nav-left">Hotels</NavLink>
+            <NavLink to="/city/moscow/restaurants" className="nav-left">Restaurants</NavLink>
           </div>
 
           <div className="col-xs-10" id="city-container">

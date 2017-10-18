@@ -14,7 +14,7 @@ class KazanHotelLuxuryHotel2 extends React.Component {
         <Header />
         <div className="row">
 
-          <div className="col-xs-2">
+          <div className="col-xs-2 nav">
             <a href="#" className="nav-left">Hotel website</a>
           </div>
 

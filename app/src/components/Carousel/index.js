@@ -11,7 +11,7 @@ const App = React.createClass({
 
     if (window.location.pathname == '/city/moscow') {
     return (
-      <Carousel>
+      <Carousel slideIndex='1'>
           <img src="https://www.accessmba.com/application/public/cache/event-moscow-620x370.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
           <img src="http://russiatrek.org/blog/wp-content/uploads/2014/11/birds-eye-views-of-moscow-russia-12.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
           <img src="https://securecdn.pymnts.com/wp-content/uploads/2016/11/moscow-russia-tech-center.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
@@ -133,7 +133,7 @@ const App = React.createClass({
 
     if (window.location.pathname == '/city/moscow/stadium/otkrytiye') {
     return (
-      <Carousel>
+      <Carousel slideIndex='2'>
           <img src="https://www.istructe.org/getmedia/2ff444eb-68ce-4d8d-94c0-7248e9d45ad2/Otkritie-Arena-(Spartak-Stadium)-5.jpg.aspx?width=900&height=550&ext=.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
           <img src="http://stadiumdb.com/pictures/stadiums/rus/otkritie_arena/otkritie_arena02.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
           <img src="https://img-fotki.yandex.ru/get/6829/118032170.aa/0_15e127_5f779393_orig" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
@@ -247,6 +247,42 @@ const App = React.createClass({
       <img src="https://cdn1.img.rsport.ru/images/112481/61/1124816188.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
           <img src="https://www.niann.ru/_data/objects/0050/3540/icon.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
           <img src="https://static.ngs.ru/news/99/preview/a78d1feee43c437a5b0f42c6adf34386070a08e4_1200.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    { /* Hotels carousels */ }
+
+    if (window.location.pathname == '/city/moscow/hotels/luxury/ararat') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/110/110320187.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/110/110320144.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/110/110320108.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/110/110320221.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/moscow/hotels/luxury/regis') {
+    return (
+      <Carousel>
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/579/57914471.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/431/43145913.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/579/57914482.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/431/43146104.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/432/43268489.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/moscow/hotels/luxury/four') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/614/61426067.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/614/61426988.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/544/54474207.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/614/61426968.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
       </Carousel>
       )
     }

@@ -1,5 +1,14 @@
 .nav-left {
   display: block;
+  color: #131486;
+  font-family: Dusha;
+  font-size: 1.3em;
+  text-decoration: none;
+  padding: 0.2em;
+}
+
+.nav {
+  margin-top: 6em;
 }
 
 #city-container {
@@ -14,4 +23,5 @@
 #city-description {
   text-align: left;
   margin-top: 3em;
+  font-family: 'Open Sans', sans-serif;
 }

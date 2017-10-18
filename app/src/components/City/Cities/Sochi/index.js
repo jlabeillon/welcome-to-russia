@@ -15,11 +15,11 @@ class Sochi extends React.Component {
       <div className="container">
         <Header />
         <div className="row">
-          <div className="col-xs-2">
-            <NavLink to="/city/sochi/stadium" className="nav-left">Sochi stadium</NavLink>
-            <a href="#" className="nav-left">Sochi transportation</a>
-            <NavLink to="/city/sochi/hotels/luxury" className="nav-left">Sochi hotels</NavLink>
-            <NavLink to="/city/moscow/restaurants" className="nav-left">Sochi restaurants</NavLink>
+          <div className="col-xs-2 nav">
+            <NavLink to="/city/sochi/stadium" className="nav-left">Stadium</NavLink>
+            <a href="#" className="nav-left">Transportation</a>
+            <NavLink to="/city/sochi/hotels/luxury" className="nav-left">Hotels</NavLink>
+            <NavLink to="/city/moscow/restaurants" className="nav-left">Restaurants</NavLink>
           </div>
 
           <div className="col-xs-10" id="city-container">
