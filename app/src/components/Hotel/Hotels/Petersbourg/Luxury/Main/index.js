@@ -16,11 +16,11 @@ class PetersbourgLuxury extends React.Component {
         {/* Header */}
           <Header />
 
-          <h1>Hotels</h1>
-
-          <NavLink to="/city/petersbourg/hotels/eco">ECO</NavLink>
-          <NavLink to="/city/petersbourg/hotels/authentic">AUTHENTIC</NavLink>
-          <NavLink to="/city/petersbourg/hotels/luxury">LUXURY</NavLink>
+          <div className="nav-options-container">
+            <NavLink to="/city/petersbourg/hotels/eco" className="nav-options" activeClassName="active-nav">eco</NavLink>
+            <NavLink to="/city/petersbourg/hotels/authentic" className="nav-options" activeClassName="active-nav">authentic</NavLink>
+            <NavLink to="/city/petersbourg/hotels/luxury" className="nav-options" activeClassName="active-nav">luxury</NavLink>
+          </div>
 
           <div className="row">
             <div className="col-xs-12">
@@ -33,7 +33,7 @@ class PetersbourgLuxury extends React.Component {
 
           <div className="row">
           <div className="col-xs-12">
-            <NavLink to="/city/petersbourg/hotels/Petersbourg/luxury/lotte">
+            <NavLink to="/city/petersbourg/hotels/luxury/lotte">
             <img className="hotels-image" src="/images/hotels/Petersbourg/petersbourg-luxury-lotte.jpg" />
             <p className="hotels-description">Offering a terrace and spa centre, Lotte Hotel St. Petersburg is located in Saint Petersburg. The hotel has a sauna and fitness centre, and guests can enjoy a meal at the restaurant.</p>
             </NavLink>
@@ -42,7 +42,7 @@ class PetersbourgLuxury extends React.Component {
 
           <div className="row">
           <div className="col-xs-12">
-            <NavLink to="/city/petersbourg/hotels/Petersbourg/luxury/belmond">
+            <NavLink to="/city/petersbourg/hotels/luxury/belmond">
             <img className="hotels-image" src="/images/hotels/Petersbourg/petersbourg-luxury-belmond.jpg" />
             <p className="hotels-description">Set in a stunning central location of St. Petersburg is this grand hotel that offers elegant accommodation in a fantastic setting.</p>
             </NavLink>

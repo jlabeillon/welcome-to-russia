@@ -55,6 +55,7 @@ class Hotel extends React.Component {
   render() {
     return (
       <div>
+
         <Route path="/city/moscow/hotels/eco" component={MoscowEco} />
         <Route path="/city/moscow/hotels/authentic" component={MoscowAuthentic} />
         <Route path="/city/moscow/hotels/luxury" component={MoscowLuxury} />
