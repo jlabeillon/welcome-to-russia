@@ -36,7 +36,7 @@ class Article
      * @ORM\Column(type="string")
      *
      * @Assert\NotBlank(message="Please, upload a image.")
-     * @Assert\File(mimeTypes={ "image/jpeg" })
+     * @Assert\File(mimeTypes={ "image/jpeg", "image/png" })
      */
     private $image;
 

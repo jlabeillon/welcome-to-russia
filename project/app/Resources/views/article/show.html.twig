@@ -1,11 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+<article id="container-blog-show">
+<img class="img-blog-show"src="{{asset('public/pic/' ~ article.image)}}">
     <h1 class="blog-title">{{article.title}}</h1>
-	<img src="{{asset('public/pic/' ~ article.image)}}">
-<h3>{{article.content}}</h3>
 
+<p class="post_article-show">{{article.content}}</p>
 
+</article>
 
 	<h2>Commentaires</h2>
 	{% for commentaire in article.commentaires %}

@@ -1,30 +1,27 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-<div id="container-blog">
+<article id="container-blog">
 
 
 		{% for article in articles %}
+
             <a class="link-article" href="{{ path('article_show', { 'id': article.id }) }}">
 				<img class="img-blog" src="{{asset('public/pic/' ~ article.image)}}">
-			<h2 class="blog-title">	{{ article.title }}</h2>
-			<p>    {{ article.content|truncate(50) }}</p>
+				{% if is_granted('ROLE_USER')%}
+					<a class="buttn_edit" href="{{ path('article_edit', { 'id': article.id }) }}" class="btn btn-info btn-xs">Editer</a>
+				{% endif %}
+				<main class="block">
+					<h2 class="blog-title">	{{ article.title }}</h2>
+					<p class="post_article">    {{ article.content|truncate(500) }}</p>
+					<a class="buttn_view" href="{{ path('article_show', { 'id': article.id }) }}">View</a>
+				</main>
 			</a>
-			<ul>
-            	<li>
-					{% if is_granted('ROLE_USER')%}
-                    	<a href="{{ path('article_edit', { 'id': article.id }) }}" class="btn btn-info btn-xs">Editer</a>
-						{% endif %}
-            	</li>
-            </ul>
 		{% endfor %}
 
-    <ul class="list-unstyled">
-        <li>
-			{% if is_granted('ROLE_USER')%}
-            <a href="{{ path('article_add') }}" class="btn btn-primary">Create a new article</a>
-			{% endif %}
-        </li>
-    </ul>
-	</div>
+
+</article>
+{% if is_granted('ROLE_USER')%}
+<a class="buttn_new" href="{{ path('article_add') }}">Create a new article</a>
+{% endif %}
 {% endblock %}
