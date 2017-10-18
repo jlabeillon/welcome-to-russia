@@ -9,7 +9,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Cocur\Slugify\Slugify;
 
 
-class SaintPetersbourgFixtures extends Fixture
+class SaintPetersburgFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
@@ -26,12 +26,15 @@ class SaintPetersbourgFixtures extends Fixture
         #Hotel Fixtures
         ####################################################################################################################
         $hotel1 = new Hotel();
-        $hotel1->setName('');
-        $hotel1->setShortdescription('');
-        $hotel1->setDescription('');
-        $hotel1->setCategory('');
-        $hotel1->setAddress('');
-        $hotel1->setEmail('');
+        $hotel1->setName('Piter’s house na Nevskom');
+        $hotel1->setShortdescription('Piter’s house na Nevskom is located in the Tsentralny district district in Saint Petersburg, 2.7 km from State Russian Museum.
+Each room has a flat-screen TV. Certain units feature a seating area for your convenience. You will find a kettle in the room. Every room is equipped with a private bathroom. For your comfort, you will find slippers, free toiletries and a hairdryer. Piters house na Nevskom features free WiFi throughout the property.');
+        $hotel1->setDescription('Piter’s house na Nevskom is located in the Tsentralny district district in Saint Petersburg, 2.7 km from State Russian Museum.
+Each room has a flat-screen TV. Certain units feature a seating area for your convenience. You will find a kettle in the room. Every room is equipped with a private bathroom. For your comfort, you will find slippers, free toiletries and a hairdryer. Piters house na Nevskom features free WiFi throughout the property.
+Church of the Savior on Spilled Blood is 2.9 km from Piter’s house na Nevskom, while Palace Square is 3.5 km away. The nearest airport is Pulkovo Airport, 15 km from the property.');
+        $hotel1->setCategory('Eco');
+        $hotel1->setAddress('Nevsky avenue, 156, Saint Petersburg, Sankt-Peterburg, Russia, 190000');
+        $hotel1->setEmail('email@address.fake');
         $slug = new Slugify();
         $hotel1Slug = $slug->slugify($hotel1->getName());
         $hotel1->setSlug($hotel1Slug);
@@ -39,12 +42,15 @@ class SaintPetersbourgFixtures extends Fixture
         $manager->persist($hotel1);
 
         $hotel2 = new Hotel();
-        $hotel2->setName('');
-        $hotel2->setShortdescription('');
-        $hotel2->setDescription('');
-        $hotel2->setCategory('');
-        $hotel2->setAddress('');
-        $hotel2->setEmail('');
+        $hotel2->setName('Capital Hotel');
+        $hotel2->setShortdescription('This hotel is located in the heart of Saint Petersburg, just a 4-minute walk from the Sennaya Square and Sadovaya Metro Station. Free Wi-Fi is featured at Capital Hotel.');
+        $hotel2->setDescription('This hotel is located in the heart of Saint Petersburg, just a 4-minute walk from the Sennaya Square and Sadovaya Metro Station. Free Wi-Fi is featured at Capital Hotel.
+The bright hotel rooms offer warm-coloured interiors and classic-style decor. Every room comes with a cable flat-screen TV and a private bathroom. Slippers and free toiletries are provided.
+A microwave and a refrigerator are available at the hotel. A variety of cafes, shops and restaurants can be found within a 2-minute walk from the hotel.
+The Kazansky Cathedral and the lively Nevsky Prospekt are a 15-minute walk from the hotel. The Hermitage Museum and the Neva River Embankment are a 20-minute walk away.');
+        $hotel2->setCategory('Eco');
+        $hotel2->setAddress('Moskovsky Ave, 6, Sankt-Peterburg, Russia, 190031');
+        $hotel2->setEmail('vopros@mojotel.ru');
         $slug = new Slugify();
         $hotel2Slug = $slug->slugify($hotel2->getName());
         $hotel2->setSlug($hotel2Slug);
@@ -52,8 +58,8 @@ class SaintPetersbourgFixtures extends Fixture
         $manager->persist($hotel2);
 
         $hotel3 = new Hotel();
-        $hotel3->setName('');
-        $hotel3->setShortdescription('');
+        $hotel3->setName('Pushka INN hotel');
+        $hotel3->setShortdescription('Pushka Inn is a 18th Century mansion located in an historic part of St. Petersburg, one minute walk from the Palace Square. It offers non-smoking rooms with air conditioning, satellite TV and free Wi-Fi.');
         $hotel3->setDescription('');
         $hotel3->setCategory('');
         $hotel3->setAddress('');
@@ -65,11 +71,14 @@ class SaintPetersbourgFixtures extends Fixture
         $manager->persist($hotel3);
 
         $hotel4 = new Hotel();
-        $hotel4->setName('');
-        $hotel4->setShortdescription('');
-        $hotel4->setDescription(' ');
-        $hotel4->setCategory('');
-        $hotel4->setAddress('');
+        $hotel4->setName('Staraya Gora Hostel');
+        $hotel4->setShortdescription('Featuring free WiFi throughout the property, Staraya Gora Hostel is located in Saint Petersburg, 900 m from State Russian Museum.');
+        $hotel4->setDescription('Featuring free WiFi throughout the property, Staraya Gora Hostel is located in Saint Petersburg, 900 m from State Russian Museum.
+You will find a kettle in the room. The rooms are fitted with a shared bathroom equipped with a shower. For your comfort, you will find free toiletries and a hairdryer. A flat-screen TV with cable channels is provided.
+There is a 24-hour front desk at the property.
+Church of the Savior on Spilled Blood is 1.1 km from Staraya Gora Hostel, while Palace Square is 1.8 km away. The nearest airport is Pulkovo Airport, 16 km from Staraya Gora Hostel.');
+        $hotel4->setCategory('Eco');
+        $hotel4->setAddress('Liteyniy avenue, 31, Sankt-Peterburg, Russia, 191028');
         $hotel4->setEmail('');
         $slug = new Slugify();
         $hotel4Slug = $slug->slugify($hotel4->getName());
