@@ -16,8 +16,8 @@ class Luzhniki extends React.Component {
         <div className="row">
 
           <div className="col-xs-2 nav">
-            <a href="#" className="nav-left">Buy tickets</a>
-            <a href="#" className="nav-left">Stadium website</a>
+            <a href="http://www.fifa.com/worldcup/organisation/ticketing/index.html" className="nav-left">Buy tickets</a>
+            <a href="http://eng.luzhniki.ru/" className="nav-left">Stadium website</a>
           </div>
 
           <div className="col-xs-10" id="city-container">

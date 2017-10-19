@@ -11,7 +11,7 @@ const App = React.createClass({
 
     if (window.location.pathname == '/city/moscow') {
     return (
-      <Carousel slideIndex='1'>
+      <Carousel slideIndex={1}>
           <img src="https://www.accessmba.com/application/public/cache/event-moscow-620x370.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
           <img src="http://russiatrek.org/blog/wp-content/uploads/2014/11/birds-eye-views-of-moscow-russia-12.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
           <img src="https://securecdn.pymnts.com/wp-content/uploads/2016/11/moscow-russia-tech-center.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
@@ -31,7 +31,7 @@ const App = React.createClass({
 
     if (window.location.pathname == '/city/yekaterinburg') {
     return (
-      <Carousel>
+      <Carousel slideIndex={1}>
         <img src="http://askural.com/wp-content/uploads/2010/12/P1050466.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
         <img src="https://i2.wp.com/explorerussia.org/wp-content/uploads/2016/10/Yekaterinburg-City.jpg?w=516&h=344&crop" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
         <img src="http://budgettravelrussia.com/Technicals/images/Yekaterinburg%20city.png" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
@@ -133,7 +133,7 @@ const App = React.createClass({
 
     if (window.location.pathname == '/city/moscow/stadium/otkrytiye') {
     return (
-      <Carousel slideIndex='2'>
+      <Carousel slideIndex={2}>
           <img src="https://www.istructe.org/getmedia/2ff444eb-68ce-4d8d-94c0-7248e9d45ad2/Otkritie-Arena-(Spartak-Stadium)-5.jpg.aspx?width=900&height=550&ext=.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
           <img src="http://stadiumdb.com/pictures/stadiums/rus/otkritie_arena/otkritie_arena02.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
           <img src="https://img-fotki.yandex.ru/get/6829/118032170.aa/0_15e127_5f779393_orig" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
@@ -414,6 +414,318 @@ const App = React.createClass({
           <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/534/53489666.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
           <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/624/62416640.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
           <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/624/62416038.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/petersbourg/hotels/authentic/hermitage') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/111/111239661.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/111/111239187.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/111/111232764.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/207/20777490.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/209/20954791.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/petersbourg/hotels/eco/piter') {
+    return (
+      <Carousel>
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/520/52051416.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/641/64156854.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/641/64156872.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/petersbourg/hotels/eco/capital') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/618/61889624.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/618/61887553.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/121/12195547.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/petersbourg/hotels/eco/gora') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/794/79415544.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/113/113437677.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/794/79414874.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/yekaterinburg/hotels/luxury/hyatt') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/103/103884283.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/103/103884323.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/103/103884291.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/yekaterinburg/hotels/luxury/vysotsky') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/270/27074371.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/272/27253401.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/272/27250339.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/yekaterinburg/hotels/luxury/ramada') {
+    return (
+      <Carousel>
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/799/79974443.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/799/79974582.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/802/80288684.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/yekaterinburg/hotels/authentic/red') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/937/93726351.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/937/93727718.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/937/93727635.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/yekaterinburg/hotels/authentic/chekhov') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/770/77060928.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/109/109403283.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/109/109403509.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/yekaterinburg/hotels/authentic/renomme') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/110/110103108.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/110/110103083.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/109/109403509.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/yekaterinburg/hotels/eco/bolshoy') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/116/116094130.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/116/116650757.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/851/85133329.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/yekaterinburg/hotels/eco/ural') {
+    return (
+      <Carousel>
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/116/116092287.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/116/116092225.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/962/96294595.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/yekaterinburg/hotels/eco/lhouse') {
+    return (
+      <Carousel>
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/392/39282986.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/392/39254663.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/392/39255024.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/sochi/hotels/luxury/pullman') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/293/29312552.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/293/29312544.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/933/93319567.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/sochi/hotels/luxury/hyatt') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/113/113609189.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/113/113609163.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/113/113609173.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/sochi/hotels/luxury/rodina') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/333/33321034.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/325/32566813.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/333/33320986.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/sochi/hotels/authentic/anna') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/100/10039574.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/100/10051898.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/643/6433918.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/sochi/hotels/authentic/chebotarev') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/282/28281605.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/100/100396685.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/282/28281190.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/sochi/hotels/authentic/tsvetnoy') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/109/109205992.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/111/111025098.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/109/109214501.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/sochi/hotels/eco/victor') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/333/33383232.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/333/33386739.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/333/33387943.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/sochi/hotels/eco/prima') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/951/95182502.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/953/95305923.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/953/95305741.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/sochi/hotels/eco/marika') {
+    return (
+      <Carousel>
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/487/48719599.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/487/48719529.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/487/48720017.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/kazan/hotels/luxury/hilton') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/754/75487003.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/754/75486650.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/754/75485901.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/kazan/hotels/luxury/shalyapin') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/625/62599482.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/197/19795547.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/625/62599481.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/kazan/hotels/luxury/luciano') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/623/6239833.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/621/6218757.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/621/6219964.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/kazan/hotels/authentic/kikhot') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/109/109278156.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/109/109278460.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/110/110633067.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/kazan/hotels/authentic/sapozhok') {
+    return (
+      <Carousel>
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/652/65248492.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/601/60113993.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/601/60114058.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/kazan/hotels/authentic/tatarskaya') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/637/63734672.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/599/59947604.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/599/59947410.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/kazan/hotels/eco/moskovskaya') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/408/40830304.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/408/40830131.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/385/38554268.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/kazan/hotels/eco/kamala') {
+    return (
+      <Carousel>
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/708/70811369.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/665/66543002.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://t-ec.bstatic.com/images/hotel/max1024x768/645/64503344.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+      </Carousel>
+      )
+    }
+
+    if (window.location.pathname == '/city/kazan/hotels/eco/gvardeiskaya') {
+    return (
+      <Carousel>
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/162/16277305.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/103/103618621.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
+          <img src="https://s-ec.bstatic.com/images/hotel/max1024x768/162/16277324.jpg" onLoad={() => {window.dispatchEvent(new Event('resize'));}} />
       </Carousel>
       )
     }

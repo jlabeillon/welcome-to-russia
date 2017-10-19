@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 // Local import
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
+import Carousel from 'src/components/Carousel';
 
 // Code
 class KazanHotelLuxuryHotel2 extends React.Component {
@@ -15,12 +16,12 @@ class KazanHotelLuxuryHotel2 extends React.Component {
         <div className="row">
 
           <div className="col-xs-2 nav">
-            <a href="#" className="nav-left">Hotel website</a>
+            <a href="" className="nav-left">Hotel website</a>
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Shalyapin Palace Hotel</h1>
-            <span>Carousel component</span>
+          <h1 id="city-name">Shalyapin Palace Hotel</h1>
+            <div id="carousel"><Carousel /></div>
             <p id="city-description">The Shalyapin Palace is a 4-star hotel, centrally located in Kazan near the pedestrian zone of Baumana street.
 
             The hotel has a total of 123 classically-designed guest rooms, offering the guest a clean and comfortable place to stay.
@@ -29,24 +30,29 @@ class KazanHotelLuxuryHotel2 extends React.Component {
 
             All guests of the Shalyapin Palace receive complimentary access to the fitness centre with its indoor swimming pool, gym and sauna. The hotel offers business meeting facilities of different capacity. There is also an on site car parking, available upon request to hotel guests.</p>
 
-            <div id="form-hotel" className="col-xs-6">
-              <form>
-              <input type="text" placeholder="Lastname" />
-              <input type="text" placeholder="Firstname" />
-              <br />
-              <input type="text" placeholder="Email" />
-              <input type="text" placeholder="Phone" />
-              <br />
-              <input type="radio" />I accept to be contacted by phone
-              <br />
-              <textarea rows="4" cols="50" placeholder="Here you can send a message to the hotel. Note that it is preferable to send your message in English."></textarea>
-              <br />
-              <button>Send</button>
-              </form>
-            </div>
+            <section className="get-in-touch col-xs-6">
+             <h1 className="title">Contact the hotel</h1>
+             <form className="contact-form row" action="/email-sended">
+                <div className="form-field col x-50">
+                   <input id="name" className="input-text js-input" type="text" required />
+                   <label className="label" htmlFor="name">Name</label>
+                </div>
+                <div className="form-field col x-50">
+                   <input id="email" className="input-text js-input" type="email" required />
+                   <label className="label" htmlFor="email">E-mail</label>
+                </div>
+                <div className="form-field col x-100">
+                   <input id="message" className="input-text js-input" type="text" required />
+                   <label className="label" htmlFor="message">Message</label>
+                </div>
+                <div className="form-field col x-100 align-center">
+                   <input className="submit-btn" type="submit" value="Submit"/>
+                </div>
+             </form>
+            </section>
 
-            <div id="map-hotel" className="col-xs-6">
-              <p>Map</p>
+            <div className="col-xs-6 map-hotel">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8973.239886797859!2d49.1194466!3d55.7878553!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3e9708b416375c8e!2sShalyapin+Palace+Hotel!5e0!3m2!1sen!2sfr!4v1508405392226" width="450" height="300" frameBorder="0" />
             </div>
 
           </div>

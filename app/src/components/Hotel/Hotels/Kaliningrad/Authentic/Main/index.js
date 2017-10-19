@@ -16,11 +16,11 @@ class KaliningradAuthenticMain extends React.Component {
         {/* Header */}
           <Header />
 
-          <h1>Hotels</h1>
-
-          <NavLink to="/city/kaliningrad/hotels/eco">ECO</NavLink>
-          <NavLink to="/city/kaliningrad/hotels/authentic">AUTHENTIC</NavLink>
-          <NavLink to="/city/kaliningrad/hotels/luxury">LUXURY</NavLink>
+          <div className="nav-options-container">
+            <NavLink to="/city/kaliningrad/hotels/eco" className="nav-options" activeClassName="active-nav">eco</NavLink>
+            <NavLink to="/city/kaliningrad/hotels/authentic" className="nav-options" activeClassName="active-nav">authentic</NavLink>
+            <NavLink to="/city/kaliningrad/hotels/luxury" className="nav-options" activeClassName="active-nav">luxury</NavLink>
+          </div>
 
           <div className="row">
             <div className="col-xs-12">

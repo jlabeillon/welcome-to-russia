@@ -12,16 +12,16 @@ import Carousel from 'src/components/Carousel';
 // Code
 class Moscow extends React.Component {
 
-  // componentWillMount() {
-  //   axios
-  //     .get('http://localhost/Projet/back/welcome-to-russia/project/web/app_dev.php/json/city/moscou')
-  //     .then((response) => {
-  //       console.log(response);
-  //     })
-  //     .catch(() => {
-  //       console.error('Ajax failed');
-  //     });
-  // }
+  componentWillMount() {
+    axios
+      .get('http://localhost/code/welcome-to-russia/project/web/app_dev.php/json/city/moscou')
+      .then((response) => {
+        console.log(response);
+      })
+      .catch(() => {
+        console.error('Ajax failed');
+      });
+  }
 
   render() {
     return (
