@@ -10,6 +10,11 @@ import Carousel from 'src/components/Carousel';
 
 // Code
 class Petersbourg extends React.Component {
+
+    // componentWillMount() {
+    //   this.props.actions.loadPetersbourg();
+    // }
+
   render() {
     return (
       <div className="container">

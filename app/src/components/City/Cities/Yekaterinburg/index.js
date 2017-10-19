@@ -10,6 +10,11 @@ import Carousel from 'src/components/Carousel';
 
 // Code
 class Yekaterinburg extends React.Component {
+
+      // componentWillMount() {
+      //   this.props.actions.loadYekaterinburg();
+      // }
+
   render() {
     return (
       <div className="container">

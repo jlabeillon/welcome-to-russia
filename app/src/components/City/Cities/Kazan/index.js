@@ -10,6 +10,11 @@ import Carousel from 'src/components/Carousel';
 
 // Code
 class Kazan extends React.Component {
+
+      // componentWillMount() {
+      //   this.props.actions.loadKazan();
+      //
+
   render() {
     return (
       <div className="container">

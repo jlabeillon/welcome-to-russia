@@ -10,6 +10,11 @@ import Carousel from 'src/components/Carousel';
 
 // Code
 class Kaliningrad extends React.Component {
+
+      // componentWillMount() {
+      //   this.props.actions.loadKaliningrad();
+      // }
+
   render() {
     return (
       <div className="container">

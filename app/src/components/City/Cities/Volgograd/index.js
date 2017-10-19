@@ -10,6 +10,11 @@ import Carousel from 'src/components/Carousel';
 
 // Code
 class Volgograd extends React.Component {
+
+      // componentWillMount() {
+      //   this.props.actions.loadVolgograd();
+      //
+
   render() {
     return (
       <div className="container">

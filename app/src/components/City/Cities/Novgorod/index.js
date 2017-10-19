@@ -10,6 +10,11 @@ import Carousel from 'src/components/Carousel';
 
 // Code
 class Novgorod extends React.Component {
+
+      // componentWillMount() {
+      //   this.props.actions.loadNovgorod();
+      // }
+
   render() {
     return (
       <div className="container">

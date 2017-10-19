@@ -10,6 +10,11 @@ import Carousel from 'src/components/Carousel';
 
 // Code
 class Saransk extends React.Component {
+
+      // componentWillMount() {
+      //   this.props.actions.loadSaransk();
+      // }
+
   render() {
     return (
       <div className="container">
