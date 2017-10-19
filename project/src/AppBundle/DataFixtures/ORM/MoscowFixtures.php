@@ -227,7 +227,9 @@ class MoscowFixtures extends Fixture
         $slug = new Slugify();
         $moscowSlug = $slug->slugify($moscow->getName());
         $moscow->setSlug($moscowSlug);
-        $moscow->setDescription('Moscou est la capitale de la Fédération de Russie et la plus grande ville d\'Europe. Moscou est situé sur la rivière Moskova. Cette ville a une place importante dans l\'économie russe : elle produit 25 % du PIB de la Fédération. Moscou est l\'hôte des Jeux olympiques d\'été en 1980 ');
+        $moscow->setDescription('Moscow is the capital and most populous city of Russia, with 13.2 million residents within the city limits and 17.1 million within the urban area. Moscow has the status of a Russian federal city. Moscow has one of the largest municipal economies in Europe and it accounts more than one-fifth of Russia\'s gross domestic product (GDP). As of 2015, the nominal GRP in Moscow reached ₽13,5 trillion $0.22 trillion($0.55 trillion in Purchasing Power), $18,000 per capita and $46,000 per capita in Purchasing Power). The city is full of clubs, restaurants and bars. Tverskaya Street is also one of the busiest shopping streets in Moscow.
+
+The adjoining Tretyakovsky Proyezd, also south of Tverskaya Street, in Kitai-gorod, is host to upmarket boutique stores such as Bulgari, Tiffany & Co., Armani, Prada and Bentley. Nightlife in Moscow has moved on since Soviet times and today the city has many of the world\'s largest nightclubs. Clubs, bars, creative spaces and restaurants-turned-into-dancefloors are flooding Moscow streets with new openings every year. The hottest area is located around the old chocolate factory, where bars, nightclubs, galleries, cafés and restaurants are placed.');
         $moscow->addHotel($hotelMoscow1);
         $moscow->addHotel($hotelMoscow2);
         $moscow->addHotel($hotelMoscow3);
