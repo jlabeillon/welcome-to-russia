@@ -63,7 +63,7 @@ class NizhnyNovgorodFixtures extends Fixture
         // hotel 1
         $hotelNizhnyNovgorod1 = new Hotel();
         $hotelNizhnyNovgorod1->setName('Hotel Mona Lisa');
-        $hotelNizhnyNovgorod1->setEmail('email@address.fake');
+        $hotelNizhnyNovgorod1->setEmail('monalisa59@yandex.ru');
         $hotelNizhnyNovgorod1->setShortdescription('Located in a green area of Nizhniy Novgorod, a 30-minute drive to the city centre, Hotel Mona Lisa features an outdoor swimming pool. The Volga River is a 15-minute walk away.');
         $hotelNizhnyNovgorod1->setDescription('Located in a green area of Nizhniy Novgorod, a 30-minute drive to the city centre, Hotel Mona Lisa features an outdoor swimming pool. The Volga River is a 15-minute walk away. The comfortable rooms feature air conditioning and free Wi-Fi. They have a flat-screen satellite TV and fridge. The private bathrooms come with a shower or bath, hairdryer and free toiletries.
         The restaurant at Hotel Mona Lisa serves dishes of European and Russian cuisine. The 24-hour front desk offers laundry and ironing services. Free private parking is available. The nearest bus stop is a 3-minute walk from the hotel. Nizhniy Novgorod Moskovskiy Train Station is 10 km away, while Nizhniy Novgorod Airport is 33 km away.');
@@ -72,6 +72,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $slug = new Slugify();
         $hotelNizhnyNovgorod1Slug = $slug->slugify($hotelNizhnyNovgorod1->getName());
         $hotelNizhnyNovgorod1->setSlug($hotelNizhnyNovgorod1Slug);
+        $hotelNizhnyNovgorod1->setAddress('ul. Khalzovskaya, 59, Nizhnij Novgorod, Nizhegorodskaya oblast, Russia, 603068');
         $hotelNizhnyNovgorod1->setCity($nizhnyNovgorod);
 
         $manager->persist($hotelNizhnyNovgorod1);
@@ -79,7 +80,7 @@ class NizhnyNovgorodFixtures extends Fixture
         // hotel 2
         $hotelNizhnyNovgorod2 = new Hotel();
         $hotelNizhnyNovgorod2->setName('Baget Hotel');
-        $hotelNizhnyNovgorod2->setEmail('email@address.fake');
+        $hotelNizhnyNovgorod2->setEmail('bagethotel@gmail.com');
         $hotelNizhnyNovgorod2->setShortdescription('Located a 10-minute walk from the Nizhny Novgorod Kremlin, Baget Hotel features rooms with a contemporary décor. It offers a 24-hour front desk.');
         $hotelNizhnyNovgorod2->setDescription('Located a 10-minute walk from the Nizhny Novgorod Kremlin, Baget Hotel features rooms with a contemporary décor. It offers a 24-hour front desk.
         With air conditioning, rooms all come with a flat-screen TV and a private bathroom equipped with free toiletries. Studios also have an equipped kitchenette. Guests will find several cafes and restaurants within a radius of 200 m of the property.
@@ -89,6 +90,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $slug = new Slugify();
         $hotelNizhnyNovgorod2Slug = $slug->slugify($hotelNizhnyNovgorod2->getName());
         $hotelNizhnyNovgorod2->setSlug($hotelNizhnyNovgorod2Slug);
+        $hotelNizhnyNovgorod2->setAddress('Ilinskaya street 3, Nizhny Novgorod, Russia');
         $hotelNizhnyNovgorod2->setCity($nizhnyNovgorod);
 
         $manager->persist($hotelNizhnyNovgorod2);
@@ -96,7 +98,7 @@ class NizhnyNovgorodFixtures extends Fixture
         // hotel 3
         $hotelNizhnyNovgorod3 = new Hotel();
         $hotelNizhnyNovgorod3->setName('MaxxRoyal Hotel');
-        $hotelNizhnyNovgorod3->setEmail('email@address.fake');
+        $hotelNizhnyNovgorod3->setEmail('maxxroyal-nn@yandex.ru');
         $hotelNizhnyNovgorod3->setShortdescription('Offering a restaurant, MaxxRoyal Hotel is located in Nizhniy Novgorod, a 20-minute drive from city centre. Free WiFi access is available.');
         $hotelNizhnyNovgorod3->setDescription('Offering a restaurant, MaxxRoyal Hotel is located in Nizhniy Novgorod, a 20-minute drive from city centre. Free WiFi access is available.
         Each room here will provide you with a TV. Featuring a shower, private bathroom also comes with a hairdryer and free toiletries. Extras include a desk and a fan.
@@ -106,6 +108,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $slug = new Slugify();
         $hotelNizhnyNovgorod3Slug = $slug->slugify($hotelNizhnyNovgorod3->getName());
         $hotelNizhnyNovgorod3->setSlug($hotelNizhnyNovgorod3Slug);
+        $hotelNizhnyNovgorod3->setAddress('Nijni Novgorod, ul. Oudmourte, 34a');
         $hotelNizhnyNovgorod3->setCity($nizhnyNovgorod);
 
         $manager->persist($hotelNizhnyNovgorod3);
@@ -123,6 +126,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $slug = new Slugify();
         $hotelNizhnyNovgorod4Slug = $slug->slugify($hotelNizhnyNovgorod4->getName());
         $hotelNizhnyNovgorod4->setSlug($hotelNizhnyNovgorod4Slug);
+        $hotelNizhnyNovgorod4->setAddress('ul. Marata, 23А, Nizhnij Novgorod, Nizhegorodskaya oblast, Russie, 603002');
         $hotelNizhnyNovgorod4->setCity($nizhnyNovgorod);
 
         $manager->persist($hotelNizhnyNovgorod4);
@@ -130,7 +134,7 @@ class NizhnyNovgorodFixtures extends Fixture
         // hotel 5
         $hotelNizhnyNovgorod5 = new Hotel();
         $hotelNizhnyNovgorod5->setName('Joy Hotel');
-        $hotelNizhnyNovgorod5->setEmail('email@address.fake');
+        $hotelNizhnyNovgorod5->setEmail('hotel-joy@mail.ru');
         $hotelNizhnyNovgorod5->setShortdescription('Joy Hotel is located in the historic centre, a 5-minute walk from Nizhny Novgorod Kremlin. The rooms offer air conditioning, a safety deposit box, flat-screen TV with cable channels, and kitchenette equipped with a fridge, microwave and electric kettle. The bathrooms include a hairdryer.');
         $hotelNizhnyNovgorod5->setDescription('Joy Hotel is located in the historic centre, a 5-minute walk from Nizhny Novgorod Kremlin. The rooms offer air conditioning, a safety deposit box, flat-screen TV with cable channels, and kitchenette equipped with a fridge, microwave and electric kettle. The bathrooms include a hairdryer.
         Guests are welcome to eat out in the cafés and restaurants within a 5-minute walk away. Breakfasts in the room are served upon request. Free WiFi is available throughout the property and parking is provided at surcharge. Guests can enjoy billiards on site. The Oka River embankment is a 12-minute walk from the property. Nizhny Novgorod Train Station is 5.5 km away, and Nizhny Novgorod International Airport is 23 km from Joy Hotel.
@@ -140,6 +144,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $slug = new Slugify();
         $hotelNizhnyNovgorod5Slug = $slug->slugify($hotelNizhnyNovgorod5->getName());
         $hotelNizhnyNovgorod5->setSlug($hotelNizhnyNovgorod5Slug);
+        $hotelNizhnyNovgorod5->setAddress('ul. Oktyabrskaya, 4, Nizhnij Novgorod, Nizhegorodskaya oblast, Russia, 603005');
         $hotelNizhnyNovgorod5->setCity($nizhnyNovgorod);
 
         $manager->persist($hotelNizhnyNovgorod5);
@@ -147,7 +152,7 @@ class NizhnyNovgorodFixtures extends Fixture
         // hotel 6
         $hotelNizhnyNovgorod6 = new Hotel();
         $hotelNizhnyNovgorod6->setName('Nikitin Hotel');
-        $hotelNizhnyNovgorod6->setEmail('email@address.fake');
+        $hotelNizhnyNovgorod6->setEmail('info@nikitin-hotel.ru');
         $hotelNizhnyNovgorod6->setShortdescription('Free Wi-Fi and a full English breakfast are offered at this hotel, located just 350 m from where the River Volga meets the River Oka. The design hotel offers a 24-hour reception.');
         $hotelNizhnyNovgorod6->setDescription('Free Wi-Fi and a full English breakfast are offered at this hotel, located just 350 m from where the River Volga meets the River Oka. The design hotel offers a 24-hour reception. Rooms at Nikitin Hotel feature a mixture of bright and deep colours. Each one comes with a flat-screen TV, minibar, and air conditioning. The private bathroom includes a bathrobe, slippers, and free toiletries. Nikitin Hotel offers a laundry and ironing service to guests, as well as a shoe shine. A shuttle  service is also available.
         The hotel is a 9-minute walk from Nizhniy Novgorod Fair Exhibition Grounds. Alexandra Nevskogo Cathedral is less than 1 minute away by foot. Nizhny Novgorod Main Station is 2 km away and Nizhny Novgorod Airport is 20 km away.');
@@ -156,6 +161,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $slug = new Slugify();
         $hotelNizhnyNovgorod6Slug = $slug->slugify($hotelNizhnyNovgorod6->getName());
         $hotelNizhnyNovgorod6->setSlug($hotelNizhnyNovgorod6Slug);
+        $hotelNizhnyNovgorod6->setAddress('Strelka Street, 13, Nizhnij Novgorod, Nizhegorodskaya oblast, Russia, 603086');
         $hotelNizhnyNovgorod6->setCity($nizhnyNovgorod);
 
         $manager->persist($hotelNizhnyNovgorod6);
@@ -163,7 +169,7 @@ class NizhnyNovgorodFixtures extends Fixture
         // hotel 7
         $hotelNizhnyNovgorod7 = new Hotel();
         $hotelNizhnyNovgorod7->setName('City Hotel Sova');
-        $hotelNizhnyNovgorod7->setEmail('email@address.fake');
+        $hotelNizhnyNovgorod7->setEmail('reception@hotelsova.ru');
         $hotelNizhnyNovgorod7->setShortdescription('This 4-star business City Hotel Sova is located a 10-minute drive to the centre of Nizhniy Novgorod and offers free WiFi, a business centre and underground parking. The Kremlin and the pedestrian street Bolshaya Pokrovskaya are just a few bus stops away.');
         $hotelNizhnyNovgorod7->setDescription('This 4-star business City Hotel Sova is located a 10-minute drive to the centre of Nizhniy Novgorod and offers free WiFi, a business centre and underground parking. The Kremlin and the pedestrian street Bolshaya Pokrovskaya are just a few bus stops away.
         The modern rooms are air conditioned and come with orthopedic mattresses, hypoallergenic pillows, a TV and a minibar. The private bathrooms feature a bath or shower, hairdryer and free toiletries. Bathrobes and slippers are offered.
@@ -173,6 +179,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $slug = new Slugify();
         $hotelNizhnyNovgorod7Slug = $slug->slugify($hotelNizhnyNovgorod7->getName());
         $hotelNizhnyNovgorod7->setSlug($hotelNizhnyNovgorod7Slug);
+        $hotelNizhnyNovgorod7->setAddress('ul. Vaneeva, 121, Nizhnij Novgorod, Nizhegorodskaya oblast, Russia, 603105');
         $hotelNizhnyNovgorod7->setCity($nizhnyNovgorod);
 
         $manager->persist($hotelNizhnyNovgorod7);
@@ -180,7 +187,7 @@ class NizhnyNovgorodFixtures extends Fixture
         // hotel 8
         $hotelNizhnyNovgorod8 = new Hotel();
         $hotelNizhnyNovgorod8->setName('Courtyard by Marriott Nizhny Novgorod City Center');
-        $hotelNizhnyNovgorod8->setEmail('email@address.fake');
+        $hotelNizhnyNovgorod8->setEmail('reservation@courtyard-nnovgorod.com');
         $hotelNizhnyNovgorod8->setShortdescription('Featuring a fitness centre, Courtyard by Marriott Nizhny Novgorod City Center is located a 20-minute walk from Nizhny Novgorod Kremlin. Free WiFi and free private parking are available on site.');
         $hotelNizhnyNovgorod8->setDescription('Featuring a fitness centre, Courtyard by Marriott Nizhny Novgorod City Center is located a 20-minute walk from Nizhny Novgorod Kremlin. Free WiFi and free private parking are available on site.
         All rooms are fitted with air conditioning, a flat-screen TV with satellite channels, electric kettle and working area. The bathrooms come with a hairdryer and free toiletries. Guests can dine in the hotel’s restaurant and there is also a 24-hour front desk at the property. Moskovsky Train Station is 5 km away and Nizhny Novgorod International Airport is 23 km from Courtyard by Marriott Nizhny Novgorod City Center.');
@@ -189,6 +196,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $slug = new Slugify();
         $hotelNizhnyNovgorod8Slug = $slug->slugify($hotelNizhnyNovgorod8->getName());
         $hotelNizhnyNovgorod8->setSlug($hotelNizhnyNovgorod8Slug);
+        $hotelNizhnyNovgorod8->setAddress('Ilinskaïa rue, 46, Nizhnij Novgorod, Nizhegorodskaya oblast, Russia, 603109');
         $hotelNizhnyNovgorod8->setCity($nizhnyNovgorod);
 
         $manager->persist($hotelNizhnyNovgorod8);
@@ -196,7 +204,7 @@ class NizhnyNovgorodFixtures extends Fixture
         // hotel 9
         $hotelNizhnyNovgorod9 = new Hotel();
         $hotelNizhnyNovgorod9->setName('Park-Hotel Chayka');
-        $hotelNizhnyNovgorod9->setEmail('email@address.fake');
+        $hotelNizhnyNovgorod9->setEmail('malto:sales@volnahotel.ru');
         $hotelNizhnyNovgorod9->setShortdescription('Park-Hotel Chayka offers accommodation in Zhelnino. The hotel has a spa centre and water sports facilities, and guests can enjoy a drink at the bar.');
         $hotelNizhnyNovgorod9->setDescription('Park-Hotel Chayka offers accommodation in Zhelnino. The hotel has a spa centre and water sports facilities, and guests can enjoy a drink at the bar.
         All rooms have a TV. Some units have a seating area where you can relax. The rooms are equipped with a private bathroom fitted with a bath or shower. For your comfort, you will find bath robes and slippers. There is a 24-hour front desk, a cash machine, a shared lounge and hairdresser’s at the property.
@@ -206,6 +214,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $slug = new Slugify();
         $hotelNizhnyNovgorod9Slug = $slug->slugify($hotelNizhnyNovgorod9->getName());
         $hotelNizhnyNovgorod9->setSlug($hotelNizhnyNovgorod9Slug);
+        $hotelNizhnyNovgorod9->setAddress('pr. Lenina, 98, Nizhnij Novgorod, Nizhegorodskaya oblast, Russia, 603049');
         $hotelNizhnyNovgorod9->setCity($nizhnyNovgorod);
 
         $manager->persist($hotelNizhnyNovgorod9);
