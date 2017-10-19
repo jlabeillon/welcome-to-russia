@@ -7,15 +7,22 @@
 		{% for article in articles %}
 
             <a class="link-article" href="{{ path('article_show', { 'id': article.id }) }}">
+				<hr class="separate">
 				<img class="img-blog" src="{{asset('public/pic/' ~ article.image)}}">
+
 				{% if is_granted('ROLE_USER')%}
 					<a class="buttn_edit" href="{{ path('article_edit', { 'id': article.id }) }}" class="btn btn-info btn-xs">Editer</a>
+					{% else %}
+					<div class="buttn_bug"></div>
 				{% endif %}
+
 				<main class="block">
 					<h2 class="blog-title">	{{ article.title }}</h2>
 					<p class="post_article">    {{ article.content|truncate(500) }}</p>
 					<a class="buttn_view" href="{{ path('article_show', { 'id': article.id }) }}">View</a>
+
 				</main>
+
 			</a>
 		{% endfor %}
 

@@ -1,17 +1,24 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1 class="blog-title">Création de l'article</h1>
+
+
+<div class="form-user">
+	<h1 class="form-title">Creation of an article</h1>
+	<div class="form-text">
+
 
     {{ form_start(form) }}
         {{ form_widget(form) }}
          {{ form_row(form.image) }}
-        <input type="submit" value="Create" />
+        <input class="login" type="submit" value="Create" />
+
     {{ form_end(form) }}
 
-    <ul class="list-inline">
-        <li>
-            <a href="{{ path('article_index') }}" class="btn btn-primary">Back to the list</a>
-        </li>
-    </ul>
+</div></div>
+
+<a class="buttn_new" href="{{ path('article_index') }}" class="btn btn-primary">Back to the list</a>
+
+
+
 {% endblock %}

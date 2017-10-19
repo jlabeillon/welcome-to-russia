@@ -1,6 +1,9 @@
 @font-face {
     font-family: Dusha;
     src: url(Dusha.ttf);
+
+}
+@font-face {
 	font-family:Quicksand-Regular;
 	src: url(Quicksand-Regular.ttf);
 }
@@ -211,5 +214,93 @@ max-width: 640px;
     background-color: white;
     box-shadow: 0px 0px 10px 1px rgba(1,1,1,0.30);
     overflow: hidden;
+}
 
+.separate {
+	margin: 0.03em 0 0 0;
+    border-style: dashed;
+    border-color: #FF5B98;
+    border-width: 2px;
+}
+
+.separate-notgr {
+	margin: 0.03em 0 0 0;
+    border-style: dashed;
+    border-color: #FF5B98;
+    border-width: 2px;
+}
+
+.buttn_bug {
+	width: 74px;
+	height: 38px;
+	    display: table;
+    border: none;
+    text-decoration: none;
+}
+
+#comment {
+text-align: center;
+}
+
+.post_article-comment {
+	font-family: Quicksand-Regular;
+	font-weight:400;
+	font-style:normal;
+	line-height: 1.7em;
+	color : #928989;
+	font-size: 0.8em;
+	text-align: left;
+	padding-left: 3.8em;
+}
+
+.post_article-comment-by {
+	color:#FF5B98;
+}
+
+#appbundle_commentaire_content {
+	width: 100%;
+	margin:5px 0;
+}
+
+#appbundle_commentaire_username {
+	width: 100%;
+	margin:5px 0;
+}
+
+#appbundle_article_title{
+	width: 100%;
+	margin:5px 0;
+}
+#appbundle_article_content{
+	width: 100%;
+	margin:5px 0;
+}
+
+#appbundle_article_image{
+	width: 100%;
+	margin:5px 0;
+}
+.buttn_edit-show {
+	text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    display: block;
+    cursor: pointer;
+    background-color: #27BDEE;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+}
+
+.bttn_return{
+    cursor: pointer;
+    background-color: #27BDEE;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    position: absolute;
+    right: 107px;
 }
