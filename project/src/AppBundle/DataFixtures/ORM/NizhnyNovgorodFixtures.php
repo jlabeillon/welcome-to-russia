@@ -12,6 +12,8 @@ class NizhnyNovgorodFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
+        $nizhnyNovgorod = New City();
+        $manager->persist($nizhnyNovgorod);
         // restaurant 1
         $restaurantNizhnyNovgorod1 = new Restaurant();
         $restaurantNizhnyNovgorod1->setPhone('+7 831 213-80-82');
@@ -241,7 +243,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $nizhnyNovgorod->addRestaurant($restaurantNizhnyNovgorod2);
         $nizhnyNovgorod->addRestaurant($restaurantNizhnyNovgorod3);
 
-        $manager->persist($kaliningrad);
+        $manager->persist($nizhnyNovgorod);
 
         $manager->flush();
     }

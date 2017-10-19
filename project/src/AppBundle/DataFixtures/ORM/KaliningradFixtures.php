@@ -12,6 +12,8 @@ class KaliningradFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
+        $Kaliningrad = New City();
+        $manager->persist($Kaliningrad);
         // restaurant 1
         $restaurantKaliningrad1 = new Restaurant();
         $restaurantKaliningrad1->setPhone('+7 401 235-76-76');
@@ -73,7 +75,7 @@ class KaliningradFixtures extends Fixture
         $hotelKaliningrad1Slug = $slug->slugify($hotelKaliningrad1->getName());
         $hotelKaliningrad1->setSlug($hotelKaliningrad1Slug);
         $hotelKaliningrad1->setAddress('Kaliningrad, ul. Kolkhoznaya, 6');
-        $hotelKaliningrad1->setCity($kaliningrad);
+        $hotelKaliningrad1->setCity($Kaliningrad);
 
         $manager->persist($hotelKaliningrad1);
 
@@ -90,7 +92,7 @@ class KaliningradFixtures extends Fixture
         $hotelKaliningrad2Slug = $slug->slugify($hotelKaliningrad2->getName());
         $hotelKaliningrad2->setSlug($hotelKaliningrad2Slug);
         $hotelKaliningrad2->setAddress('Kolomenskaya Ulitsa 27, 236010 Kaliningrad, Russia');
-        $hotelKaliningrad2->setCity($kaliningrad);
+        $hotelKaliningrad2->setCity($Kaliningrad);
 
         $manager->persist($hotelKaliningrad2);
 
@@ -106,7 +108,7 @@ class KaliningradFixtures extends Fixture
         $hotelKaliningrad3Slug = $slug->slugify($hotelKaliningrad3->getName());
         $hotelKaliningrad3->setSlug($hotelKaliningrad3Slug);
         $hotelKaliningrad3->setAddress('pr. Mira, 20, Konigsberg, Kaliningradskaya oblast, Russia, 236022');
-        $hotelKaliningrad3->setCity($kaliningrad);
+        $hotelKaliningrad3->setCity($Kaliningrad);
 
         $manager->persist($hotelKaliningrad3);
 
@@ -123,7 +125,7 @@ class KaliningradFixtures extends Fixture
         $hotelKaliningrad4Slug = $slug->slugify($hotelKaliningrad4->getName());
         $hotelKaliningrad4->setSlug($hotelKaliningrad4Slug);
         $hotelKaliningrad4->setAddress('ul. Chaykovskogo, 43, Konigsberg, Kaliningradskaya oblast, Russia, 236000');
-        $hotelKaliningrad4->setCity($kaliningrad);
+        $hotelKaliningrad4->setCity($Kaliningrad);
 
         $manager->persist($hotelKaliningrad4);
 
@@ -139,7 +141,7 @@ class KaliningradFixtures extends Fixture
         $hotelKaliningrad5Slug = $slug->slugify($hotelKaliningrad5->getName());
         $hotelKaliningrad5->setSlug($hotelKaliningrad5Slug);
         $hotelKaliningrad5->setAddress('Pugacheva st., 13, Kaliningrad, RF.');
-        $hotelKaliningrad5->setCity($kaliningrad);
+        $hotelKaliningrad5->setCity($Kaliningrad);
 
         $manager->persist($hotelKaliningrad5);
 
@@ -156,7 +158,7 @@ class KaliningradFixtures extends Fixture
         $hotelKaliningrad6Slug = $slug->slugify($hotelKaliningrad6->getName());
         $hotelKaliningrad6->setSlug($hotelKaliningrad6Slug);
         $hotelKaliningrad6->setAddress('8, Zarechnaya st., Orlovka, Kaliningrad');
-        $hotelKaliningrad6->setCity($kaliningrad);
+        $hotelKaliningrad6->setCity($Kaliningrad);
 
         $manager->persist($hotelKaliningrad6);
 
@@ -174,7 +176,7 @@ class KaliningradFixtures extends Fixture
         $hotelKaliningrad7Slug = $slug->slugify($hotelKaliningrad7->getName());
         $hotelKaliningrad7->setSlug($hotelKaliningrad7Slug);
         $hotelKaliningrad7->setAddress('Beregovoy per., 2, Svetlogorsk, Kaliningradskaya oblast, Russia, 238560');
-        $hotelKaliningrad7->setCity($kaliningrad);
+        $hotelKaliningrad7->setCity($Kaliningrad);
 
         $manager->persist($hotelKaliningrad7);
 
@@ -192,7 +194,7 @@ class KaliningradFixtures extends Fixture
         $hotelKaliningrad8Slug = $slug->slugify($hotelKaliningrad8->getName());
         $hotelKaliningrad8->setSlug($hotelKaliningrad8Slug);
         $hotelKaliningrad8->setAddress('ul. Oktyabrskaya, 6а, Konigsberg, Kaliningradskaya oblast, Russia, 236006');
-        $hotelKaliningrad8->setCity($kaliningrad);
+        $hotelKaliningrad8->setCity($Kaliningrad);
 
         $manager->persist($hotelKaliningrad8);
 
@@ -209,33 +211,33 @@ class KaliningradFixtures extends Fixture
         $hotelKaliningrad9Slug = $slug->slugify($hotelKaliningrad9->getName());
         $hotelKaliningrad9->setSlug($hotelKaliningrad9Slug);
         $hotelKaliningrad9->setAddress('Rabochiy per., 7, Kaliningrad, Kaliningradskaya oblast, Russia, 236020');
-        $hotelKaliningrad9->setCity($kaliningrad);
+        $hotelKaliningrad9->setCity($Kaliningrad);
 
         $manager->persist($hotelKaliningrad9);
 
         // City Fixtures
-        $kaliningrad->setName('Kalilingrad');
+        $Kaliningrad->setName('Kalilingrad');
         $slug = new Slugify();
-        $kaliningradSlug = $slug->slugify($kaliningrad->getName());
-        $kaliningrad->setSlug($kaliningradSlug);
-        $kaliningrad->setDescription('It was named Königsberg originally. It was the capital city of the German province of East Prussia, the earlier Duchy of Prussia, and before that of the Monastic State of the Teutonic Knights. The city had that name from 1254 to 1945.
+        $kaliningradSlug = $slug->slugify($Kaliningrad->getName());
+        $Kaliningrad->setSlug($kaliningradSlug);
+        $Kaliningrad->setDescription('It was named Königsberg originally. It was the capital city of the German province of East Prussia, the earlier Duchy of Prussia, and before that of the Monastic State of the Teutonic Knights. The city had that name from 1254 to 1945.
         One of the famous people from Königsberg was the philosopher Immanuel Kant.');
 
-        $kaliningrad->addHotel($hotelKaliningrad1);
-        $kaliningrad->addHotel($hotelKaliningrad2);
-        $kaliningrad->addHotel($hotelKaliningrad3);
-        $kaliningrad->addHotel($hotelKaliningrad4);
-        $kaliningrad->addHotel($hotelKaliningrad5);
-        $kaliningrad->addHotel($hotelKaliningrad6);
-        $kaliningrad->addHotel($hotelKaliningrad7);
-        $kaliningrad->addHotel($hotelKaliningrad8);
-        $kaliningrad->addHotel($hotelKaliningrad9);
+        $Kaliningrad->addHotel($hotelKaliningrad1);
+        $Kaliningrad->addHotel($hotelKaliningrad2);
+        $Kaliningrad->addHotel($hotelKaliningrad3);
+        $Kaliningrad->addHotel($hotelKaliningrad4);
+        $Kaliningrad->addHotel($hotelKaliningrad5);
+        $Kaliningrad->addHotel($hotelKaliningrad6);
+        $Kaliningrad->addHotel($hotelKaliningrad7);
+        $Kaliningrad->addHotel($hotelKaliningrad8);
+        $Kaliningrad->addHotel($hotelKaliningrad9);
 
-        $kaliningrad->addRestaurant($restaurantKaliningrad1);
-        $kaliningrad->addRestaurant($restaurantKaliningrad2);
-        $kaliningrad->addRestaurant($restaurantKaliningrad3);
+        $Kaliningrad->addRestaurant($restaurantKaliningrad1);
+        $Kaliningrad->addRestaurant($restaurantKaliningrad2);
+        $Kaliningrad->addRestaurant($restaurantKaliningrad3);
 
-        $manager->persist($kaliningrad);
+        $manager->persist($Kaliningrad);
 
         $manager->flush();
     }

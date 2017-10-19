@@ -12,6 +12,8 @@ class SaranskFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
+        $saransk = New City();
+        $manager->persist($saransk);
         // restaurant 1
         $restaurantSaransk1 = new Restaurant();
         $restaurantSaransk1->setPhone('+7 834 236-36-36');

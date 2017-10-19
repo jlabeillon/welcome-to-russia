@@ -12,6 +12,8 @@ class SamaraFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
+        $samara = New City();
+        $manager->persist($samara);
         // restaurant 1
         $restaurantSamara1 = new Restaurant();
         $restaurantSamara1->setPhone('+7 846 332-22-60');
