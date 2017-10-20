@@ -122,8 +122,6 @@ class BlogController extends Controller
 
         $editForm->handleRequest($request);
 
-dump($article);
-
 
         if ($editForm->isSubmitted() && $editForm->isValid()) {
             if ($article->getImage() != null){

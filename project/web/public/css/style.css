@@ -241,7 +241,7 @@ max-width: 640px;
 #comment {
 text-align: center;
 }
-
+p {	font-family: Quicksand-Regular;}
 .post_article-comment {
 	font-family: Quicksand-Regular;
 	font-weight:400;
