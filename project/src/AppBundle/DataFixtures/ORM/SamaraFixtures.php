@@ -153,9 +153,7 @@ class SamaraFixtures extends Fixture
         $hotelSamara6->setName('Hotel Europe');
         $hotelSamara6->setEmail('hoteleurope@samaramail.ru');
         $hotelSamara6->setShortdescription('This property is 11 minutes walk from the beach. Situated in the historic city centre of Samara, this hotel features free Wi-Fi. Russian specialities are served in the hotel restaurant, and guests benefit from a 24-hour reception.');
-        $hotelSamara5->setDescription('This property is 11 minutes walk from the beach. Situated in the historic city centre of Samara, this hotel features free Wi-Fi. Russian specialities are served in the hotel restaurant, and guests benefit from a 24-hour reception.
-        The air-conditioned rooms at Hotel Europe are decorated in shades of peach, and come with satellite TV and a seating area. A hairdryer is provided in the en suite bathroom. A variety of traditional cuisine is served in the Europe Hotel’s Dublin restaurant, a continental breakfast is served there too. After dinner guests can enjoy a drink at the bar.
-        The Volga River is a 10-minute walk from the hotel, and Samara Opera and Drama Theatre is a 5-minute drive away. After a day of sightseeing, guests can relax in the hotel’s sauna.');
+        $hotelSamara6->setDescription('This property is 11 minutes walk from the beach. Situated in the historic city centre of Samara, this hotel features free Wi-Fi. Russian specialities are served in the hotel restaurant, and guests benefit from a 24-hour reception. The air-conditioned rooms at Hotel Europe are decorated in shades of peach, and come with satellite TV and a seating area. A hairdryer is provided in the en suite bathroom. A variety of traditional cuisine is served in the Europe Hotel’s Dublin restaurant, a continental breakfast is served there too. After dinner guests can enjoy a drink at the bar. The Volga River is a 10-minute walk from the hotel, and Samara Opera and Drama Theatre is a 5-minute drive away. After a day of sightseeing, guests can relax in the hotel’s sauna.');
         $hotelSamara6->setCategory('Authentic');
 
         $slug = new Slugify();

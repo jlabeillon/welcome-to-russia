@@ -55,8 +55,8 @@ class RestaurantController extends Controller
 
         $serializer = $this->container->get('jms_serializer');
 
-        $hotel = $this->getDoctrine()->getRepository(Restaurant::class)->findByCity($id);
-        $jsonContent = $serializer->serialize($hotel, 'json');
+        $restaurant = $this->getDoctrine()->getRepository(Restaurant::class)->findByCity($id);
+        $jsonContent = $serializer->serialize($restaurant, 'json');
 
         $response = new Response($jsonContent);
         $response->headers->set('Access-Control-Allow-Origin', '*');
