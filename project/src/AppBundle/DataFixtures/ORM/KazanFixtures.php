@@ -220,7 +220,7 @@ The luxurious wellness area includes a spa bath and Turkish steam room. A range 
         $slug = new Slugify();
         $citySlug = $slug->slugify($city->getName());
         $city->setSlug($citySlug);
-        $city->setDescription('zdzdfzfzf');
+        $city->setDescription('Kazan is the capital and largest city of the Republic of Tatarstan, Russia. With a population of 1,143,535, it is the eighth most populous city in Russia. Kazan lies at the confluence of the Volga and Kazanka Rivers in European Russia. The Kazan Kremlin is a World Heritage Site. Kazan is one of the largest industrial and financial centers of Russia, and a leading city of the Volga economic region in construction and accumulated investment. City\'s Gross Regional Product had reached 380 billion rubles in 2011. Kazan now is one of the most developed cities in Russia in terms of sport. The city has hosted two Bandy World Championships, in 2005 and 2011, the World Summer Universiade 2013, the World Championship in fencing in 2014, the Aquatics Championship FINA 2015, 2017 FIFA Confederations Cup and other international competitions of various levels. In the future the city will hold the 2018 FIFA World Cup.');
         $city->addHotel($hotel1);
         $city->addHotel($hotel2);
         $city->addHotel($hotel3);

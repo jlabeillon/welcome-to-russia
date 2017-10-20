@@ -221,7 +221,7 @@ Rodina Grand Hotel & SPA is the only 5-star boutique hotel in Sochi. Other exclu
         $slug = new Slugify();
         $citySlug = $slug->slugify($city->getName());
         $city->setSlug($citySlug);
-        $city->setDescription('adadazdazdazd');
+        $city->setDescription('Sochi is a city in Krasnodar Krai, Russia, located on the Black Sea coast near the border between Georgia and Russia. Sochi is also known for its sport facilities: a local tennis school spawned the careers of such notable players as Grand Slam champions Maria Sharapova and Yevgeny Kafelnikov. In late 2005, the Russian Football Union announced that it was planning to establish a year-round training center for the country\'s national teams in Sochi. The city\'s warm climate was cited as one of the main incentives. Sochi is also the home for the football team FC Zhemchuzhina which plays in the Russian First Division and for the ice hockey team HC Sochi which plays in the Kontinental Hockey League. ');
         $city->addHotel($hotel1);
         $city->addHotel($hotel2);
         $city->addHotel($hotel3);

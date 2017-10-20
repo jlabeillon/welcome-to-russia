@@ -220,7 +220,7 @@ The Ramada Ekaterinburg spa features an indoor swimming pool and a year-round ou
         $slug = new Slugify();
         $citySlug = $slug->slugify($city->getName());
         $city->setSlug($citySlug);
-        $city->setDescription('adazdazdazdkjhedvugbev');
+        $city->setDescription('Yekaterinburg, alternatively romanised as Ekaterinburg, is the main industrial, administrative, and cultural centre of the Sverdlovsk Oblast, in the Ural Federal District. Yekaterinburg is one of the largest economic centers in Russia. It is included in the City-600 list (it unites the 600 largest cities in the world that produce 60% of global GDP), compiled by the McKinsey Global Institute, a research organization. In 2010, the consulting company estimated the gross product of Yekaterinburg to be about $19 billion (according to the calculations of the company, it should grow to 40 billion by 2025). Yekaterinburg is one of the 11 host-cities that will receive matches of the 2018 FIFA World Cup. The matches will be played on the upgraded Central Stadium.');
         $city->addHotel($hotel1);
         $city->addHotel($hotel2);
         $city->addHotel($hotel3);

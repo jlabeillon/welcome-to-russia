@@ -224,7 +224,7 @@ Saint Isaac’s Cathedral is 400 m from Lotte Hotel St. Petersburg, while Admira
         $slug = new Slugify();
         $saintPetersbourgSlug = $slug->slugify($saintPetersbourg->getName());
         $saintPetersbourg->setSlug($saintPetersbourgSlug);
-        $saintPetersbourg->setDescription('zfzfzfzfzfz');
+        $saintPetersbourg->setDescription('Saint Petersburg is Russia\'s second-largest city after Moscow, with five million inhabitants in 2012. An important Russian port on the Baltic Sea, it is politically administered as a federal subject. Saint Petersburg is a major trade gateway, serving as the financial and industrial centre of Russia, with specialisions in oil and gas trade; shipbuilding yards; aerospace industry; technology, including radio, electronics, software, and computers; machine building, heavy machinery and transport, including tanks and other military equipment; mining; instrument manufacture; ferrous and nonferrous metallurgy (production of aluminium alloys); chemicals, pharmaceuticals, and medical equipment; publishing and printing; food and catering; wholesale and retail; textile and apparel industries; and many other businesses. Saint Petersburg hosted part of the association football tournament during the 1980 Summer Olympics. The 1994 Goodwill Games were also held here.');
         $saintPetersbourg->addHotel($hotel1);
         $saintPetersbourg->addHotel($hotel2);
         $saintPetersbourg->addHotel($hotel3);
