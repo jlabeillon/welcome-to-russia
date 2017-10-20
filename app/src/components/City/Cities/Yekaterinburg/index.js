@@ -11,9 +11,9 @@ import Carousel from 'src/components/Carousel';
 // Code
 class Yekaterinburg extends React.Component {
 
-      // componentWillMount() {
-      //   this.props.actions.loadYekaterinburg();
-      // }
+      componentWillMount() {
+        this.props.actions.loadYekaterinburg();
+      }
 
   render() {
     return (
@@ -24,13 +24,13 @@ class Yekaterinburg extends React.Component {
             <NavLink to="/city/yekaterinburg/stadium" className="nav-left">Stadium</NavLink>
             <a href="#" className="nav-left">Transportation</a>
             <NavLink to="/city/yekaterinburg/hotels/luxury" className="nav-left">Hotels</NavLink>
-            <NavLink to="/city/moscow/restaurants" className="nav-left">Restaurants</NavLink>
+            <NavLink to="/city/yekaterinburg/restaurants" className="nav-left">Restaurants</NavLink>
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Yekaterinburg</h1>
+            <h1 id="city-name">{this.props.cityName}</h1>
             <div id="carousel"><Carousel /></div>
-            <p id="city-description">Yekaterinburg, alternatively romanised as Ekaterinburg, is the main industrial, administrative, and cultural centre of the Sverdlovsk Oblast, in the Ural Federal District. With a Russia Census-estimated population of 1,488,791 as of 2017, Yekaterinburg is Russia’s fourth-largest city after Moscow, Saint Petersburg, and Novosibirsk. Situated on the Iset River, Yekaterinburg is located east of the Ural Mountains, in the middle of the Eurasian continent, on the border of Europe and Asia, with an area of 495 square kilometres. The Yekaterinburg agglomeration is the fourth largest urban agglomeration in Russia, as well as one of the three most developed post-industrial agglomerations of the country. Yekaterinburg is also the headquarters of the Central Military District.</p>
+            <p id="city-description">{this.props.cityDesc}</p>
           </div>
 
         </div>

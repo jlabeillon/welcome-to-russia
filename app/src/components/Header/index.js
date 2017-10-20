@@ -10,7 +10,7 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <img id="header-logo" src="/images/FIFA_World_Cup_2018_Logo.png" />
+        <img id="header-logo" src="/images/FIFA_World_Cup_2018_Logo.jpg" />
         <div id="header-menu">
           <NavLink exact to="/">Home</NavLink>
           <NavLink to="/transports">Transports</NavLink>

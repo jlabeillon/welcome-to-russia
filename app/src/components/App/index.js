@@ -1,7 +1,7 @@
 // Import
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 // Local import
 import City from 'src/components/City';

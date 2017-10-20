@@ -11,9 +11,9 @@ import Carousel from 'src/components/Carousel';
 // Code
 class Rostov extends React.Component {
 
-      // componentWillMount() {
-      //   this.props.actions.loadRostov();
-      // }
+      componentWillMount() {
+        this.props.actions.loadRostov();
+      }
 
   render() {
     return (
@@ -28,9 +28,9 @@ class Rostov extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Rostov-on-Don</h1>
+            <h1 id="city-name">{this.props.cityName}</h1>
             <div id="carousel"><Carousel /></div>
-            <p id="city-description">Rostov-on-Don is a port city and the administrative center of Rostov Oblast and the Southern Federal District of Russia. It lies in the southeastern part of the East European Plain on the Don River, 32 kilometers from the Sea of Azov. The southwestern suburbs of the city abut the Don River delta. Population: 1,089,261 (2010 Census)</p>
+            <p id="city-description">{this.props.cityDesc}</p>
           </div>
 
         </div>

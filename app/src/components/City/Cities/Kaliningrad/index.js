@@ -11,9 +11,9 @@ import Carousel from 'src/components/Carousel';
 // Code
 class Kaliningrad extends React.Component {
 
-      // componentWillMount() {
-      //   this.props.actions.loadKaliningrad();
-      // }
+      componentWillMount() {
+        this.props.actions.loadKaliningrad();
+      }
 
   render() {
     return (
@@ -28,11 +28,9 @@ class Kaliningrad extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Kaliningrad</h1>
+            <h1 id="city-name">{this.props.cityName}</h1>
             <div id="carousel"><Carousel /></div>
-            <p id="city-description">Kaliningrad is the administrative center of Kaliningrad Oblast, a Russian exclave between Poland and Lithuania on the Baltic Sea.
-
-            In the Middle Ages, it was the site of Old Prussian settlement Twangste. In 1255, during the Northern Crusades, a new fortress was built by the Teutonic Knights. The city became the capital of the Duchy of Prussia and East Prussia (part of Germany). It was heavily damaged during World War II and its population fled or was removed by force when it became a Russian city. According to the 2010 Census, its population was 431,902.</p>
+            <p id="city-description">{this.props.cityDesc}</p>
           </div>
 
         </div>

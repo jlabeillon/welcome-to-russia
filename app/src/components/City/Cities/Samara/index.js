@@ -11,9 +11,9 @@ import Carousel from 'src/components/Carousel';
 // Code
 class Samara extends React.Component {
 
-      // componentWillMount() {
-      //   this.props.actions.loadSamara();
-      // }
+      componentWillMount() {
+        this.props.actions.loadSamara();
+      }
 
   render() {
     return (
@@ -28,9 +28,9 @@ class Samara extends React.Component {
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Samara</h1>
+            <h1 id="city-name">{this.props.cityName}</h1>
             <div id="carousel"><Carousel /></div>
-            <p id="city-description">Samara, known from 1935 to 1991 as Kuybyshev, is the sixth largest city in Russia and the administrative center of Samara Oblast. It is situated in the southeastern part of European Russia at the confluence of the Volga and Samara Rivers on the east bank of the Volga. The Volga acts as the city’s western boundary; across the river are the Zhiguli Mountains, after which the local beer (Zhigulyovskoye) is named. The northern boundary is formed by the Sokolyi Hills and by the steppes in the south and east. The land within the city boundaries covers 46,597 hectares (115,140 acres). Population: 1,164,685 (2010 Census). The metropolitan area of Samara-Tolyatti-Syzran within Samara Oblast contains a population of over three million.</p>
+            <p id="city-description">{this.props.cityDesc}</p>
           </div>
 
         </div>

@@ -11,9 +11,9 @@ import Carousel from 'src/components/Carousel';
 // Code
 class Sochi extends React.Component {
 
-      // componentWillMount() {
-      //   this.props.actions.loadSochi();
-      //
+      componentWillMount() {
+        this.props.actions.loadSochi();
+      }
 
   render() {
     return (
@@ -24,15 +24,13 @@ class Sochi extends React.Component {
             <NavLink to="/city/sochi/stadium" className="nav-left">Stadium</NavLink>
             <a href="#" className="nav-left">Transportation</a>
             <NavLink to="/city/sochi/hotels/luxury" className="nav-left">Hotels</NavLink>
-            <NavLink to="/city/moscow/restaurants" className="nav-left">Restaurants</NavLink>
+            <NavLink to="/city/sochi/restaurants" className="nav-left">Restaurants</NavLink>
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Sochi</h1>
+            <h1 id="city-name">{this.props.cityName}</h1>
             <div id="carousel"><Carousel /></div>
-            <p id="city-description">Sochi is a city in Krasnodar Krai, Russia, located on the Black Sea coast near the border between Georgia/Abkhazia and Russia. The Greater Sochi area, which includes territories and localities subordinated to Sochi proper, has a total area of 3,526 square kilometers and sprawls for 145 kilometers along the shores of the Black Sea near the Caucasus Mountains. The area of the city proper is 176.77 square kilometers. According to the 2010 Census, the city had a permanent population of 343,334 up from 328,809 recorded in the 2002 Census, making it Russia’s largest resort city. Being part of the Caucasian Riviera, it is one of the very few places in Russia with a subtropical climate, with warm to hot summers and mild winters.
-
-            With the alpine and Nordic events held at the nearby ski resort of Roza Khutor in Krasnaya Polyana, Sochi hosted the XXII Olympic Winter Games and XI Paralympic Winter Games in 2014, as well as the Russian Formula 1 Grand Prix from 2014 until at least 2020. It will also be one of the host cities for the 2018 FIFA World Cup.</p>
+            <p id="city-description">{this.props.cityDesc}</p>
           </div>
 
         </div>

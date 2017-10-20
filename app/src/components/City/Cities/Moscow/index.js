@@ -9,6 +9,7 @@ import Header from 'src/components/Header';
 import Carousel from 'src/components/Carousel';
 
 // Code
+
 class Moscow extends React.Component {
 
   componentWillMount() {

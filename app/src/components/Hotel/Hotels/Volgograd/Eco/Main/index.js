@@ -16,8 +16,6 @@ class VolgogradEcoMain extends React.Component {
         {/* Header */}
           <Header />
 
-          <h1>Hotels</h1>
-
           <div className="nav-options-container">
             <NavLink to="/city/volgograd/hotels/eco" className="nav-options" activeClassName="active-nav">eco</NavLink>
             <NavLink to="/city/volgograd/hotels/authentic" className="nav-options" activeClassName="active-nav">authentic</NavLink>

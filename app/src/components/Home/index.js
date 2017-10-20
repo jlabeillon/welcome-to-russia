@@ -9,11 +9,6 @@ import Header from 'src/components/Header';
 
 // Code
 class Home extends React.Component {
-
-  Tralala = () => (
-    console.log('yes')
-  );
-
   render() {
     return (
       <div className="container">
@@ -25,7 +20,7 @@ class Home extends React.Component {
           <div className="home-picture-container">
 
             <div className="image">
-              <NavLink to="/city/moscow" onClick={this.Tralala}><img id="big-picture-home" src="/images/moscow-1.jpg" />
+              <NavLink to="/city/moscow"><img id="big-picture-home" src="/images/moscow-1.jpg" />
               <span id="moscow-home-container"><p id="moscow-home-text">Moscow</p></span></NavLink>
             </div>
 
@@ -45,8 +40,8 @@ class Home extends React.Component {
             <div id="second-medium">
 
               <div className="image">
-                <a href="/city/yekaterinburg"><img className="medium-picture-home" src="/images/yekaterinburg.jpg" />
-                <span id="yekaterinburg-home-container"><p id="yekaterinburg-home-text">Yekaterinburg</p></span></a>
+                <NavLink to="/city/yekaterinburg"><img className="medium-picture-home" src="/images/yekaterinburg.jpg" />
+                <span id="yekaterinburg-home-container"><p id="yekaterinburg-home-text">Yekaterinburg</p></span></NavLink>
               </div>
 
               <div className="image">
