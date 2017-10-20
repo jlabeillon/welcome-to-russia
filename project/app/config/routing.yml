@@ -22,3 +22,7 @@ fos_user_change_password:
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+
+kms_froala_editor:
+  resource: "@KMSFroalaEditorBundle/Resources/config/routing.yml"
+  prefix:   /froalaeditor

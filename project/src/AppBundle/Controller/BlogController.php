@@ -9,6 +9,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\HttpFoundation\File\File;
 
 
 /**
@@ -111,14 +113,40 @@ class BlogController extends Controller
      */
     public function editAction(Request $request, Article $article)
     {
+        $currentFile =$article->getImage();
+        $article->setImage(
+        new File($this->getParameter('images_directory').'/'.$article->getImage())
+        );
         $deleteForm = $this->createDeleteForm($article);
         $editForm = $this->createForm('AppBundle\Form\ArticleType', $article);
+
         $editForm->handleRequest($request);
 
-        if ($editForm->isSubmitted() && $editForm->isValid()) {
-            $this->getDoctrine()->getManager()->flush();
+dump($article);
 
-            return $this->redirectToRoute('article_edit', array('id' => $article->getId()));
+
+        if ($editForm->isSubmitted() && $editForm->isValid()) {
+            if ($article->getImage() != null){
+                $file = $article->getImage();
+                // Generate a unique name for the file before saving it
+                $fileName = md5(uniqid()).'.'.$file->guessExtension();
+                // Move the file to the directory where brochures are stored
+                $file->move(
+                    $this->getParameter('images_directory'),
+                    $fileName
+                );
+                // Update the 'brochure' property to store the PDF file name
+                // instead of its contents
+                $article->setImage($fileName);
+            } else {
+                $article->setImage($currentFile);
+            }
+
+            $em=$this->getDoctrine()->getManager();
+            $em->persist($article);
+            $em->flush();
+
+            return $this->redirectToRoute('article_show', array('id' => $article->getId()));
         }
 
         return $this->render('article/edit.html.twig', array(

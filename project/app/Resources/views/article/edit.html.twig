@@ -12,4 +12,10 @@
 </div>
 
 <a class="buttn_new" href="{{ path('article_index') }}" class="btn btn-primary">Back to the list</a>
+
+
+	{{ form_start(delete_form) }}
+	    <input type="submit" value="Delete" class="btn btn-danger" onclick="return confirm('Supprimer ?')">
+	{{ form_end(delete_form) }}
+	
 {% endblock %}

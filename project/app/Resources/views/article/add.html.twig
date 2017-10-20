@@ -10,10 +10,11 @@
 
     {{ form_start(form) }}
         {{ form_widget(form) }}
+		{{ froala_display( article.content ) }}
          {{ form_row(form.image) }}
         <input class="login" type="submit" value="Create" />
 
-    {{ form_end(form) }}
+
 
 </div></div>
 

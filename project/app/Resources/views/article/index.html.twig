@@ -18,7 +18,7 @@
 
 				<main class="block">
 					<h2 class="blog-title">	{{ article.title }}</h2>
-					<p class="post_article">    {{ article.content|truncate(500) }}</p>
+					<p class="post_article">    {{ article.content|truncate(500)|raw }}</p>
 					<a class="buttn_view" href="{{ path('article_show', { 'id': article.id }) }}">View</a>
 
 				</main>
