@@ -216,7 +216,7 @@ The Ramada Ekaterinburg spa features an indoor swimming pool and a year-round ou
 
         #City Fixtures
         ####################################################################################################################
-        $city->setName('');
+        $city->setName('Yekaterinburg');
         $slug = new Slugify();
         $citySlug = $slug->slugify($city->getName());
         $city->setSlug($citySlug);

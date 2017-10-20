@@ -216,7 +216,7 @@ The luxurious wellness area includes a spa bath and Turkish steam room. A range 
 
         #City Fixtures
         ####################################################################################################################
-        $city->setName('');
+        $city->setName('Kazan');
         $slug = new Slugify();
         $citySlug = $slug->slugify($city->getName());
         $city->setSlug($citySlug);
