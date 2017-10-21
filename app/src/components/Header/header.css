@@ -16,16 +16,3 @@
   font-family: Dusha;
   font-size: 1.3em;
 }
-
-#header-connection {
-  display: inline;
-  margin-left: 8em;
-}
-
-#header-connection a {
-  color: red;
-  text-decoration: none;
-  padding: 0.5em;
-  font-size: 1.3em;
-  font-family: Dusha;
-}

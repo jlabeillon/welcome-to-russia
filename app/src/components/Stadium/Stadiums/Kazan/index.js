@@ -16,12 +16,12 @@ class KazanArena extends React.Component {
         <div className="row">
 
           <div className="col-xs-2 nav">
-            <a href="#" className="nav-left">Buy tickets</a>
-            <a href="#" className="nav-left">Stadium website</a>
+            <a href="http://www.fifa.com/worldcup/organisation/ticketing/index.html" className="nav-left">Buy tickets</a>
+            <a href="http://kazanarena.com/en/" className="nav-left">Stadium website</a>
           </div>
 
           <div className="col-xs-10" id="city-container">
-            <h1 id="city-name">Kazan Stadium</h1>
+            <h1 id="city-name">Kazan Arena</h1>
             <div id="carousel"><Carousel /></div>
             <p id="city-description">The Kazan Arena (Russian: Казань Арена; Tatar: Казан-Арена) is a stadium in Kazan, Russia. It was completed in July 2013, and will host football matches, especially Rubin Kazan’s home games in the Russian Premier League. The stadium has the largest outside screen in Europe.</p>
           </div>

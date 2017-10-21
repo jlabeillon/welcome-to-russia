@@ -6,8 +6,6 @@ import { Route } from 'react-router-dom';
 // Local import
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
-
-// import Restaurants from 'src/components/Restaurant/Restaurants';
 import Restaurants from 'src/containers/Restaurant';
 
 // Code

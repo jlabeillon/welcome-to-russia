@@ -1,7 +1,3 @@
-#hotels-body {
-  text-align: center;
-}
-
 #hotels-body a {
   text-decoration: none;
   color: black;
@@ -18,11 +14,12 @@
   padding: 5em;
   text-align: left;
   margin-left: 20em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .nav-options {
   font-family: Dusha;
-  color: #131486 !important;
+  color: #DAA520 !important;
   font-size: 2em;
   text-decoration: none;
   padding: 0.5em;
@@ -31,6 +28,7 @@
 
 .nav-options-container {
   margin-bottom: 3em;
+  text-align: center;
 }
 
 .active-nav {

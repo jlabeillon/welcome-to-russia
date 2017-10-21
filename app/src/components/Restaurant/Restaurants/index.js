@@ -48,13 +48,10 @@ class Restaurants extends React.Component {
   render() {
     return (
       <div className="container" id="hotels-body">
-
-      {/* Header */}
-        <Header />
-
-          <h1 className="restaurants-city">Restaurants</h1>
+      <Header />
+        <div id="restaurants">
           <div className="row">
-            <div className="col-xs-12">
+            <div className="col-xs-12 restaurant-description">
 
               { this.props.state.cityRestaurant == 'Moscow' ?
               <img className="restaurants-image" src="/images/restaurants/Moscow/moscow-pushkin.jpg" />
@@ -106,12 +103,13 @@ class Restaurants extends React.Component {
               <p>Good For: {this.props.restaurantGood1}</p>
               <p>Price: {this.props.restaurantPrice1}</p>
               <p>Adress: {this.props.restaurantAdress2}</p>
-              <p>Phone: {this.props.restaurantPhone1}</p>
+              <p><i className="fa fa-phone" aria-hidden="true"></i> {this.props.restaurantPhone1}</p>
             </div>
           </div>
 
+
           <div className="row">
-          <div className="col-xs-12">
+          <div className="col-xs-12 restaurant-description">
 
               { this.props.state.cityRestaurant == 'Moscow' ?
               <img className="restaurants-image" src="/images/restaurants/Moscow/moscow-wine-crab.jpg" />
@@ -163,12 +161,12 @@ class Restaurants extends React.Component {
             <p>Good For: {this.props.restaurantGood2}</p>
             <p>Price: {this.props.restaurantPrice1}</p>
             <p>Adress: {this.props.restaurantAdress2}</p>
-            <p>Phone: {this.props.restaurantPhone2}</p>
+            <p><i className="fa fa-phone" aria-hidden="true"></i> {this.props.restaurantPhone2}</p>
           </div>
           </div>
 
           <div className="row">
-          <div className="col-xs-12">
+          <div className="col-xs-12 restaurant-description">
 
               { this.props.state.cityRestaurant == 'Moscow' ?
               <img className="restaurants-image" src="/images/restaurants/Moscow/moscow-savva.jpg" />
@@ -220,10 +218,10 @@ class Restaurants extends React.Component {
             <p>Good For: {this.props.restaurantGood3}</p>
             <p>Price: {this.props.restaurantPrice1}</p>
             <p>Adress: {this.props.restaurantAdress3}</p>
-            <p>Phone: {this.props.restaurantPhone3}</p>
+            <p><i className="fa fa-phone" aria-hidden="true"></i> {this.props.restaurantPhone3}</p>
           </div>
           </div>
-
+        </div>
         <Footer />
 
       </div>

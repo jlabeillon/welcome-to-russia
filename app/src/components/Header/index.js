@@ -15,13 +15,10 @@ class Header extends React.Component {
           <NavLink exact to="/">Home</NavLink>
           <NavLink to="/transports">Transports</NavLink>
           <NavLink to="/accommodation">Accommodation</NavLink>
-          <NavLink to="/come-to-russia">Come to Russia</NavLink>
+          <NavLink to="/visa">Come to Russia</NavLink>
           <NavLink to="/fan-zone">Fan zone</NavLink>
           <NavLink to="/competition">Competition</NavLink>
-        </div>
-        <div id="header-connection">
-          <NavLink to="/signup">Signup</NavLink>
-          <NavLink to="/signin">Signin</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
         </div>
       </div>
     );

@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 // Local import
-import { sendCity, sendRestaurant } from 'src/store/reducer';
+import { sendCity, sendRestaurant, sendHotel } from 'src/store/reducer';
 
 // Code
 export default store => next => (action) => {
@@ -14,6 +14,7 @@ export default store => next => (action) => {
         .then(({ data }) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
+          store.dispatch(sendHotel(data));
           console.log(data)
         })
         .catch(() => {
@@ -28,6 +29,7 @@ export default store => next => (action) => {
         .then(({ data }) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
+          store.dispatch(sendHotel(data));
           console.log(data)
         })
         .catch(() => {
@@ -42,6 +44,7 @@ export default store => next => (action) => {
         .then(({ data }) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
+          store.dispatch(sendHotel(data));
           console.log(data)
         })
         .catch(() => {
@@ -56,6 +59,7 @@ export default store => next => (action) => {
         .then(({ data }) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
+          store.dispatch(sendHotel(data));
           console.log(data)
         })
         .catch(() => {
@@ -70,6 +74,7 @@ export default store => next => (action) => {
         .then(({ data }) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
+          store.dispatch(sendHotel(data));
           console.log(data)
         })
         .catch(() => {
@@ -84,6 +89,7 @@ export default store => next => (action) => {
         .then(({ data }) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
+          store.dispatch(sendHotel(data));
           console.log(data)
         })
         .catch(() => {
@@ -98,6 +104,7 @@ export default store => next => (action) => {
         .then(({ data }) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
+          store.dispatch(sendHotel(data));
           console.log(data)
         })
         .catch(() => {
@@ -112,6 +119,7 @@ export default store => next => (action) => {
         .then(({ data }) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
+          store.dispatch(sendHotel(data));
           console.log(data)
         })
         .catch(() => {
@@ -126,6 +134,7 @@ export default store => next => (action) => {
         .then(({ data }) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
+          store.dispatch(sendHotel(data));
           console.log(data)
         })
         .catch(() => {
@@ -140,6 +149,7 @@ export default store => next => (action) => {
         .then(({ data }) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
+          store.dispatch(sendHotel(data));
           console.log(data)
         })
         .catch(() => {
@@ -153,7 +163,8 @@ export default store => next => (action) => {
         .get('http://localhost/Projet/back/welcome-to-russia/project/web/app_dev.php/json/city/nizhny-novgorod')
         .then(({ data }) => {
           store.dispatch(sendCity(data));
-          store.dispatch(sendRestaurant(data)); 
+          store.dispatch(sendRestaurant(data));
+          store.dispatch(sendHotel(data));
           console.log(data)
         })
         .catch(() => {

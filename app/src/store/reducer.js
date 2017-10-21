@@ -39,6 +39,19 @@ export default (state = initialState, action = {}) => {
         restaurantPrice2: action.data.restaurant[1].price,
         restaurantPrice3: action.data.restaurant[2].price,
       };
+    case 'SET_HOTEL':
+      return {
+        ...state,
+        hotel1: action.data.hotel[0],
+        hotel2: action.data.hotel[1],
+        hotel3: action.data.hotel[2],
+        hotel4: action.data.hotel[3],
+        hotel5: action.data.hotel[4],
+        hotel6: action.data.hotel[5],
+        hotel7: action.data.hotel[6],
+        hotel8: action.data.hotel[7],
+        hotel9: action.data.hotel[8],
+      };
     default:
       return state;
   }
@@ -52,6 +65,11 @@ export const sendCity = data => ({
 
 export const sendRestaurant = data => ({
   type: 'SET_RESTAURANT',
+  data,
+});
+
+export const sendHotel = data => ({
+  type: 'SET_HOTEL',
   data,
 });
 

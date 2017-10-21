@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.restaurants-city {
-  margin-bottom: 1em;
-  font-family: Dusha;
-  font-size: 3em;
-}
-
 .restaurants-image {
   width: 300px;
   height: 200px;
@@ -16,11 +10,15 @@
 }
 
 .restaurants-name {
-  margin-top: 2em;
+  font-family: Dusha;
+  font-size: 1.5em;
 }
 
-.restaurants-description {
-  padding: 2em;
-  text-align: left;
-  margin-left: 25em;
+#restaurants {
+	margin-top: 3em;
+}
+
+.restaurant-description {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
