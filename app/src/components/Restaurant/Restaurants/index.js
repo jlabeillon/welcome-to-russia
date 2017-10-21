@@ -98,15 +98,14 @@ class Restaurants extends React.Component {
               : ''
               }
 
-              <p className="restaurants-name">{this.props.restaurantName1}</p>
-              <p>Cuisine: {this.props.restaurantCuisine1}</p>
-              <p>Good For: {this.props.restaurantGood1}</p>
-              <p>Price: {this.props.restaurantPrice1}</p>
-              <p>Adress: {this.props.restaurantAdress2}</p>
-              <p><i className="fa fa-phone" aria-hidden="true"></i> {this.props.restaurantPhone1}</p>
+              <p className="restaurants-name">{this.props.restaurant1.name}</p>
+              <p>Cuisine: {this.props.restaurant1.cuisine}</p>
+              <p>Good For: {this.props.restaurant1.goodfor}</p>
+              <p>Price: {this.props.restaurant1.price}</p>
+              <p>Adress: {this.props.restaurant1.adress}</p>
+              <p><i className="fa fa-phone" aria-hidden="true"></i> {this.props.restaurant1.phone}</p>
             </div>
           </div>
-
 
           <div className="row">
           <div className="col-xs-12 restaurant-description">
@@ -156,12 +155,12 @@ class Restaurants extends React.Component {
               : ''
               }
 
-            <p className="restaurants-name">{this.props.restaurantName2}</p>
-            <p>Cuisine: {this.props.restaurantCuisine2}</p>
-            <p>Good For: {this.props.restaurantGood2}</p>
-            <p>Price: {this.props.restaurantPrice1}</p>
-            <p>Adress: {this.props.restaurantAdress2}</p>
-            <p><i className="fa fa-phone" aria-hidden="true"></i> {this.props.restaurantPhone2}</p>
+              <p className="restaurants-name">{this.props.restaurant2.name}</p>
+              <p>Cuisine: {this.props.restaurant2.cuisine}</p>
+              <p>Good For: {this.props.restaurant2.goodfor}</p>
+              <p>Price: {this.props.restaurant2.price}</p>
+              <p>Adress: {this.props.restaurant2.adress}</p>
+              <p><i className="fa fa-phone" aria-hidden="true"></i> {this.props.restaurant2.phone}</p>
           </div>
           </div>
 
@@ -213,12 +212,12 @@ class Restaurants extends React.Component {
               : ''
               }
 
-            <p className="restaurants-name">{this.props.restaurantName3}</p>
-            <p>Cuisine: {this.props.restaurantCuisine3}</p>
-            <p>Good For: {this.props.restaurantGood3}</p>
-            <p>Price: {this.props.restaurantPrice1}</p>
-            <p>Adress: {this.props.restaurantAdress3}</p>
-            <p><i className="fa fa-phone" aria-hidden="true"></i> {this.props.restaurantPhone3}</p>
+              <p className="restaurants-name">{this.props.restaurant3.name}</p>
+              <p>Cuisine: {this.props.restaurant3.cuisine}</p>
+              <p>Good For: {this.props.restaurant3.goodfor}</p>
+              <p>Price: {this.props.restaurant3.price}</p>
+              <p>Adress: {this.props.restaurant3.adress}</p>
+              <p><i className="fa fa-phone" aria-hidden="true"></i> {this.props.restaurant3.phone}</p>
           </div>
           </div>
         </div>
