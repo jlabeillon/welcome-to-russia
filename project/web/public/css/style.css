@@ -214,6 +214,7 @@ max-width: 640px;
     background-color: white;
     box-shadow: 0px 0px 10px 1px rgba(1,1,1,0.30);
     overflow: hidden;
+	padding: 0 2em;
 }
 
 .separate {
@@ -241,7 +242,8 @@ max-width: 640px;
 #comment {
 text-align: center;
 }
-p {	font-family: Quicksand-Regular;}
+p {	font-family: Quicksand-Regular;
+color:black;}
 .post_article-comment {
 	font-family: Quicksand-Regular;
 	font-weight:400;
