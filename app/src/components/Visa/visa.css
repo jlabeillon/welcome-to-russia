@@ -1,17 +1,28 @@
-#visa-title {
+.page-title {
   text-align: center;
   font-family: Dusha;
   margin-bottom: 1em;
 }
-#visa-desc {
-  margin-bottom: 4em;
+.page-desc {
+  margin-bottom: 2em;
   text-align: left;
+  font-family: Lusitana, serif;
+  font-size: 1.5em;
 }
 
-#visa-container h2 {
+.page-container h2 {
   font-family: Dusha;
   font-size: 3em;
   cursor: pointer;
+}
+
+.page-container h2:hover {
+  color: #666666;
+}
+
+.page-container p {
+  font-family: Lusitana, serif;
+  font-size: 1.5em;
 }
 
 #reponse1 {

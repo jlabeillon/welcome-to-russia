@@ -10,6 +10,9 @@ import Hotel from 'src/components/Hotel';
 import Restaurant from 'src/components/Restaurant';
 import Stadium from 'src/components/Stadium';
 import Visa from 'src/components/Visa';
+import Accommodation from 'src/components/Hotel/Accommodation';
+import Transport from 'src/components/Transport';
+import Competition from 'src/components/Competition';
 
 // Code
 class App extends React.Component {
@@ -25,6 +28,9 @@ class App extends React.Component {
           <Route path="/city/:city/stadium/:name" exact component={Stadium} />
           <Route path="/visa" exact component={Visa} />
           <Route path="/email-sended" exact component={Hotel} />
+          <Route path="/accommodation" exact component={Accommodation} />
+          <Route path="/transports" exact component={Transport} />
+          <Route path="/competition" exact component={Competition} />
       </div>
     );
   };

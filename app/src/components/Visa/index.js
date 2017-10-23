@@ -25,9 +25,9 @@ class Visa extends React.Component {
         <Header />
         <div className="row">
 
-          <div className="col-xs-12" id="visa-container">
-            <h1 id="visa-title">Formalités territoriales</h1>
-            <p id="visa-desc">Vous souhaitez vous rendre en Russie pour assister aux matchs de la Coupe du Monde 2018 qui débutera le 14 juin 2018 à Moscou ? Il faudra dans ce cas vous munir de votre « passeport du supporter » ! Explications. </p>
+          <div className="col-xs-12" className="page-container">
+            <h1 className="page-title">Formalités territoriales</h1>
+            <p className="page-desc">Vous souhaitez vous rendre en Russie pour assister aux matchs de la Coupe du Monde 2018 qui débutera le 14 juin 2018 à Moscou ? Il faudra dans ce cas vous munir de votre « passeport du supporter » ! Explications. </p>
 
             <h2 onClick={function(){show(1)}}>Pourquoi un passeport du supporter ?</h2>
 

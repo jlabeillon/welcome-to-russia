@@ -94,7 +94,7 @@ class Home extends React.Component {
             <span id="visa-home-container"><p id="visa-home-text">visa</p></span></NavLink>
           </div>
           <div className="image">
-            <NavLink to="/hotels"><img className="bottom-nav" src="/images/hotels-home.jpg" />
+            <NavLink to="/accommodation"><img className="bottom-nav" src="/images/hotels-home.jpg" />
             <span id="hotels-home-container"><p id="hotels-home-text">hotels</p></span></NavLink>
           </div>
           <div className="image">
