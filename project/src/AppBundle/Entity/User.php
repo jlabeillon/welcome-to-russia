@@ -4,6 +4,8 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping  as ORM;
 use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\Common\Collections\ArrayCollection;
+
 
 /**
 * @ORM\Entity
@@ -27,6 +29,30 @@ class User extends BaseUser
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @ORM\OneToMany(targetEntity="Article", mappedBy="author")
+     */
+    protected $article;
+
+
+    public function __construct()
+    {
+        $this->article = new ArrayCollection();
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getArticle()
+    {
+        return $this->article;
+    }
+
+    public function addArticle(Article $article)
+    {
+        $this->article[] = $article;
     }
 
 }

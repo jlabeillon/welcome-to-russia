@@ -31,6 +31,10 @@ class Article
      */
     private $content;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="User", inversedBy="article")
+     */
+    private $author;
 
     /**
      * @ORM\Column(type="string")
@@ -169,4 +173,22 @@ class Article
 
         return $this;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+
+    /**
+     * @param mixed $author
+     */
+    public function setAuthor($author)
+    {
+        $this->author = $author;
+    }
+
+
 }
