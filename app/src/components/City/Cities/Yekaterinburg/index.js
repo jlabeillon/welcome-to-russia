@@ -10,10 +10,16 @@ import Carousel from 'src/components/Carousel';
 
 // Code
 class Yekaterinburg extends React.Component {
-
-      componentWillMount() {
-        this.props.actions.loadYekaterinburg();
-      }
+  // Props validation
+  static propTypes = {
+    actions: PropTypes.objectOf(PropTypes.func.isRequired).isRequired,
+    cityName: PropTypes.string.isRequired,
+    cityDesc: PropTypes.string.isRequired,
+  }
+  // Lifecycle
+  componentWillMount() {
+    this.props.actions.loadYekaterinburg();
+  }
 
   render() {
     return (
@@ -36,7 +42,7 @@ class Yekaterinburg extends React.Component {
         <Footer />
       </div>
     );
-  };
+  }
 }
 // Export
 export default Yekaterinburg;

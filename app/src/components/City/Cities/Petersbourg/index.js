@@ -10,10 +10,16 @@ import Carousel from 'src/components/Carousel';
 
 // Code
 class Petersbourg extends React.Component {
-
-    componentWillMount() {
-      this.props.actions.loadPetersbourg();
-    }
+  // Props validation
+  static propTypes = {
+    actions: PropTypes.objectOf(PropTypes.func.isRequired).isRequired,
+    cityName: PropTypes.string.isRequired,
+    cityDesc: PropTypes.string.isRequired,
+  }
+  // Lifecycle
+  componentWillMount() {
+    this.props.actions.loadPetersbourg();
+  }
 
   render() {
     return (
@@ -29,14 +35,14 @@ class Petersbourg extends React.Component {
           <div className="col-xs-10" id="city-container">
             <h1 id="city-name">{this.props.cityName}</h1>
             <div id="carousel"><Carousel /></div>
-          <p id="city-description">{this.props.cityDesc}</p>
+            <p id="city-description">{this.props.cityDesc}</p>
           </div>
 
         </div>
         <Footer />
       </div>
     );
-  };
+  }
 }
 // Export
 export default Petersbourg;

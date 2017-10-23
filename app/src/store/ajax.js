@@ -7,7 +7,6 @@ import { sendCity, sendRestaurant, sendHotel } from 'src/store/reducer';
 // Code
 export default store => next => (action) => {
   switch (action.type) {
-
     case 'LOAD_MOSCOW': {
       axios
         .get('http://localhost/Projet/back/welcome-to-russia/project/web/app_dev.php/json/city/moscow')
@@ -15,7 +14,7 @@ export default store => next => (action) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
           store.dispatch(sendHotel(data));
-          console.log(data)
+          console.log(data);
         })
         .catch(() => {
           console.error('Ajax failed');
@@ -30,7 +29,7 @@ export default store => next => (action) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
           store.dispatch(sendHotel(data));
-          console.log(data)
+          console.log(data);
         })
         .catch(() => {
           console.error('Ajax failed');
@@ -45,7 +44,7 @@ export default store => next => (action) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
           store.dispatch(sendHotel(data));
-          console.log(data)
+          console.log(data);
         })
         .catch(() => {
           console.error('Ajax failed');
@@ -60,7 +59,7 @@ export default store => next => (action) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
           store.dispatch(sendHotel(data));
-          console.log(data)
+          console.log(data);
         })
         .catch(() => {
           console.error('Ajax failed');
@@ -75,7 +74,7 @@ export default store => next => (action) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
           store.dispatch(sendHotel(data));
-          console.log(data)
+          console.log(data);
         })
         .catch(() => {
           console.error('Ajax failed');
@@ -90,7 +89,7 @@ export default store => next => (action) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
           store.dispatch(sendHotel(data));
-          console.log(data)
+          console.log(data);
         })
         .catch(() => {
           console.error('Ajax failed');
@@ -105,7 +104,7 @@ export default store => next => (action) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
           store.dispatch(sendHotel(data));
-          console.log(data)
+          console.log(data);
         })
         .catch(() => {
           console.error('Ajax failed');
@@ -120,7 +119,7 @@ export default store => next => (action) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
           store.dispatch(sendHotel(data));
-          console.log(data)
+          console.log(data);
         })
         .catch(() => {
           console.error('Ajax failed');
@@ -135,7 +134,7 @@ export default store => next => (action) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
           store.dispatch(sendHotel(data));
-          console.log(data)
+          console.log(data);
         })
         .catch(() => {
           console.error('Ajax failed');
@@ -150,7 +149,7 @@ export default store => next => (action) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
           store.dispatch(sendHotel(data));
-          console.log(data)
+          console.log(data);
         })
         .catch(() => {
           console.error('Ajax failed');
@@ -165,7 +164,7 @@ export default store => next => (action) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));
           store.dispatch(sendHotel(data));
-          console.log(data)
+          console.log(data);
         })
         .catch(() => {
           console.error('Ajax failed');

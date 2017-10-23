@@ -1,6 +1,6 @@
-var React = require('react');
+const React = require('react');
 
-var Carousel = require('nuka-carousel');
+const Carousel = require('nuka-carousel');
 
 const App = React.createClass({
   mixins: [Carousel.ControllerMixin],
@@ -729,7 +729,6 @@ const App = React.createClass({
       </Carousel>
       )
     }
-
   }
 });
 

@@ -1,7 +1,3 @@
-// Types
-
-// Cities
-
 // Initial State
 const initialState = {
   cityRestaurant: 'moscow',
@@ -101,4 +97,3 @@ export const loadKaliningrad = () => ({
 export const loadNovgorod = () => ({
   type: 'LOAD_NOVGOROD',
 });
-// Selectors

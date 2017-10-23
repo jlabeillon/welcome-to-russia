@@ -10,10 +10,16 @@ import Carousel from 'src/components/Carousel';
 
 // Code
 class Sochi extends React.Component {
-
-      componentWillMount() {
-        this.props.actions.loadSochi();
-      }
+  // Props validation
+  static propTypes = {
+    actions: PropTypes.objectOf(PropTypes.func.isRequired).isRequired,
+    cityName: PropTypes.string.isRequired,
+    cityDesc: PropTypes.string.isRequired,
+  }
+  // Lifecycle
+  componentWillMount() {
+    this.props.actions.loadSochi();
+  }
 
   render() {
     return (
@@ -36,7 +42,7 @@ class Sochi extends React.Component {
         <Footer />
       </div>
     );
-  };
+  }
 }
 // Export
 export default Sochi;

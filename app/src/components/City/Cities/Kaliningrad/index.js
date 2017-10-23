@@ -10,10 +10,16 @@ import Carousel from 'src/components/Carousel';
 
 // Code
 class Kaliningrad extends React.Component {
-
-      componentWillMount() {
-        this.props.actions.loadKaliningrad();
-      }
+  // Props validation
+  static propTypes = {
+    actions: PropTypes.objectOf(PropTypes.func.isRequired).isRequired,
+    cityName: PropTypes.string.isRequired,
+    cityDesc: PropTypes.string.isRequired,
+  }
+  // Lifecycle
+  componentWillMount() {
+    this.props.actions.loadKaliningrad();
+  }
 
   render() {
     return (
@@ -36,7 +42,7 @@ class Kaliningrad extends React.Component {
         <Footer />
       </div>
     );
-  };
+  }
 }
 // Export
 export default Kaliningrad;

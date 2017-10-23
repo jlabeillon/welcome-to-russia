@@ -10,10 +10,16 @@ import Carousel from 'src/components/Carousel';
 
 // Code
 class Novgorod extends React.Component {
-
-      componentWillMount() {
-        this.props.actions.loadNovgorod();
-      }
+  // Props validation
+  static propTypes = {
+    actions: PropTypes.objectOf(PropTypes.func.isRequired).isRequired,
+    cityName: PropTypes.string.isRequired,
+    cityDesc: PropTypes.string.isRequired,
+  }
+  // Lifecycle
+  componentWillMount() {
+    this.props.actions.loadNovgorod();
+  }
 
   render() {
     return (
@@ -36,7 +42,7 @@ class Novgorod extends React.Component {
         <Footer />
       </div>
     );
-  };
+  }
 }
 // Export
 export default Novgorod;
