@@ -230,7 +230,6 @@ class Restaurants extends React.Component {
             </div>
           </div>
           <Footer />
-
         </div>
       );
     }
