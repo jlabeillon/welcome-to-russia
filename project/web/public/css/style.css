@@ -10,6 +10,7 @@
 
 /* ZONE HEADER */
 
+
 #header-logo {
  width: 150px;
  height: 150px;
@@ -31,7 +32,7 @@
 
 #header-connection {
  display: inline;
- margin-left: 8em;
+ margin-left: 1em;
 }
 
 #header-connection a {

@@ -19,7 +19,6 @@
 				<main class="block">
 					<h2 class="blog-title">	{{ article.title }}</h2>
 					<p class="post_article">    {{ article.content|truncate(500)|raw }}</p>
-					<p>Article created by {{ article.author_id }}</p>
 					<a class="buttn_view" href="{{ path('article_show', { 'id': article.id }) }}">View</a>
 
 				</main>
