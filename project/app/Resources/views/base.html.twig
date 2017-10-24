@@ -6,35 +6,47 @@
         {% block stylesheets %}{% endblock %}
          <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <link rel="stylesheet" type="text/css" href="{{ asset('public/css/style.css') }}" />
+
+		<script src="https://use.fontawesome.com/7455f3feae.js"></script>
     </head>
     <body>
-		<header><div>
-		   <a href="/"><img id="header-logo" src="{{ asset('FIFA_World_Cup_2018_Logo.png')}}" /></a>
+		<header>
+		<a href="/"><img id="header-logo" src="{{ asset('FIFA_World_Cup_2018_Logo.png')}}" /></a>
+
 		   <div id="header-menu">
-		     <a href="/">Home</a>
-		     <a href="/transports">Transports</a>
-		     <a href="/accommodation">Accommodation</a>
-		     <a href="/come-to-russia">Come to Russia</a>
-		     <a href="/fan-zone">FanZone</a>
-		     <a href="/competition">Competition</a>
-         <a href="/blog">Blog</a>
+			     <a href="/">Home</a>
+			     <a href="/transports">Transports</a>
+			     <a href="/accommodation">Accommodation</a>
+			     <a href="/come-to-russia">Come to Russia</a>
+			     <a href="/fan-zone">FanZone</a>
+			     <a href="/competition">Competition</a>
+	         	<a href="/blog">Blog</a>
 		   </div>
+					  	<!-- <ul>
+						    <a href="/"><li>Home</li></a>
+						    <a href="/transports"><li>Transports</li></a>
+						    <a href="/accomodation"><li>Accommodation</li></a>
+						    <a href="/come-to-russia"><li>Come to Russia</li></a>
+						    <a href="/fan-zone"><li>FanZone</li></a>
+							<a href="/competition"><li>Competition</li></a>
+						    <a href="/blog"><li>Blog</li></a>
+						</ul>
+ -->
 		   <div id="header-connection">
 			   {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-	   {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
-	   <a href="{{ path('fos_user_security_logout') }}">
-		   {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
-	   </a>
-   {% else %}
-	   <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
-	   	   <a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a>
-   {% endif %}
-</div>
+	   				{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+	   				<a href="{{ path('fos_user_security_logout') }}">
+		   			{{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+	   				</a>
+   				{% else %}
+	   				<a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+	   	   			<a href="{{ path('fos_user_registration_register') }}">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</a>
+   					{% endif %}
+			</div>
 
-		   </div>
-		 </div>
-	 </header>
+ </header>
         {% block body %}{% endblock %}
-        {% block javascripts %}<script href="{{ asset('public/js/plugins/font_family.min.js')}}"></script>{% endblock %}
+        {% block javascripts %}
+		{% endblock %}
     </body>
 </html>
