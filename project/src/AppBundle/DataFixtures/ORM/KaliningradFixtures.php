@@ -217,7 +217,7 @@ class KaliningradFixtures extends Fixture
         $manager->persist($hotelKaliningrad9);
 
         // City Fixtures
-        $kaliningrad->setName('Kalilingrad');
+        $kaliningrad->setName('Kaliningrad');
         $slug = new Slugify();
         $kaliningradSlug = $slug->slugify($kaliningrad->getName());
         $kaliningrad->setSlug($kaliningradSlug);

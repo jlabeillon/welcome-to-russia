@@ -223,7 +223,7 @@ class NizhnyNovgorodFixtures extends Fixture
         $manager->persist($hotelNizhnyNovgorod9);
 
         // City Fixtures
-        $nizhnyNovgorod->setName('NizhnyNovgorod');
+        $nizhnyNovgorod->setName('Nizhny-Novgorod');
         $slug = new Slugify();
         $nizhnyNovgorodSlug = $slug->slugify($nizhnyNovgorod->getName());
         $nizhnyNovgorod->setSlug($nizhnyNovgorodSlug);
