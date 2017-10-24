@@ -1,27 +1,22 @@
 // Import
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 // Local import
-import RostovHotelLuxuryMain from 'src/components/Hotel/Hotels/Rostov/Luxury/Main'
+import RostovHotelLuxuryMain from 'src/components/Hotel/Hotels/Rostov/Luxury/Main';
 import RostovHotelLuxuryHotel1 from 'src/components/Hotel/Hotels/Rostov/Luxury/Hotel1';
 import RostovHotelLuxuryHotel2 from 'src/components/Hotel/Hotels/Rostov/Luxury/Hotel2';
 import RostovHotelLuxuryHotel3 from 'src/components/Hotel/Hotels/Rostov/Luxury/Hotel3';
 
 // Code
-class RostovLuxury extends React.Component {
-  render() {
-    return (
-      <div>
-        <Route path="/city/rostov/hotels/luxury" exact component={RostovHotelLuxuryMain} />
-        <Route path="/city/rostov/hotels/luxury/izvolte" exact component={RostovHotelLuxuryHotel1} />
-        <Route path="/city/rostov/hotels/luxury/soho" exact component={RostovHotelLuxuryHotel2} />
-        <Route path="/city/rostov/hotels/luxury/mercure" exact component={RostovHotelLuxuryHotel3} />
-      </div>
-    );
-  };
-}
+const RostovLuxury = () => (
+  <div>
+    <Route path="/city/rostov/hotels/luxury" exact component={RostovHotelLuxuryMain} />
+    <Route path="/city/rostov/hotels/luxury/izvolte" exact component={RostovHotelLuxuryHotel1} />
+    <Route path="/city/rostov/hotels/luxury/soho" exact component={RostovHotelLuxuryHotel2} />
+    <Route path="/city/rostov/hotels/luxury/mercure" exact component={RostovHotelLuxuryHotel3} />
+  </div>
+);
 
 // Export
 export default RostovLuxury;

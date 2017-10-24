@@ -159,7 +159,7 @@ export default store => next => (action) => {
 
     case 'LOAD_NOVGOROD': {
       axios
-        .get('http://localhost/Projet/back/welcome-to-russia/project/web/app_dev.php/json/city/nizhny-novgorod')
+        .get('http://localhost/Projet/back/welcome-to-russia/project/web/app_dev.php/json/city/nizhnynovgorod')
         .then(({ data }) => {
           store.dispatch(sendCity(data));
           store.dispatch(sendRestaurant(data));

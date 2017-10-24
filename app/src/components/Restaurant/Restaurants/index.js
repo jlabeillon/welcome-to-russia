@@ -106,6 +106,16 @@ class Restaurants extends React.Component {
                   : ''
                 }
 
+                { this.props.state.cityRestaurant === 'Kaliningrad' ?
+                  <img className="restaurants-image" alt="salo" src="/images/restaurants/Kaliningrad/kaliningrad-salo.jpg" />
+                  : ''
+                }
+
+                { this.props.state.cityRestaurant === 'Nizhny Novgorod' ?
+                  <img className="restaurants-image" alt="testo" src="/images/restaurants/Novgorod/novgorod-testo.jpg" />
+                  : ''
+                }
+
                 <p className="restaurants-name">{this.props.restaurant1.name}</p>
                 <p>Cuisine: {this.props.restaurant1.cuisine}</p>
                 <p>Good For: {this.props.restaurant1.goodfor}</p>
@@ -163,6 +173,16 @@ class Restaurants extends React.Component {
                   : ''
                 }
 
+                { this.props.state.cityRestaurant === 'Kaliningrad' ?
+                  <img className="restaurants-image" alt="britanika" src="/images/restaurants/Kaliningrad/kaliningrad-britanika.jpg" />
+                  : ''
+                }
+
+                { this.props.state.cityRestaurant === 'Nizhny Novgorod' ?
+                  <img className="restaurants-image" alt="biblioteka" src="/images/restaurants/Novgorod/novgorod-biblioteka.jpg" />
+                  : ''
+                }
+
                 <p className="restaurants-name">{this.props.restaurant2.name}</p>
                 <p>Cuisine: {this.props.restaurant2.cuisine}</p>
                 <p>Good For: {this.props.restaurant2.goodfor}</p>
@@ -217,6 +237,16 @@ class Restaurants extends React.Component {
 
                 { this.props.state.cityRestaurant === 'Rostov' ?
                   <img className="restaurants-image" alt="cow" src="/images/restaurants/Rostov/rostov-cow.jpg" />
+                  : ''
+                }
+
+                { this.props.state.cityRestaurant === 'Kaliningrad' ?
+                  <img className="restaurants-image" alt="zolter" src="/images/restaurants/Kaliningrad/kaliningrad-zotler.jpg" />
+                  : ''
+                }
+
+                { this.props.state.cityRestaurant === 'Nizhny Novgorod' ?
+                  <img className="restaurants-image" alt="posolstvo" src="/images/restaurants/Novgorod/novgorod-posolstvo.jpg" />
                   : ''
                 }
 
