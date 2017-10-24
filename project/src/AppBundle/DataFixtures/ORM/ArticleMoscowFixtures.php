@@ -19,7 +19,7 @@ class ArticleMoscowFixtures extends Fixture
 
         $article = new Article();
         $article->setTitle('How to stay in Russia.');
-        $article->setContent('During your trip to Russia you will have the opportunity to rest in many hotels. From economy class, through hotels that we classify as authentic, and ending with luxury hotels, we hope that among all these choices, you will find your happiness. Feel free to leave a comment, share your testimonials!');
+        $article->setContent('Tourism in Russia has been growing strongly since the Soviet years, firstly thanks to domestic tourism and also thanks to international tourism. A rich cultural heritage and a wide variety of landscapes make the country one of the most popular tourist destinations in the world. During your trip to Russia you will have the opportunity to rest in many hotels. From economy class, through hotels that we classify as authentic, and ending with luxury hotels, we hope that among all these choices, you will find your happiness. Feel free to leave a comment, share your testimonials!');
         $article->setImage('ede2dbd036fd70fe3c2c02d8476623a0.png');
         $manager->persist($article);
 
