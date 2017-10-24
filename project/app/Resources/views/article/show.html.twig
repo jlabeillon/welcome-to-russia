@@ -9,6 +9,7 @@
 	<a class="buttn_edit-show" href="{{ path('article_edit', { 'id': article.id }) }}" class="btn btn-info">Edit</a>
 	{% endif %}
     <h1 class="blog-title">{{article.title}}</h1>
+	<h2>Article created by {{ article.author.username }}</h2>
 
 <p class="post_article-show">{{article.content|raw}}</p>
 

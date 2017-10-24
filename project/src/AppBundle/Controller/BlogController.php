@@ -43,6 +43,7 @@ class BlogController extends Controller
     public function addAction(Request $request)
     {
         $article = new Article();
+        $user = $this->getUser();
         $form = $this->createForm('AppBundle\Form\ArticleType', $article);
         $form->handleRequest($request);
 
@@ -63,6 +64,8 @@ class BlogController extends Controller
             // Update the 'brochure' property to store the PDF file name
             // instead of its contents
             $article->setImage($fileName);
+            $article->setAuthor($user);
+            $user->addArticle($article);
             $em->persist($article);
             $em->flush();
 
@@ -91,9 +94,9 @@ class BlogController extends Controller
         if ($form->isSubmitted() && $form->isValid())
         {
             $em = $this->getDoctrine()->getManager();
-            //$article->addCommentaire($commentaire);
             $commentaire->setArticle($article);
             $commentaire->setPublishedAt(new \DateTime());
+            $article->addCommentaire($commentaire);
             $em->persist($commentaire);
             $em->flush();
             return $this->redirectToRoute('article_show', array('id' => $article->getId()));
