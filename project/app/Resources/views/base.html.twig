@@ -6,32 +6,46 @@
         {% block stylesheets %}{% endblock %}
          <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <link rel="stylesheet" type="text/css" href="{{ asset('public/css/style.css') }}" />
-
-		<script src="https://use.fontawesome.com/7455f3feae.js"></script>
+		 <link rel="stylesheet" href="{{ asset('public/bootstrap/css/bootstrap.min.css')}}">
     </head>
     <body>
-		<header>
-		<a href="/"><img id="header-logo" src="{{ asset('FIFA_World_Cup_2018_Logo.png')}}" /></a>
-
-		   <div id="header-menu">
-			     <a href="/">Home</a>
-			     <a href="/transports">Transports</a>
-			     <a href="/accommodation">Accommodation</a>
-			     <a href="/come-to-russia">Come to Russia</a>
-			     <a href="/fan-zone">FanZone</a>
-			     <a href="/competition">Competition</a>
-	         	<a href="/blog">Blog</a>
-		   </div>
-					  	<!-- <ul>
-						    <a href="/"><li>Home</li></a>
-						    <a href="/transports"><li>Transports</li></a>
-						    <a href="/accomodation"><li>Accommodation</li></a>
-						    <a href="/come-to-russia"><li>Come to Russia</li></a>
-						    <a href="/fan-zone"><li>FanZone</li></a>
-							<a href="/competition"><li>Competition</li></a>
-						    <a href="/blog"><li>Blog</li></a>
-						</ul>
- -->
+		<header><a href="/"><img id="header-logo" src="{{ asset('FIFA_World_Cup_2018_Logo.png')}}" /></a>
+ <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+			   <a class="navbar-brand" href="#">A la dérive</a>
+		</div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+			    <li> <a href="/">Home</a></li>
+			    <li> <a href="/transports">Transports</a></li>
+			    <li> <a href="/accommodation">Accommodation</a></li>
+			    <li> <a href="/come-to-russia">Come to Russia</a></li>
+			    <li> <a href="/fan-zone">FanZone</a></li>
+			    <li> <a href="/competition">Competition</a></li>
+	         	<li> <a href="/blog">Blog</a></li>
+			</ul>
+		    </div>
+		</div>
+	</nav>
+		    <!-- <div class="menu-burger">
+			  	<ul>
+				    <a href="/"><li>Home</li></a>
+				    <a href="/transports"><li>Transports</li></a>
+				    <a href="/accomodation"><li>Accommodation</li></a>
+				    <a href="/come-to-russia"><li>Come to Russia</li></a>
+				    <a href="/fan-zone"><li>FanZone</li></a>
+					<a href="/competition"><li>Competition</li></a>
+				    <a href="/blog"><li>Blog</li></a>
+				</ul>
+			</div> -->
 		   <div id="header-connection">
 			   {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
 	   				{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
@@ -47,6 +61,11 @@
  </header>
         {% block body %}{% endblock %}
         {% block javascripts %}
+
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" charset="utf-8"></script>
+    <!-- inclusion des JS de Bootstrap -->
+    	<script src="{{ asset('public/bootstrap/js/bootstrap.min.js')}}" charset="utf-8"></script>
+      <script src="{{ asset('public/froala_editor.min.js')}}" charset="utf-8"></script>
 		{% endblock %}
     </body>
 </html>

@@ -115,3 +115,4 @@ kms_froala_editor:
     imageUploadFolder: "/photos"
     imageUploadPath: "/photos"
     pluginsDisabled: ["save"]
+    includeJQuery: true

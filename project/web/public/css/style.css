@@ -134,9 +134,10 @@
 	cursor: pointer;
 }
 .block {
-    margin-left: 43em;
+    margin-left: 49em;
     padding-right: 2.8em;
     padding-top: 2em;
+	margin-bottom: 1.5em;
     padding-bottom: 2.67em;
 }
 .img-blog {
@@ -175,7 +176,7 @@ max-width: 640px;
     color: white;
     padding: 10px 32px;
     text-decoration: none;
-	margin: auto;
+	margin: 30px auto 0;
 }
 .buttn_new {
 	display: table;
@@ -307,5 +308,5 @@ color:black;}
     position: absolute;
     right: 107px;
 }
-.menu-burger {display: none;}
+
 /** MENU BURGER **/
