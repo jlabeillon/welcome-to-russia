@@ -14,15 +14,13 @@ class ArticleFifaFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
         $date = new \DateTime('');
-        $em = $this->container->get('doctrine.orm.entity_manager');
-        $author = $em->getRepository(User::class)->findOneById(1);
+
 
 
         $article = new Article();
         $article->setTitle('FIFA World Cup 2018 is coming soon !');
         $article->setContent('In 2018 the fifa world cup will start, and everyone is preparing to go to russia to support his team. This blog aims to exchange tips and testimonials, so that the road trip in Russia is going well! And you are ready to go, to the east, to attend live matches of our favorite sport, do you think that the atmosphere will be at the rendezvous? Feel free to leave us your comments !');
         $article->setImage('b72351e5642b58689467f89d20da9cf9.png');
-        $article->setAuthor($author);
         $manager->persist($article);
 
 

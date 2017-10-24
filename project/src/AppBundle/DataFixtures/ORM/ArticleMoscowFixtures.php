@@ -14,15 +14,13 @@ class ArticleMoscowFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
         $date = new \DateTime('');
-        $em = $this->container->get('doctrine.orm.entity_manager');
-        $author = $em->getRepository(User::class)->findOneById(1);
+
 
 
         $article = new Article();
         $article->setTitle('How to stay in Russia.');
         $article->setContent('During your trip to Russia you will have the opportunity to rest in many hotels. From economy class, through hotels that we classify as authentic, and ending with luxury hotels, we hope that among all these choices, you will find your happiness. Feel free to leave a comment, share your testimonials!');
         $article->setImage('ede2dbd036fd70fe3c2c02d8476623a0.png');
-        $article->setAuthor($author);
         $manager->persist($article);
 
 
